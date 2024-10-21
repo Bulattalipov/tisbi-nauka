@@ -1,0 +1,1784 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Описание сайта">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Наука и образование | Тисби Наука</title>
+    <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.min.css?v=0.0.0.0">
+  </head>
+  <body class="yunesko-page" style="background-image: url('assets/images/backpickcha-yunesko.jpg'); background-attachment: fixed">
+    <div class="page-wrapper">
+
+      <header class="header">
+        <div class="site-container">
+          <div class="header__wrapper">
+            <div class="logo logo-animations">
+              <a class="logo__left" href="#">
+                <img class="logo__img" src="assets/images/logo-tisbi-nauka.svg" alt="Logo">
+                <div class="logo__text">
+                  <img class="logo__text-img" src="assets/images/logo-tisbi-nauka-text.svg" alt="Logo">
+                </div>
+              </a>
+              <div class="logo__line"></div>
+              <a class="logo__right" href="http://localhost:3000/index.html">
+                <img class="logo__right-img" src="assets/images/science.svg" alt="Logo">
+              </a>
+            </div>
+            <nav class="nav header__nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="http://localhost:3000/about-science.html">О науке</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="http://localhost:3000/events.html">Мероприятия</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="http://localhost:3000/own-scientific-publications.html">Издания</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="http://localhost:3000/conferences.html">Конференции</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="http://localhost:3000/competitions.html">Гранты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__burger">
+              <button class="header__burger-btn"><span></span><span></span><span></span>
+              </button>
+              <div class="header__burger-text">Меню</div>
+            </div>
+            <div class="header__loss js-drop-down-list">
+              <div class="header__loss-base">
+                <svg class="icon icon-icon__lang" width="20px" height="21px">
+                  <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__lang"></use>
+                </svg>
+                <div class="header__loss-base-text">Русский</div>
+                <svg class="icon icon-icon__angle-small-down" width="20px" height="21px">
+                  <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-down"></use>
+                </svg>
+              </div>
+              <div class="header__loss-list">
+                <div class="header__loss-list-inner">
+                  <a class="header__loss-list-item" href="#">Русский</a>
+                  <a class="header__loss-list-item" href="#">English</a>
+                  <a class="header__loss-list-item" href="#">Deutsland</a>
+                  <a class="header__loss-list-item" href="#">Francais</a>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn--transparent btn--cube header__bnt-open-banner">
+              <svg class="icon icon-icon__angle-small-down btn__icon-right" width="20px" height="20px">
+                <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-down"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="timer-banner">
+            <div class="timer-banner__inner">
+              <div class="timer">
+                <div class="timer__completed">
+                  <div class="timer__completed-title">Регистрация завершена</div>
+                </div>
+                <div class="timer__current">
+                  <div class="timer__contain">
+                    <svg class="icon icon-icon__info" width="24px" height="24px">
+                      <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__info"></use>
+                    </svg>
+                    <div class="timer__text">До конца регистрации осталось</div>
+                  </div>
+                  <div class="timer__date loading timer-box" data-time="2024-11-14">
+                    <div class="timer__date-box"><span class="timer-days">00</span>
+                    </div>
+                    <div class="timer__date-line"></div>
+                    <div class="timer__date-box"><span class="timer-hours">00</span>
+                    </div>
+                    <div class="timer__date-line"></div>
+                    <div class="timer__date-box"><span class="timer-minutes">00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="timer-banner__list">
+                <li class="timer-banner__item">
+                  <a class="timer-banner__link" href="#intellgence">Основные сведения</a>
+                </li>
+                <li class="timer-banner__item">
+                  <a class="timer-banner__link" href="#regulations">Регламент работы</a>
+                </li>
+                <li class="timer-banner__item">
+                  <a class="timer-banner__link" href="#program">Программа</a>
+                </li>
+                <li class="timer-banner__item">
+                  <a class="timer-banner__link" href="#requirements">Требования к публикации</a>
+                </li>
+                <li class="timer-banner__item">
+                  <a class="timer-banner__link" href="#partners">Организаторы и партнеры</a>
+                </li>
+                <li class="timer-banner__item">
+                  <a class="timer-banner__link" href="#faq">Часто задаваемые вопросы</a>
+                </li>
+              </ul>
+              <div class="timer-banner__btns">
+                <button class="btn btn--transparent timer-banner__btn-close">
+                  <div class="btn__text">Скрыть</div>
+                  <svg class="icon icon-icon__angle-small-down btn__icon-right" width="20px" height="20px">
+                    <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-down"></use>
+                  </svg>
+                </button>
+                <a class="btn" href="#" data-path="modal-registration">
+                  <div class="btn__text">Зарегистрироваться</div>
+                  <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                    <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="menu">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="http://localhost:3000/about-science.html">О науке</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="http://localhost:3000/events.html">Мероприятия</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="http://localhost:3000/own-scientific-publications.html">Издания</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="http://localhost:3000/conferences.html">Конференции</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Гранты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu__langs">
+          <a class="btn btn--transparent" href="#">
+            <svg class="icon icon-icon__lang btn__icon-left" width="20px" height="20px">
+              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__lang"></use>
+            </svg>
+            <div class="btn__text">Русский</div>
+          </a>
+          <a class="btn btn--transparent" href="#">
+            <svg class="icon icon-icon__lang btn__icon-left" width="20px" height="20px">
+              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__lang"></use>
+            </svg>
+            <div class="btn__text">English</div>
+          </a>
+          <a class="btn btn--transparent" href="#">
+            <svg class="icon icon-icon__lang btn__icon-left" width="20px" height="20px">
+              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__lang"></use>
+            </svg>
+            <div class="btn__text">Deutsland</div>
+          </a>
+          <a class="btn btn--transparent" href="#">
+            <svg class="icon icon-icon__lang btn__icon-left" width="20px" height="20px">
+              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__lang"></use>
+            </svg>
+            <div class="btn__text">Francais</div>
+          </a>
+        </div>
+      </div>
+
+      <main class="page-main main">
+        <section class="conferences-intro">
+          <div class="site-container">
+            <div class="conferences-intro__inner">
+              <div class="conferences-intro__box">
+                <div class="conferences-intro__logos">
+                  <img class="conferences-intro__logo-item" src="assets/images/Logo_UNESCO_new_1.svg">
+                  <img class="conferences-intro__logo-item" src="assets/images/logo-tisbi.svg">
+                </div>
+                <div class="conferences-intro__small-text">Международная научно-практическая конференция</div>
+                <h1 class="conferences-intro__title">Инклюзия в образовании</h1>
+                <p class="conferences-intro__subtitle">Доступная наука в государственных учреждениях</p>
+                <ul class="conferences-intro__tags">
+                  <li class="conferences-intro__tag">Русский</li>
+                  <li class="conferences-intro__tag">Английский</li>
+                  <li class="conferences-intro__tag">Татарский</li>
+                </ul>
+              </div>
+              <div class="conferences-intro__right">
+                <img class="conferences-intro__img" src="assets/images/Time-right.jpg" alt="">
+                <div class="timer">
+                  <div class="timer__completed">
+                    <div class="timer__completed-title">Регистрация завершена</div>
+                  </div>
+                  <div class="timer__current">
+                    <div class="timer__contain">
+                      <svg class="icon icon-icon__info" width="24px" height="24px">
+                        <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__info"></use>
+                      </svg>
+                      <div class="timer__text">До конца регистрации осталось</div>
+                    </div>
+                    <div class="timer__date loading timer-box" data-time="2024-11-14">
+                      <div class="timer__date-box"><span class="timer-days">00</span>
+                      </div>
+                      <div class="timer__date-line"></div>
+                      <div class="timer__date-box"><span class="timer-hours">00</span>
+                      </div>
+                      <div class="timer__date-line"></div>
+                      <div class="timer__date-box"><span class="timer-minutes">00</span>
+                      </div>
+                    </div>
+                    <div class="timer__btns">
+                      <button class="btn timer__btn--registration" data-path="modal-registration">
+                        <div class="btn__text">Зарегистрироваться</div>
+                        <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                        </svg>
+                      </button>
+                      <a class="btn btn--transparent" href="#">
+                        <div class="btn__text">Архив</div>
+                        <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="conferences-intro__box">
+                <ul class="conferences-intro__info">
+                  <li class="conferences-intro__info-item">
+                    <svg class="icon icon-icon__calendar" width="24px" height="24px">
+                      <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__calendar"></use>
+                    </svg>
+                    <div class="conferences-intro__info-item-text">26.04.2024<span class="conferences-intro__info-item-add">11:30</span>
+                    </div>
+                  </li>
+                  <li class="conferences-intro__info-item">
+                    <svg class="icon icon-icon__marker" width="24px" height="24px">
+                      <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__marker"></use>
+                    </svg>
+                    <div class="conferences-intro__info-item-text">Казань, ул. Муштари, д.13</div>
+                  </li>
+                  <li class="conferences-intro__info-item">
+                    <svg class="icon icon-icon__shuffle" width="24px" height="24px">
+                      <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__shuffle"></use>
+                    </svg>
+                    <div class="conferences-intro__info-item-text">Смешанная</div>
+                  </li>
+                </ul>
+                <p class="conferences-intro__text">Приглашаем Вас принять участие в работе XXIV Национальной научно-практической конференции студентов, магистрантов, аспирантов и молодых ученых «Общество, государство, личность: механизмы инновационной деятельности молодежи в решении задач научно-технологического развития».</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section conferences-intellgence" id="intellgence">
+          <div class="site-container">
+            <h2 class="title">
+              <div class="title__inner">
+                <svg class="icon icon-icon__target title__icon" width="32px" height="32px">
+                  <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__target"></use>
+                </svg>
+                <div class="title__text">Основные сведения о конференции</div>
+              </div>
+            </h2>
+            <div class="conferences-intellgence__inner">
+              <div class="conferences-intellgence__item">
+                <div class="conferences-intellgence__item-title">Цели</div>
+                <ul class="conferences-intellgence__item-list">
+                  <li class="conferences-intellgence__item-elem">Формирование научного видения перспектив реализации инновационной активности молодежи и ее роли в решении задач научно-технологического развития</li>
+                </ul>
+              </div>
+              <div class="conferences-intellgence__item">
+                <div class="conferences-intellgence__item-title">Задачи</div>
+                <ul class="conferences-intellgence__item-list">
+                  <li class="conferences-intellgence__item-elem">Определение современных возможностей и направлений инновационной деятельности молодежи.</li>
+                  <li class="conferences-intellgence__item-elem">Обсуждение актуальных проблем и путей реализации инновационного потенциала молодежи.</li>
+                  <li class="conferences-intellgence__item-elem">Рассмотрение и актуализация научных приоритетов в исследованиях молодых ученых процессов трансформирующейся научно-технологической среды.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section conferences-regulations" id="regulations">
+          <div class="site-container">
+            <h2 class="title">
+              <div class="title__inner">
+                <svg class="icon icon-icon__time-fast title__icon" width="32px" height="32px">
+                  <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__time-fast"></use>
+                </svg>
+                <div class="title__text">Регламент работы конференции</div>
+              </div>
+            </h2>
+            <div class="conferences-regulations__inner">
+              <div class="conferences-regulations__item">
+                <ul class="conferences-regulations__item-list">
+                  <li class="conferences-regulations__item-elem">
+                    <div class="conferences-regulations__item-elem-date">09:00 - 13:00</div>
+                    <div class="conferences-regulations__item-elem-title">Регистрация на конференцию</div>
+                  </li>
+                  <li class="conferences-regulations__item-elem">
+                    <div class="conferences-regulations__item-elem-date">14:00- 19:00</div>
+                    <div class="conferences-regulations__item-elem-title">Пленарная сессия в Большом актовом зале</div>
+                  </li>
+                  <li class="conferences-regulations__item-elem">
+                    <div class="conferences-regulations__item-elem-date">09:00 - 13:00</div>
+                    <div class="conferences-regulations__item-elem-title">Регистрация на конференцию</div>
+                  </li>
+                  <li class="conferences-regulations__item-elem">
+                    <div class="conferences-regulations__item-elem-date">09:00 - 13:00</div>
+                    <div class="conferences-regulations__item-elem-title">Регистрация на конференцию</div>
+                  </li>
+                  <li class="conferences-regulations__item-elem">
+                    <div class="conferences-regulations__item-elem-date">09:00 - 13:00</div>
+                    <div class="conferences-regulations__item-elem-title">Регистрация на конференцию</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="conferences-regulations__right">
+                <img class="conferences-regulations__img" src="assets/images/kazan-1.jpg" alt="alt">
+                <div class="conferences-regulations__right-title">Историко-архитектурный комплекс Казанского кремля</div>
+                <div class="conferences-regulations__right-desc">В 2000 году внесен в список объектов всемирного наследия ЮНЕСКО в России</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section conferences-program" id="program">
+          <div class="site-container">
+            <div class="conferences-program__inner">
+              <h2 class="title">
+                <div class="title__inner">
+                  <svg class="icon icon-icon__apps title__icon" width="32px" height="32px">
+                    <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__apps"></use>
+                  </svg>
+                  <div class="title__text">Программа панельной дискуссии</div>
+                </div>
+              </h2>
+              <div class="conferences-program__box">
+                <a class="btn" href="#">
+                  <div class="btn__text">Скачать программу</div>
+                  <svg class="icon icon-icon__download btn__icon-right" width="20px" height="20px">
+                    <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__download"></use>
+                  </svg>
+                </a>
+                <div class="conferences-program__box-text">Обновлен 14.05.2024</div>
+              </div>
+            </div>
+            <div class="conferences-program__table">
+              <div class="conferences-program__row">
+                <div class="conferences-program__col">
+                  <div class="conferences-program__col-title">Название</div>
+                </div>
+                <div class="conferences-program__col">
+                  <div class="conferences-program__col-title">Модераторы</div>
+                </div>
+              </div>
+              <div class="conferences-program__row conferences-program__row--background">
+                <div class="conferences-program__col">
+                  <div class="conferences-program__col-info">
+                    <div class="conferences-program__col-info-title">Синергия гуманитарных ценностей и инновационной активности молодежи: особенности и перспективы.</div>
+                    <ul class="conferences-program__col-info-tags">
+                      <li class="conferences-program__col-info-tag conferences-program__col-info-tag--orange">
+                        <div class="conferences-program__col-info-tag-title">Лекция</div>
+                      </li>
+                      <li class="conferences-program__col-info-tag">
+                        <svg class="icon icon-icon__clock" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__clock"></use>
+                        </svg>
+                        <div class="conferences-program__col-info-tag-title">18.04.2024</div><span class="conferences-program__col-info-tag-add">11:20</span>
+                      </li>
+                      <li class="conferences-program__col-info-tag">
+                        <svg class="icon icon-icon__home-location" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__home-location"></use>
+                        </svg>
+                        <div class="conferences-program__col-info-tag-title">Казань, ул. Муштари, д.13</div>
+                      </li>
+                      <li class="conferences-program__col-info-tag">
+                        <svg class="icon icon-icon__shuffle-mini" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__shuffle-mini"></use>
+                        </svg>
+                        <div class="conferences-program__col-info-tag-title">Смешанная</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="conferences-program__col">
+                  <div class="conferences-program__col-user">
+                    <img class="conferences-program__col-user-img" src="assets/images/conferences-program/user-1.jpg" alt="user">
+                    <div class="conferences-program__col-user-box">
+                      <div class="conferences-program__col-user-name">Катекина А. А.</div>
+                      <div class="conferences-program__col-user-speciality">канд. пед. наук, доцент</div>
+                      <a class="btn btn--transparent" href="mailto:el.faizr@mail.ru">
+                        <svg class="icon icon-icon__envelope btn__icon-left" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__envelope"></use>
+                        </svg>
+                        <div class="btn__text">el.faizr@mail.ru</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="conferences-program__row conferences-program__row--background">
+                <div class="conferences-program__col">
+                  <div class="conferences-program__col-info">
+                    <div class="conferences-program__col-info-title">Экономические аспекты научно-технологического развития региона.</div>
+                    <ul class="conferences-program__col-info-tags">
+                      <li class="conferences-program__col-info-tag conferences-program__col-info-tag--orange">
+                        <div class="conferences-program__col-info-tag-title">Лекция</div>
+                      </li>
+                      <li class="conferences-program__col-info-tag">
+                        <svg class="icon icon-icon__clock" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__clock"></use>
+                        </svg>
+                        <div class="conferences-program__col-info-tag-title">18.04.2024</div><span class="conferences-program__col-info-tag-add">11:20</span>
+                      </li>
+                      <li class="conferences-program__col-info-tag">
+                        <svg class="icon icon-icon__home-location" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__home-location"></use>
+                        </svg>
+                        <div class="conferences-program__col-info-tag-title">Казань, ул. Муштари, д.13</div>
+                      </li>
+                      <li class="conferences-program__col-info-tag">
+                        <svg class="icon icon-icon__shuffle-mini" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__shuffle-mini"></use>
+                        </svg>
+                        <div class="conferences-program__col-info-tag-title">Смешанная</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="conferences-program__col">
+                  <div class="conferences-program__col-user">
+                    <img class="conferences-program__col-user-img" src="assets/images/conferences-program/plug.png" alt="user">
+                    <div class="conferences-program__col-user-box">
+                      <div class="conferences-program__col-user-name">Файзрахманова Э. А.</div>
+                      <div class="conferences-program__col-user-speciality">канд. эконом. наук, доцент</div>
+                      <a class="btn btn--transparent" href="mailto:el.faizr@mail.ru">
+                        <svg class="icon icon-icon__envelope btn__icon-left" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__envelope"></use>
+                        </svg>
+                        <div class="btn__text">el.faizr@mail.ru</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="conferences-program__row conferences-program__row--background">
+                <div class="conferences-program__col">
+                  <div class="conferences-program__col-info">
+                    <div class="conferences-program__col-info-title">Актуальные проблемы российского и международного права в условиях научно-технологического развития.</div>
+                    <ul class="conferences-program__col-info-tags">
+                      <li class="conferences-program__col-info-tag conferences-program__col-info-tag--orange">
+                        <div class="conferences-program__col-info-tag-title">Лекция</div>
+                      </li>
+                      <li class="conferences-program__col-info-tag">
+                        <svg class="icon icon-icon__clock" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__clock"></use>
+                        </svg>
+                        <div class="conferences-program__col-info-tag-title">18.04.2024</div><span class="conferences-program__col-info-tag-add">11:20</span>
+                      </li>
+                      <li class="conferences-program__col-info-tag">
+                        <svg class="icon icon-icon__home-location" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__home-location"></use>
+                        </svg>
+                        <div class="conferences-program__col-info-tag-title">Казань, ул. Муштари, д.13</div>
+                      </li>
+                      <li class="conferences-program__col-info-tag">
+                        <svg class="icon icon-icon__shuffle-mini" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__shuffle-mini"></use>
+                        </svg>
+                        <div class="conferences-program__col-info-tag-title">Смешанная</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="conferences-program__col">
+                  <div class="conferences-program__col-user">
+                    <img class="conferences-program__col-user-img" src="assets/images/conferences-program/user-3.jpg" alt="user">
+                    <div class="conferences-program__col-user-box">
+                      <div class="conferences-program__col-user-name">Солдатов Я. В.</div>
+                      <div class="conferences-program__col-user-speciality">канд. ист. наук, доцент</div>
+                      <a class="btn btn--transparent" href="mailto:yacovsoldatov@yandex.ru">
+                        <svg class="icon icon-icon__envelope btn__icon-left" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__envelope"></use>
+                        </svg>
+                        <div class="btn__text">yacovsoldatov@yandex.ru</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="conferences-program__row conferences-program__row--background">
+                <div class="conferences-program__col">
+                  <div class="conferences-program__col-info">
+                    <div class="conferences-program__col-info-title">Современные аспекты цифровых технологий.</div>
+                    <ul class="conferences-program__col-info-tags">
+                      <li class="conferences-program__col-info-tag conferences-program__col-info-tag--orange">
+                        <div class="conferences-program__col-info-tag-title">Лекция</div>
+                      </li>
+                      <li class="conferences-program__col-info-tag">
+                        <svg class="icon icon-icon__clock" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__clock"></use>
+                        </svg>
+                        <div class="conferences-program__col-info-tag-title">18.04.2024</div><span class="conferences-program__col-info-tag-add">11:20</span>
+                      </li>
+                      <li class="conferences-program__col-info-tag">
+                        <svg class="icon icon-icon__home-location" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__home-location"></use>
+                        </svg>
+                        <div class="conferences-program__col-info-tag-title">Казань, ул. Муштари, д.13</div>
+                      </li>
+                      <li class="conferences-program__col-info-tag">
+                        <svg class="icon icon-icon__shuffle-mini" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__shuffle-mini"></use>
+                        </svg>
+                        <div class="conferences-program__col-info-tag-title">Смешанная</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="conferences-program__col">
+                  <div class="conferences-program__col-user">
+                    <img class="conferences-program__col-user-img" src="assets/images/conferences-program/user-4.jpg" alt="user">
+                    <div class="conferences-program__col-user-box">
+                      <div class="conferences-program__col-user-name">Сафиуллина Ф. Ф.</div>
+                      <div class="conferences-program__col-user-speciality">канд. хим. наук, доцент</div>
+                      <a class="btn btn--transparent" href="mailto:fsafiullina@yandex.ru">
+                        <svg class="icon icon-icon__envelope btn__icon-left" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__envelope"></use>
+                        </svg>
+                        <div class="btn__text">fsafiullina@yandex.ru</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="conferences-program__row conferences-program__row--background">
+                <div class="conferences-program__col">
+                  <div class="conferences-program__col-info">
+                    <div class="conferences-program__col-info-title">Проблемы и пути реализации инновационного потенциала молодежи в научно-технологической среде.</div>
+                    <ul class="conferences-program__col-info-tags">
+                      <li class="conferences-program__col-info-tag conferences-program__col-info-tag--orange">
+                        <div class="conferences-program__col-info-tag-title">Лекция</div>
+                      </li>
+                      <li class="conferences-program__col-info-tag">
+                        <svg class="icon icon-icon__clock" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__clock"></use>
+                        </svg>
+                        <div class="conferences-program__col-info-tag-title">18.04.2024</div><span class="conferences-program__col-info-tag-add">11:20</span>
+                      </li>
+                      <li class="conferences-program__col-info-tag">
+                        <svg class="icon icon-icon__home-location" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__home-location"></use>
+                        </svg>
+                        <div class="conferences-program__col-info-tag-title">Казань, ул. Муштари, д.13</div>
+                      </li>
+                      <li class="conferences-program__col-info-tag">
+                        <svg class="icon icon-icon__shuffle-mini" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__shuffle-mini"></use>
+                        </svg>
+                        <div class="conferences-program__col-info-tag-title">Смешанная</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="conferences-program__col">
+                  <div class="conferences-program__col-user">
+                    <img class="conferences-program__col-user-img" src="assets/images/conferences-program/user-5.jpg" alt="user">
+                    <div class="conferences-program__col-user-box">
+                      <div class="conferences-program__col-user-name">Елесин Е. Ю.</div>
+                      <div class="conferences-program__col-user-speciality">канд. экон. наук, доцент</div>
+                      <a class="btn btn--transparent" href="mailto:nauka_management@mail.ru">
+                        <svg class="icon icon-icon__envelope btn__icon-left" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__envelope"></use>
+                        </svg>
+                        <div class="btn__text">nauka_management@mail.ru</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="conferences-program__row conferences-program__row--background">
+                <div class="conferences-program__col">
+                  <div class="conferences-program__col-info">
+                    <div class="conferences-program__col-info-title">Инновационная деятельность молодежи в спорте и физической культуре современной России.</div>
+                    <ul class="conferences-program__col-info-tags">
+                      <li class="conferences-program__col-info-tag conferences-program__col-info-tag--orange">
+                        <div class="conferences-program__col-info-tag-title">Лекция</div>
+                      </li>
+                      <li class="conferences-program__col-info-tag">
+                        <svg class="icon icon-icon__clock" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__clock"></use>
+                        </svg>
+                        <div class="conferences-program__col-info-tag-title">18.04.2024</div><span class="conferences-program__col-info-tag-add">11:20</span>
+                      </li>
+                      <li class="conferences-program__col-info-tag">
+                        <svg class="icon icon-icon__home-location" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__home-location"></use>
+                        </svg>
+                        <div class="conferences-program__col-info-tag-title">Казань, ул. Муштари, д.13</div>
+                      </li>
+                      <li class="conferences-program__col-info-tag">
+                        <svg class="icon icon-icon__shuffle-mini" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__shuffle-mini"></use>
+                        </svg>
+                        <div class="conferences-program__col-info-tag-title">Смешанная</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="conferences-program__col">
+                  <div class="conferences-program__col-user">
+                    <img class="conferences-program__col-user-img" src="assets/images/conferences-program/user-6.jpg" alt="user">
+                    <div class="conferences-program__col-user-box">
+                      <div class="conferences-program__col-user-name">Максимова Е. Ф.</div>
+                      <div class="conferences-program__col-user-speciality">канд.пед.наук, доцент</div>
+                      <a class="btn btn--transparent" href="mailto:elena.maksimova.00@bk.ru">
+                        <svg class="icon icon-icon__envelope btn__icon-left" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__envelope"></use>
+                        </svg>
+                        <div class="btn__text">elena.maksimova.00@bk.ru</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="conferences-program__row conferences-program__row--background">
+                <div class="conferences-program__col">
+                  <div class="conferences-program__col-info">
+                    <div class="conferences-program__col-info-title">III тур VI Конкурса на «Лучшая научная студенческая работа».</div>
+                    <ul class="conferences-program__col-info-tags">
+                      <li class="conferences-program__col-info-tag conferences-program__col-info-tag--orange">
+                        <div class="conferences-program__col-info-tag-title">Лекция</div>
+                      </li>
+                      <li class="conferences-program__col-info-tag">
+                        <svg class="icon icon-icon__clock" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__clock"></use>
+                        </svg>
+                        <div class="conferences-program__col-info-tag-title">18.04.2024</div><span class="conferences-program__col-info-tag-add">11:20</span>
+                      </li>
+                      <li class="conferences-program__col-info-tag">
+                        <svg class="icon icon-icon__home-location" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__home-location"></use>
+                        </svg>
+                        <div class="conferences-program__col-info-tag-title">Казань, ул. Муштари, д.13</div>
+                      </li>
+                      <li class="conferences-program__col-info-tag">
+                        <svg class="icon icon-icon__shuffle-mini" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__shuffle-mini"></use>
+                        </svg>
+                        <div class="conferences-program__col-info-tag-title">Смешанная</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="conferences-program__col">
+                  <div class="conferences-program__col-user">
+                    <img class="conferences-program__col-user-img" src="assets/images/conferences-program/user-7.jpg" alt="user">
+                    <div class="conferences-program__col-user-box">
+                      <div class="conferences-program__col-user-name">Грузкова С. Ю.</div>
+                      <div class="conferences-program__col-user-speciality">канд. техн. наук, доцент</div>
+                      <a class="btn btn--transparent" href="mailto:naukatisbi@yandex.ru">
+                        <svg class="icon icon-icon__envelope btn__icon-left" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__envelope"></use>
+                        </svg>
+                        <div class="btn__text">naukatisbi@yandex.ru</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="conferences-program__note">Время проведения может варьироваться в пределах 30 минут</div>
+          </div>
+        </section>
+        <section class="section conferences-requirements" id="requirements">
+          <div class="site-container">
+            <h2 class="title">
+              <div class="title__inner">
+                <svg class="icon icon-icon__exclamation title__icon" width="32px" height="32px">
+                  <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__exclamation"></use>
+                </svg>
+                <div class="title__text">Требования к публикации статей</div>
+              </div>
+            </h2>
+            <div class="conferences-requirements__inner">
+              <ul class="conferences-requirements__list">
+                <li class="conferences-requirements__item">
+                  <div class="conferences-requirements__item-title">Правила подготовки и отправки статьи</div>
+                  <div class="conferences-requirements__item-text">Анкета-заявка с текстом статьи отправляется одним файлом на почту, полученную после регистрации на конференцию. Рабочие языки конференции: русский, татарский, английский, немецкий, французский.</div>
+                </li>
+                <li class="conferences-requirements__item">
+                  <div class="conferences-requirements__item-title">Требования к статьям</div>
+                  <div class="conferences-requirements__item-text">Авторский оригинал оформляется в электронном виде в формате документа doc или docx в формате А4 книжной ориентации. Объем от 5 страниц. В материалах не должно быть выделений, подстрочных символов. Шаблон оформления статьи (кнопка на скачивание документа, где будет макет, анкета и шаблон статьи с информацией про вот эти все кегли) Аннотация и ключевые слова должны быть представлены на русском и английском языках. Объем аннотации не менее 50 слов. Список литературы составляет не более 5 источников.</div>
+                </li>
+                <li class="conferences-requirements__item">
+                  <div class="conferences-requirements__item-title">Проверка на плагиат</div>
+                  <div class="conferences-requirements__item-text">Проверка осуществляется Оргкомитетом после получения статьи. Тезисы и статьи, содержащие плагиат и некорректные заимствования, а также статьи с оригинальностью текста менее 60% (проверка осуществляется по нескольким базам), не могут быть приняты к печати. Ранее опубликованные материалы не принимаются.</div>
+                </li>
+                <li class="conferences-requirements__item">
+                  <div class="conferences-requirements__item-title">Стоимость участия</div>
+                  <div class="conferences-requirements__item-text">Организационный взнос — 50 руб. за страницу авторского текста (минимальный объем 5 стр.) и включает публикацию статьи в издании, электронный сборник, сертификат участника, печатный сборник по запросу. Заказ дополнительного экземпляра печатного сборника — 200 руб. за экземпляр.</div>
+                </li>
+              </ul>
+              <div class="conferences-requirements__right">
+                <img class="conferences-requirements__img" src="assets/images/kazan-2.jpg" alt="">
+                <div class="conferences-requirements__right-title">Успенский собор и монастырь острова-града Свияжск</div>
+                <div class="conferences-requirements__right-desc">В 2023 году внесен в список объектов всемирного наследия ЮНЕСКО в России</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section conferences-partners" id="partners">
+          <div class="site-container">
+            <h2 class="title">
+              <div class="title__inner">
+                <svg class="icon icon-icon__badge title__icon" width="32px" height="32px">
+                  <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__badge"></use>
+                </svg>
+                <div class="title__text">Организаторы и партнеры</div>
+              </div>
+            </h2>
+            <div class="conferences-partners__wrapper">
+              <div class="conferences-partners__swiper swiper js-infinity-slider">
+                <div class="swiper-wrapper">
+                  <a class="swiper-slide" href="https://science.tisbi.ru/ru">
+                    <img class="conferences-partners__swiper-item-img" src="assets/images/sberbank.svg" alt="icon">
+                  </a>
+                  <a class="swiper-slide" href="https://science.tisbi.ru/ru">
+                    <img class="conferences-partners__swiper-item-img" src="assets/images/sberbank.svg" alt="icon">
+                  </a>
+                  <a class="swiper-slide" href="https://science.tisbi.ru/ru">
+                    <img class="conferences-partners__swiper-item-img" src="assets/images/sberbank.svg" alt="icon">
+                  </a>
+                  <a class="swiper-slide" href="https://science.tisbi.ru/ru">
+                    <img class="conferences-partners__swiper-item-img" src="assets/images/sberbank.svg" alt="icon">
+                  </a>
+                  <a class="swiper-slide" href="https://science.tisbi.ru/ru">
+                    <img class="conferences-partners__swiper-item-img" src="assets/images/sberbank.svg" alt="icon">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section conferences-faq" id="faq">
+          <div class="site-container">
+            <h2 class="title">
+              <div class="title__inner">
+                <svg class="icon icon-icon__interrogation title__icon" width="32px" height="32px">
+                  <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__interrogation"></use>
+                </svg>
+                <div class="title__text">Часто задаваемые вопросы</div>
+              </div>
+            </h2>
+            <div class="conferences-faq__inner">
+              <div class="conferences-faq__list js-faq-accordions">
+                <div class="conferences-faq__item js-accordion">
+                  <div class="conferences-faq__item-row js-accordion-btn">
+                    <div class="conferences-faq__item-title">Где будет проходить конференция?</div>
+                    <svg class="icon icon-icon__angle-small-down" width="20px" height="21px">
+                      <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-down"></use>
+                    </svg>
+                  </div>
+                  <div class="conferences-faq__item-content js-accordion-content">
+                    <div class="conferences-faq__item-content-inner">
+                      <div class="conferences-faq__item-text">Конференция будет проходить в университете управления «ТИСБИ». Адрес: г. Казань, ул. Муштари, д.13</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="conferences-faq__item js-accordion">
+                  <div class="conferences-faq__item-row js-accordion-btn">
+                    <div class="conferences-faq__item-title">Где будет проходить конференция?</div>
+                    <svg class="icon icon-icon__angle-small-down" width="20px" height="21px">
+                      <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-down"></use>
+                    </svg>
+                  </div>
+                  <div class="conferences-faq__item-content js-accordion-content">
+                    <div class="conferences-faq__item-content-inner">
+                      <div class="conferences-faq__item-text">Конференция будет проходить в университете управления «ТИСБИ». Адрес: г. Казань, ул. Муштари, д.13</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="conferences-faq__item js-accordion">
+                  <div class="conferences-faq__item-row js-accordion-btn">
+                    <div class="conferences-faq__item-title">Где будет проходить конференция?</div>
+                    <svg class="icon icon-icon__angle-small-down" width="20px" height="21px">
+                      <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-down"></use>
+                    </svg>
+                  </div>
+                  <div class="conferences-faq__item-content js-accordion-content">
+                    <div class="conferences-faq__item-content-inner">
+                      <div class="conferences-faq__item-text">Конференция будет проходить в университете управления «ТИСБИ». Адрес: г. Казань, ул. Муштари, д.13</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="conferences-faq__item js-accordion">
+                  <div class="conferences-faq__item-row js-accordion-btn">
+                    <div class="conferences-faq__item-title">Где будет проходить конференция?</div>
+                    <svg class="icon icon-icon__angle-small-down" width="20px" height="21px">
+                      <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-down"></use>
+                    </svg>
+                  </div>
+                  <div class="conferences-faq__item-content js-accordion-content">
+                    <div class="conferences-faq__item-content-inner">
+                      <div class="conferences-faq__item-text">Конференция будет проходить в университете управления «ТИСБИ». Адрес: г. Казань, ул. Муштари, д.13</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="conferences-faq__item js-accordion">
+                  <div class="conferences-faq__item-row js-accordion-btn">
+                    <div class="conferences-faq__item-title">Где будет проходить конференция?</div>
+                    <svg class="icon icon-icon__angle-small-down" width="20px" height="21px">
+                      <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-down"></use>
+                    </svg>
+                  </div>
+                  <div class="conferences-faq__item-content js-accordion-content">
+                    <div class="conferences-faq__item-content-inner">
+                      <div class="conferences-faq__item-text">Конференция будет проходить в университете управления «ТИСБИ». Адрес: г. Казань, ул. Муштари, д.13</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="conferences-faq__item js-accordion">
+                  <div class="conferences-faq__item-row js-accordion-btn">
+                    <div class="conferences-faq__item-title">Где будет проходить конференция?</div>
+                    <svg class="icon icon-icon__angle-small-down" width="20px" height="21px">
+                      <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-down"></use>
+                    </svg>
+                  </div>
+                  <div class="conferences-faq__item-content js-accordion-content">
+                    <div class="conferences-faq__item-content-inner">
+                      <div class="conferences-faq__item-text">Конференция будет проходить в университете управления «ТИСБИ». Адрес: г. Казань, ул. Муштари, д.13</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="conferences-faq__item js-accordion">
+                  <div class="conferences-faq__item-row js-accordion-btn">
+                    <div class="conferences-faq__item-title">Где будет проходить конференция?</div>
+                    <svg class="icon icon-icon__angle-small-down" width="20px" height="21px">
+                      <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-down"></use>
+                    </svg>
+                  </div>
+                  <div class="conferences-faq__item-content js-accordion-content">
+                    <div class="conferences-faq__item-content-inner">
+                      <div class="conferences-faq__item-text">Конференция будет проходить в университете управления «ТИСБИ». Адрес: г. Казань, ул. Муштари, д.13</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="conferences-faq__item conferences-faq__item--change">
+                  <div class="conferences-faq__item-row">
+                    <div class="conferences-faq__item-title">Остались вопросы?</div>
+                  </div>
+                  <div class="conferences-faq__item-content">
+                    <div class="conferences-faq__item-content-inner">
+                      <div class="conferences-faq__item-text">Наша команда поможет вам с любым вопросом по проекту “ТИСБИ Наука”</div>
+                      <div class="conferences-faq__item-btns">
+                        <a class="btn btn--transparent" href="tel:+78432948306">
+                          <svg class="icon icon-icon__envelope btn__icon-left" width="20px" height="20px">
+                            <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__envelope"></use>
+                          </svg>
+                          <div class="btn__text">+7 (843) 294-83-06</div>
+                        </a>
+                        <a class="btn btn--transparent" href="mailto:naukatisbi@yandex.ru">
+                          <svg class="icon icon-icon__phone-call btn__icon-left" width="20px" height="20px">
+                            <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__phone-call"></use>
+                          </svg>
+                          <div class="btn__text">naukatisbi@yandex.ru</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="conferences-faq__right">
+                <img class="conferences-faq__img" src="assets/images/kazan-3.jpg" alt="alt">
+                <div class="conferences-faq__right-title">Булгарский историко-археологический комплекс</div>
+                <div class="conferences-faq__right-desc">В 2014 году внесен в список объектов всемирного наследия ЮНЕСКО в России</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <button class="btn btn--cube fixed-btn">
+        <svg class="icon icon-icon__caret-up btn__icon-right" width="20px" height="20px">
+          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__caret-up"></use>
+        </svg>
+      </button>
+
+      <footer class="footer">
+        <div class="site-container">
+          <div class="logo footer__logo">
+            <a class="logo__left" href="#">
+              <img class="logo__img" src="assets/images/logo-tisbi-nauka.svg" alt="Logo">
+              <div class="logo__text">
+                <img class="logo__text-img" src="assets/images/logo-tisbi-nauka-text.svg" alt="Logo">
+              </div>
+            </a>
+            <div class="logo__line"></div>
+            <a class="logo__right" href="http://localhost:3000/index.html">
+              <img class="logo__right-img" src="assets/images/science.svg" alt="Logo">
+            </a>
+          </div>
+          <div class="footer__inner">
+            <div class="footer__address">
+              <div class="footer__subtitle">Адреса</div>
+              <div class="footer__address-elem">ул. Муштари, 11/43</div>
+              <div class="footer__address-elem">ул. Муштари, 13 (вход с ул. Маяковского)</div>
+            </div>
+            <div class="footer__telephone">
+              <div class="footer__subtitle">Телефон</div>
+              <a class="footer__telephone-elem" href="tel:+78432948306">+7 (843) 294-83-06</a>
+            </div>
+            <div class="footer__socials">
+              <div class="footer__subtitle">Мы в социальных сетях</div>
+              <ul class="footer__socials-list">
+                <a class="btn btn--transparent btn--cube" href="#">
+                  <svg class="icon icon-vk btn__icon-right" width="20px" height="20px">
+                    <use xlink:href="assets/images/sprites/sprite-mono.svg#vk"></use>
+                  </svg>
+                </a>
+                <a class="btn btn--transparent btn--cube" href="#">
+                  <svg class="icon icon-telegram btn__icon-right" width="20px" height="20px">
+                    <use xlink:href="assets/images/sprites/sprite-mono.svg#telegram"></use>
+                  </svg>
+                </a>
+                <a class="btn btn--transparent btn--cube" href="#">
+                  <svg class="icon icon-youtube btn__icon-right" width="20px" height="20px">
+                    <use xlink:href="assets/images/sprites/sprite-mono.svg#youtube"></use>
+                  </svg>
+                </a>
+                <a class="btn btn--transparent btn--cube" href="#">
+                  <svg class="icon icon-rutube btn__icon-right" width="20px" height="20px">
+                    <use xlink:href="assets/images/sprites/sprite-mono.svg#rutube"></use>
+                  </svg>
+                </a>
+                <a class="btn btn--transparent btn--cube" href="#">
+                  <svg class="icon icon-dzen btn__icon-right" width="20px" height="20px">
+                    <use xlink:href="assets/images/sprites/sprite-mono.svg#dzen"></use>
+                  </svg>
+                </a>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <a class="footer__bottom-text" href="#">Политика конфиденциальности</a>
+            <a class="footer__bottom-text" href="#">Условиям использования Google</a>
+            <a class="footer__bottom-text" href="#">Политика конфиденциальности</a>
+            <a class="footer__bottom-text" href="#">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="modal">
+      <div class="modal__container" data-target="modal-registration">
+        <div class="site-container">
+          <div class="modal__content">
+            <div class="modal__registration">
+              <div class="modal__registration-inner">
+                <div class="form-registration">
+                  <div class="form-registration__wrapper form-registration--default">
+                    <h2 class="title">
+                      <div class="title__inner">
+                        <div class="title__text">Регистрация</div>
+                      </div>
+                    </h2>
+                    <button class="button-reset modal__close-btn modal-close" type="button"><span></span><span></span>
+                    </button>
+                    <div class="form-registration__steps">
+                      <div class="form-registration__step active-step">
+                        <div class="form-registration__step-number">1</div>
+                        <div class="form-registration__step-line"></div>
+                      </div>
+                      <div class="form-registration__step">
+                        <div class="form-registration__step-number">2</div>
+                        <div class="form-registration__step-line"></div>
+                      </div>
+                      <div class="form-registration__step">
+                        <div class="form-registration__step-number">3</div>
+                      </div>
+                    </div>
+                    <form class="form-registration__form">
+                      <div class="form-registration__form-box">
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Фамилия</div>
+                          <input class="input" type="text" name="surname" placeholder="Иванов" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Имя</div>
+                          <input class="input" type="text" name="name" placeholder="Иван" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title">Отчество</div>
+                          <input class="input" type="text" name="otchestvo" placeholder="Иванович" data-no-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Адрес электронной почты</div>
+                          <input class="input" type="email" name="email" placeholder="ivanov@mail.ru" data-no-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title">Номер телефона</div>
+                          <input class="input js-phone-mask" type="tel" name="tel" placeholder="+7 (***) ***-**-**" data-no-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Организация / место работы</div>
+                          <input class="input" type="text" name="organization" placeholder="Организация / место работы" data-must-validate="">
+                        </div>
+                      </div>
+                      <div class="form-registration__form-box">
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Должность</div>
+                          <input class="input" type="text" name="job-title" placeholder="Должность полностью" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Направление</div>
+                          <select class="form-registration__form-select" data-must-validate="">
+                            <option placeholder>Выбрать из списка</option>
+                            <option value="текст 1">абсолютом, иной реальностью. Феномен мистических переживаний рассматриваетсяdewdewdwew на примерах философов, психологов, религиозных деятелей, а также на</option>
+                            <option value="текст 2">текст 2</option>
+                            <option value="текст 3">текст 3</option>
+                          </select>
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Участие в пленарной сессии</div>
+                          <div class="form-registration__form-checkboxs" data-must-validate="">
+                            <label class="radio-button">
+                              <input class="radio-button__input" type="radio" name="plenarySession" value="Нет">
+                              <div class="radio-button__elem"></div>
+                              <div class="radio-button__text">Нет</div>
+                            </label>
+                            <label class="radio-button">
+                              <input class="radio-button__input" type="radio" name="plenarySession" value="Да">
+                              <div class="radio-button__elem"></div>
+                              <div class="radio-button__text">Да</div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="form-registration__form-label form-registration__form-label--form-participation">
+                          <div class="form-registration__form-title required-title">Форма участия</div>
+                          <div class="form-registration__form-checkboxs" data-must-validate="">
+                            <label class="radio-button" data-open-next="">
+                              <input class="radio-button__input" type="radio" name="formParticipation" value="Очное">
+                              <div class="radio-button__elem"></div>
+                              <div class="radio-button__text">Очное</div>
+                            </label>
+                            <label class="radio-button">
+                              <input class="radio-button__input" type="radio" name="formParticipation" value="Заочное (Только публикация статьи)">
+                              <div class="radio-button__elem"></div>
+                              <div class="radio-button__text">Заочное (Только публикация статьи)</div>
+                            </label>
+                            <label class="radio-button">
+                              <input class="radio-button__input" type="radio" name="formParticipation" value="Дистанционное">
+                              <div class="radio-button__elem"></div>
+                              <div class="radio-button__text">Дистанционное</div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="form-registration__form-label form-registration__form-label--method-participation hidden">
+                          <div class="form-registration__form-title required-title">Способ участия</div>
+                          <div class="form-registration__form-checkboxs" data-must-validate="">
+                            <label class="radio-button" data-open-next="">
+                              <input class="radio-button__input" type="radio" name="methodParticipation" value="Докладчик">
+                              <div class="radio-button__elem"></div>
+                              <div class="radio-button__text">Докладчик</div>
+                            </label>
+                            <label class="radio-button">
+                              <input class="radio-button__input" type="radio" name="methodParticipation" value="Слушатель">
+                              <div class="radio-button__elem"></div>
+                              <div class="radio-button__text">Слушатель</div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="form-registration__form-label form-registration__form-label--type-report hidden">
+                          <div class="form-registration__form-title required-title">Тип доклада</div>
+                          <div class="form-registration__form-checkboxs" data-must-validate="">
+                            <label class="radio-button">
+                              <input class="radio-button__input" type="radio" name="typeReport" value="Доклад на пленарной сессии">
+                              <div class="radio-button__elem"></div>
+                              <div class="radio-button__text">Доклад на пленарной сессии</div>
+                            </label>
+                            <label class="radio-button">
+                              <input class="radio-button__input" type="radio" name="typeReport" value="Доклад на дискуссионной площадке">
+                              <div class="radio-button__elem"></div>
+                              <div class="radio-button__text">Доклад на дискуссионной площадке</div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="form-registration__form-label form-registration__form-label--topic-report hidden">
+                          <div class="form-registration__form-title required-title">Тема доклада / публикации</div>
+                          <input class="input" type="text" name="topicReport" placeholder="Название темы" data-must-validate="">
+                        </div>
+                      </div>
+                      <div class="form-registration__form-box">
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Сертификат</div>
+                          <div class="form-registration__form-checkboxs" data-must-validate="">
+                            <label class="radio-button">
+                              <input class="radio-button__input" type="radio" name="certificate" value="Да">
+                              <div class="radio-button__elem"></div>
+                              <div class="radio-button__text">Да</div>
+                            </label>
+                            <label class="radio-button">
+                              <input class="radio-button__input" type="radio" name="certificate" value="Нет">
+                              <div class="radio-button__elem"></div>
+                              <div class="radio-button__text">Нет</div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="form-registration__form-label form-registration__form-label--printed-copy">
+                          <div class="form-registration__form-title required-title">Нужен ли печатный экземпляр?</div>
+                          <div class="form-registration__form-checkboxs" data-must-validate="">
+                            <label class="radio-button" data-open-next="">
+                              <input class="radio-button__input" type="radio" name="printedCopy" value="Да">
+                              <div class="radio-button__elem"></div>
+                              <div class="radio-button__text">Да</div>
+                            </label>
+                            <label class="radio-button">
+                              <input class="radio-button__input" type="radio" name="printedCopy" value="Нет">
+                              <div class="radio-button__elem"></div>
+                              <div class="radio-button__text">Нет</div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="form-registration__form-label form-registration__form-label--number-copies hidden">
+                          <div class="form-registration__form-title required-title">Количество</div>
+                          <input class="input" type="number" name="numberCopies" placeholder="Количество копий" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Почтовый адрес</div>
+                          <input class="input" type="number" name="postalAddress" placeholder="Ваш почтовый адрес" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title">Комментарии / предложения</div>
+                          <textarea class="form-registration__form-textarea" placeholder="Можете добавить информацию" data-no-must-validate=""></textarea>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="form-registration__btns">
+                      <button class="btn form-registration__btn-prev btn--transparent" data-prev="data-prev">
+                        <svg class="icon icon-icon__angle-small-left btn__icon-left" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-left"></use>
+                        </svg>
+                        <div class="btn__text">Назад</div>
+                      </button>
+                      <button class="btn form-registration__btn-clear btn--transparent" data-clear="data-clear">
+                        <svg class="icon icon-icon__cross-small btn__icon-left" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__cross-small"></use>
+                        </svg>
+                        <div class="btn__text">Очистить форму</div>
+                      </button>
+                      <button class="btn form-registration__btn-next" data-next="data-next">
+                        <div class="btn__text">Далее</div>
+                        <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                        </svg>
+                      </button>
+                      <button class="btn form-registration__btn-registration" data-next="data-next">
+                        <div class="btn__text">Зарегестрироваться</div>
+                        <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="form-registration__text">Нажимая кнопку «Зарегистрироваться» Вы даёте своё согласие на обработку персональных данных в соответствии с Политикой безопасности персональных данных и обязуетесь предоставить (и предоставлять в дальнейшем в случае изменения) свои достоверные и документированные персональные данные.</div>
+                  </div>
+                  <div class="form-registration__wrapper form-registration--success">
+                    <h2 class="title">
+                      <div class="title__inner">
+                        <div class="title__text">Регистрация прошла успешно</div>
+                      </div>
+                    </h2>
+                    <div class="form-registration__success">
+                      <div class="form-registration__success-subtitle">Международная научно-практическая конференция</div>
+                      <div class="form-registration__success-title">Наука и образование</div>
+                      <div class="form-registration__success-text">Взаимодействие бизнеса и общества в условиях трансформации информационных процессов и технологий</div>
+                      <div class="form-registration__success-img-wrapper">
+                        <img class="form-registration__success-img" src="assets/images/success.svg" alt="">
+                      </div>
+                      <p class="form-registration__success-email">Вы успешно зарегистрировались на конференцию! Мы выслали вам письмо, проверьте вашу почту:<a class="form-registration__success-email-elem" href="mailto:chiatoPochta@mail.ru">ChiatoPochta@mail.ru</a>
+                      </p>
+                      <div class="form-registration__success-contact">
+                        <div class="form-registration__success-contact-title">Связь с нами</div>
+                        <div class="form-registration__success-contact-btns">
+                          <a class="btn btn--transparent" href="tel:+78432948306">
+                            <svg class="icon icon-icon__phone-call btn__icon-left" width="20px" height="20px">
+                              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__phone-call"></use>
+                            </svg>
+                            <div class="btn__text">+7 (843) 294-83-06</div>
+                          </a>
+                          <a class="btn btn--transparent" href="mailto:naukatisbi@yandex.ru">
+                            <svg class="icon icon-icon__envelope btn__icon-left" width="20px" height="20px">
+                              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__envelope"></use>
+                            </svg>
+                            <div class="btn__text">naukatisbi@yandex.ru</div>
+                          </a>
+                        </div>
+                      </div>
+                      <a class="btn form-registration__success-btn-ready modal-close" href="">
+                        <div class="btn__text">Готово</div>
+                        <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="form-registration__wrapper form-registration--error">
+                    <h2 class="title">
+                      <div class="title__inner">
+                        <div class="title__text">Регистрация не удалась</div>
+                      </div>
+                    </h2>
+                    <div class="form-registration__success">
+                      <div class="form-registration__success-subtitle">Международная научно-практическая конференция</div>
+                      <div class="form-registration__success-title">Наука и образование</div>
+                      <div class="form-registration__success-text">Взаимодействие бизнеса и общества в условиях трансформации информационных процессов и технологий</div>
+                      <div class="form-registration__success-img-wrapper">
+                        <img class="form-registration__success-img" src="assets/images/error.svg" alt="">
+                      </div>
+                      <p class="form-registration__success-email">Ошибка: Название ошибки</p>
+                      <div class="form-registration__success-contact">
+                        <div class="form-registration__success-contact-title">Связь с нами</div>
+                        <div class="form-registration__success-contact-btns">
+                          <a class="btn btn--transparent" href="tel:+78432948306">
+                            <svg class="icon icon-icon__phone-call btn__icon-left" width="20px" height="20px">
+                              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__phone-call"></use>
+                            </svg>
+                            <div class="btn__text">+7 (843) 294-83-06</div>
+                          </a>
+                          <a class="btn btn--transparent" href="mailto:naukatisbi@yandex.ru">
+                            <svg class="icon icon-icon__envelope btn__icon-left" width="20px" height="20px">
+                              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__envelope"></use>
+                            </svg>
+                            <div class="btn__text">naukatisbi@yandex.ru</div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="form-registration__success-btns">
+                        <button class="btn btn--transparent form-registration__error-back">
+                          <svg class="icon icon-icon__angle-small-left btn__icon-left" width="20px" height="20px">
+                            <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-left"></use>
+                          </svg>
+                          <div class="btn__text">Назад</div>
+                        </button>
+                        <button class="btn form-registration__success-btn-ready">
+                          <div class="btn__text">Отправить заявку еще раз</div>
+                          <svg class="icon icon-icon__refresh btn__icon-right" width="20px" height="20px">
+                            <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__refresh"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal__registration-right">
+                  <div class="timer">
+                    <div class="timer__completed">
+                      <div class="timer__completed-title">Регистрация завершена</div>
+                    </div>
+                    <div class="timer__current">
+                      <div class="timer__contain">
+                        <svg class="icon icon-icon__info" width="24px" height="24px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__info"></use>
+                        </svg>
+                        <div class="timer__text">До конца регистрации осталось</div>
+                      </div>
+                      <div class="timer__date loading timer-box" data-time="2024-11-14">
+                        <div class="timer__date-box"><span class="timer-days">00</span>
+                        </div>
+                        <div class="timer__date-line"></div>
+                        <div class="timer__date-box"><span class="timer-hours">00</span>
+                        </div>
+                        <div class="timer__date-line"></div>
+                        <div class="timer__date-box"><span class="timer-minutes">00</span>
+                        </div>
+                      </div>
+                      <div class="timer__box">
+                        <div class="timer__box-title">Начало конференции</div>
+                        <div class="timer__box-date">
+                          <svg class="icon icon-icon__calendar" width="24px" height="24px">
+                            <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__calendar"></use>
+                          </svg>
+                          <div class="timer__box-date-text">26.04.2024</div>
+                          <div class="timer__box-date-add">11:30</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <img class="modal__registration-img" src="assets/images/planet.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal__container" data-target="modal-grant">
+        <div class="site-container">
+          <div class="modal__content">
+            <div class="modal__grant">
+              <div class="modal__grant-slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="modal__grant-slider-img" src="assets/images/grant-img.jpg">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="modal__grant-slider-img" src="assets/images/grant-img.jpg">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="modal__grant-slider-img" src="assets/images/grant-img.jpg">
+                  </div>
+                </div>
+                <div class="swiper-nav">
+                  <div class="swiper-nav__pagination"></div>
+                  <div class="swiper-nav__nav">
+                    <div class="swiper-nav__nav-btn swiper-nav__nav-prev">
+                      <svg class="icon icon-icon__angle-left" width="20px" height="20px">
+                        <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-left"></use>
+                      </svg>
+                    </div>
+                    <div class="swiper-nav__nav-btn swiper-nav__nav-next">
+                      <svg class="icon icon-icon__angle-left" width="20px" height="20px">
+                        <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-left"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal__grant-content">
+                <div class="modal__grant-contain">
+                  <img class="modal__grant-contain-img" src="assets/images/Logotype_fpg1.png">
+                  <div class="modal__grant-contain-info">
+                    <div class="modal__grant-contain-info-title">Фонд президентских грантов</div>
+                    <div class="modal__grant-contain-info-desc">Конкурс на предоставление субсидии из бюджета Астраханской области некоммерческим неправительственным организациям, участвующим в развитии институтов гражданского общества, в 2024 году.</div>
+                  </div>
+                </div>
+                <div class="modal__grant-title">Акция “волонетры труда”</div>
+                <div class="modal__grant-box">
+                  <div class="modal__grant-box-title">Цель проекта</div>
+                  <div class="modal__grant-box-text">Представить научной общественности, преподавателям университетов, молодым учёным и аспирантам как в России, так и за рубежом оригинальные результаты теоретических и прикладных исследований в области экономики, менеджмента, юриспруденции, образования, науки, культуры.</div>
+                </div>
+                <div class="modal__grant-box">
+                  <div class="modal__grant-box-title">Сумма</div>
+                  <div class="modal__grant-box-price">3 498 000,00 руб.</div>
+                </div>
+                <div class="modal__grant-box">
+                  <div class="modal__grant-box-title">Команда</div>
+                  <div class="modal__grant-box-tags">
+                    <div class="modal__grant-box-tag">Найда Анна Михайловна</div>
+                    <div class="modal__grant-box-tag">Прохорова Евгения Александровна</div>
+                    <div class="modal__grant-box-tag">Грязнов Алексей Николаевич</div>
+                  </div>
+                </div>
+                <div class="modal__grant-btns">
+                  <a class="btn btn--transparent" href="#">
+                    <div class="btn__text">Страница грантодателся</div>
+                    <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                      <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                    </svg>
+                  </a>
+                  <button class="btn modal-close">
+                    <div class="btn__text">Закрыть</div>
+                    <svg class="icon icon-icon__cross-small btn__icon-right" width="20px" height="20px">
+                      <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__cross-small"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal__container" data-target="modal-registration-event">
+        <div class="site-container">
+          <div class="modal__content">
+            <div class="modal__registration">
+              <h2 class="title">
+                <div class="title__inner">
+                  <svg class="icon icon-icon__message title__icon" width="32px" height="32px">
+                    <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__message"></use>
+                  </svg>
+                  <div class="title__text">Регистрация на олимпиаду</div>
+                </div><span class="title__add">8 сентября 2024</span>
+              </h2>
+              <div class="modal__registration-inner modal__registration-inner--event">
+                <div class="form-registration">
+                  <div class="form-registration__wrapper form-registration--default">
+                    <h2 class="title">
+                      <div class="title__inner">
+                        <div class="title__text">Регистрация</div>
+                      </div>
+                    </h2>
+                    <button class="button-reset modal__close-btn modal-close" type="button"><span></span><span></span>
+                    </button>
+                    <div class="form-registration__steps">
+                      <div class="form-registration__step active-step">
+                        <div class="form-registration__step-number">1</div>
+                        <div class="form-registration__step-line"></div>
+                      </div>
+                      <div class="form-registration__step">
+                        <div class="form-registration__step-number">2</div>
+                      </div>
+                    </div>
+                    <form class="form-registration__form">
+                      <div class="form-registration__form-box">
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Фамилия</div>
+                          <input class="input" type="text" name="surname" placeholder="Иванов" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Имя</div>
+                          <input class="input" type="text" name="name" placeholder="Иван" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Отчество</div>
+                          <input class="input" type="text" name="otchestvo" placeholder="Иванович" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label form-registration__form-label--number-copies">
+                          <div class="form-registration__form-title required-title">Возраст</div>
+                          <input class="input" type="number" name="age" placeholder="24" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Адрес электронной почты</div>
+                          <input class="input" type="email" name="email" placeholder="ivanov@mail.ru" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Номер телефона</div>
+                          <input class="input js-phone-mask" type="tel" name="tel" placeholder="+7 (***) ***-**-**" data-must-validate="">
+                        </div>
+                      </div>
+                      <div class="form-registration__form-box">
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Населенный пункт</div>
+                          <input class="input" type="text" name="settlement" placeholder="Казань" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Полное название школы</div>
+                          <input class="input" type="text" name="school-name" placeholder="Школа №43" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label form-registration__form-label--number-copies">
+                          <div class="form-registration__form-title required-title">Класс</div>
+                          <input class="input" type="number" name="school-class" placeholder="10" data-must-validate="">
+                        </div>
+                      </div>
+                    </form>
+                    <div class="form-registration__btns">
+                      <button class="btn form-registration__btn-prev btn--transparent" data-prev="data-prev">
+                        <svg class="icon icon-icon__angle-small-left btn__icon-left" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-left"></use>
+                        </svg>
+                        <div class="btn__text">Назад</div>
+                      </button>
+                      <button class="btn form-registration__btn-clear btn--transparent" data-clear="data-clear">
+                        <svg class="icon icon-icon__cross-small btn__icon-left" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__cross-small"></use>
+                        </svg>
+                        <div class="btn__text">Очистить форму</div>
+                      </button>
+                      <button class="btn form-registration__btn-next" data-next="data-next">
+                        <div class="btn__text">Далее</div>
+                        <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                        </svg>
+                      </button>
+                      <button class="btn form-registration__btn-registration" data-next="data-next">
+                        <div class="btn__text">Зарегестрироваться</div>
+                        <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="form-registration__text">Нажимая кнопку «Зарегистрироваться» Вы даёте своё согласие на обработку персональных данных в соответствии с Политикой безопасности персональных данных и обязуетесь предоставить (и предоставлять в дальнейшем в случае изменения) свои достоверные и документированные персональные данные.</div>
+                  </div>
+                  <div class="form-registration__wrapper form-registration--success">
+                    <h2 class="title">
+                      <div class="title__inner">
+                        <div class="title__text">Регистрация прошла успешно</div>
+                      </div>
+                    </h2>
+                    <div class="form-registration__success">
+                      <div class="form-registration__success-subtitle">Международная научно-практическая конференция</div>
+                      <div class="form-registration__success-text">Взаимодействие бизнеса и общества в условиях трансформации информационных процессов и технологий</div>
+                      <div class="form-registration__success-img-wrapper">
+                        <img class="form-registration__success-img" src="assets/images/success.svg" alt="">
+                      </div>
+                      <p class="form-registration__success-email">Вы успешно зарегистрировались на конференцию! Мы выслали вам письмо, проверьте вашу почту:<a class="form-registration__success-email-elem" href="mailto:chiatoPochta@mail.ru">ChiatoPochta@mail.ru</a>
+                      </p>
+                      <div class="form-registration__success-contact">
+                        <div class="form-registration__success-contact-title">Связь с нами</div>
+                        <div class="form-registration__success-contact-btns">
+                          <a class="btn btn--transparent" href="tel:+78432948306">
+                            <svg class="icon icon-icon__phone-call btn__icon-left" width="20px" height="20px">
+                              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__phone-call"></use>
+                            </svg>
+                            <div class="btn__text">+7 (843) 294-83-06</div>
+                          </a>
+                          <a class="btn btn--transparent" href="mailto:naukatisbi@yandex.ru">
+                            <svg class="icon icon-icon__envelope btn__icon-left" width="20px" height="20px">
+                              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__envelope"></use>
+                            </svg>
+                            <div class="btn__text">naukatisbi@yandex.ru</div>
+                          </a>
+                        </div>
+                      </div>
+                      <a class="btn form-registration__success-btn-ready modal-close" href="">
+                        <div class="btn__text">Готово</div>
+                        <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="form-registration__wrapper form-registration--error">
+                    <h2 class="title">
+                      <div class="title__inner">
+                        <div class="title__text">Регистрация не удалась</div>
+                      </div>
+                    </h2>
+                    <div class="form-registration__success">
+                      <div class="form-registration__success-subtitle">Международная научно-практическая конференция</div>
+                      <div class="form-registration__success-text">Взаимодействие бизнеса и общества в условиях трансформации информационных процессов и технологий</div>
+                      <div class="form-registration__success-img-wrapper">
+                        <img class="form-registration__success-img" src="assets/images/error.svg" alt="">
+                      </div>
+                      <p class="form-registration__success-email">Ошибка: Название ошибки</p>
+                      <div class="form-registration__success-contact">
+                        <div class="form-registration__success-contact-title">Связь с нами</div>
+                        <div class="form-registration__success-contact-btns">
+                          <a class="btn btn--transparent" href="tel:+78432948306">
+                            <svg class="icon icon-icon__phone-call btn__icon-left" width="20px" height="20px">
+                              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__phone-call"></use>
+                            </svg>
+                            <div class="btn__text">+7 (843) 294-83-06</div>
+                          </a>
+                          <a class="btn btn--transparent" href="mailto:naukatisbi@yandex.ru">
+                            <svg class="icon icon-icon__envelope btn__icon-left" width="20px" height="20px">
+                              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__envelope"></use>
+                            </svg>
+                            <div class="btn__text">naukatisbi@yandex.ru</div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="form-registration__success-btns">
+                        <button class="btn btn--transparent form-registration__error-back">
+                          <svg class="icon icon-icon__angle-small-left btn__icon-left" width="20px" height="20px">
+                            <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-left"></use>
+                          </svg>
+                          <div class="btn__text">Назад</div>
+                        </button>
+                        <button class="btn form-registration__success-btn-ready">
+                          <div class="btn__text">Отправить заявку еще раз</div>
+                          <svg class="icon icon-icon__refresh btn__icon-right" width="20px" height="20px">
+                            <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__refresh"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal__registration-right">
+                  <div class="upcoming-events__item">
+                    <div class="upcoming-events__item-top">
+                      <div class="upcoming-events__item-top-box">
+                        <div class="upcoming-events__item-top-box-type">Лекция</div>
+                        <div class="upcoming-events__item-top-box-title">Наука</div>
+                      </div>
+                      <ul class="upcoming-events__item-top-tags">
+                        <li class="upcoming-events__item-top-tag">Очное</li>
+                        <li class="upcoming-events__item-top-tag">Очное</li>
+                        <li class="upcoming-events__item-top-tag">Студенты</li>
+                      </ul>
+                    </div>
+                    <div class="upcoming-events__item-title">Международная научно-практическая конференция: “Переход от образовательной среды к образовательной экосистеме в интересах устойчивого развития”</div>
+                    <ul class="upcoming-events__item-info">
+                      <li class="upcoming-events__item-info-item">
+                        <svg class="icon icon-icon__clock" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__clock"></use>
+                        </svg>
+                        <div class="upcoming-events__item-info-item-text">18.04.2024</div><span>11:20</span>
+                      </li>
+                      <li class="upcoming-events__item-info-item">
+                        <svg class="icon icon-icon__marker" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__marker"></use>
+                        </svg>
+                        <div class="upcoming-events__item-info-item-text">Казань, ул. Муштари, д.13</div>
+                      </li>
+                      <li class="upcoming-events__item-info-item">
+                        <svg class="icon icon-icon__shuffle" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__shuffle"></use>
+                        </svg>
+                        <div class="upcoming-events__item-info-item-text">Смешанная</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal__container" data-target="modal-materials">
+        <div class="site-container">
+          <div class="modal__content">
+            <div class="modal__registration">
+              <div class="modal__registration-inner modal__registration-inner--materials">
+                <div class="form-registration form-registration--material">
+                  <form class="form-registration__wrapper form-registration--default">
+                    <h2 class="title">
+                      <div class="title__inner">
+                        <div class="title__text">Подача материалов</div>
+                      </div>
+                    </h2>
+                    <button class="button-reset modal__close-btn modal-close" type="button"><span></span><span></span>
+                    </button>
+                    <div class="form-registration__form">
+                      <div class="form-registration__form-box">
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Имя</div>
+                          <input class="input" type="text" name="name" placeholder="Иван" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Адрес электронной почты</div>
+                          <input class="input" type="email" name="email" placeholder="ivanov@mail.ru" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Номер телефона</div>
+                          <input class="input js-phone-mask" type="tel" name="tel" placeholder="+7 (***) ***-**-**" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Комментарии</div>
+                          <textarea class="form-registration__form-textarea" placeholder="Можете добавить информацию" data-no-must-validate=""></textarea>
+                        </div>
+                        <div class="form-registration__dropzone">
+                          <div class="form-registration__dropzone-inner">
+                            <div class="form-registration__dropzone-text">Внесите в файл в данную область, либо нажмите на кнопку</div>
+                            <label class="form-registration__dropzone-btn" for="file">
+                              <div class="form-registration__dropzone-btn-text">Выбрать файл</div>
+                              <svg class="icon icon-icon__file" width="20px" height="20px">
+                                <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__file"></use>
+                              </svg>
+                            </label>
+                            <input class="form-registration__dropzone-input visually-hidden" type="file" data-max-size="2" accept=".doc, .docx" name="file" id="file" data-no-must-validate="">
+                            <div class="form-registration__dropzone-recomen">Вы можете загрузить один файл размером не более 2 мегабайт в формате<span>.doc</span>или<span>.docx</span>
+                            </div>
+                            <div class="form-registration__dropzone-file-name"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-registration__btns">
+                      <button class="btn form-registration__btn-clear btn--transparent" data-clear="data-clear">
+                        <svg class="icon icon-icon__cross-small btn__icon-left" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__cross-small"></use>
+                        </svg>
+                        <div class="btn__text">Очистить форму</div>
+                      </button>
+                      <button class="btn form-registration__btn-registration" data-next="data-next">
+                        <div class="btn__text">Отправить</div>
+                        <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </form>
+                  <div class="form-registration__wrapper form-registration--success">
+                    <h2 class="title">
+                      <div class="title__inner">
+                        <div class="title__text">Регистрация прошла успешно</div>
+                      </div>
+                    </h2>
+                    <div class="form-registration__success">
+                      <div class="form-registration__success-subtitle">Международная научно-практическая конференция</div>
+                      <div class="form-registration__success-text">Взаимодействие бизнеса и общества в условиях трансформации информационных процессов и технологий</div>
+                      <div class="form-registration__success-img-wrapper">
+                        <img class="form-registration__success-img" src="assets/images/success.svg" alt="">
+                      </div>
+                      <p class="form-registration__success-email">Вы успешно зарегистрировались на конференцию! Мы выслали вам письмо, проверьте вашу почту:<a class="form-registration__success-email-elem" href="mailto:chiatoPochta@mail.ru">ChiatoPochta@mail.ru</a>
+                      </p>
+                      <div class="form-registration__success-contact">
+                        <div class="form-registration__success-contact-title">Связь с нами</div>
+                        <div class="form-registration__success-contact-btns">
+                          <a class="btn btn--transparent" href="tel:+78432948306">
+                            <svg class="icon icon-icon__phone-call btn__icon-left" width="20px" height="20px">
+                              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__phone-call"></use>
+                            </svg>
+                            <div class="btn__text">+7 (843) 294-83-06</div>
+                          </a>
+                          <a class="btn btn--transparent" href="mailto:naukatisbi@yandex.ru">
+                            <svg class="icon icon-icon__envelope btn__icon-left" width="20px" height="20px">
+                              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__envelope"></use>
+                            </svg>
+                            <div class="btn__text">naukatisbi@yandex.ru</div>
+                          </a>
+                        </div>
+                      </div>
+                      <a class="btn form-registration__success-btn-ready modal-close" href="">
+                        <div class="btn__text">Готово</div>
+                        <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="form-registration__wrapper form-registration--error">
+                    <h2 class="title">
+                      <div class="title__inner">
+                        <div class="title__text">Регистрация не удалась</div>
+                      </div>
+                    </h2>
+                    <div class="form-registration__success">
+                      <div class="form-registration__success-subtitle">Международная научно-практическая конференция</div>
+                      <div class="form-registration__success-text">Взаимодействие бизнеса и общества в условиях трансформации информационных процессов и технологий</div>
+                      <div class="form-registration__success-img-wrapper">
+                        <img class="form-registration__success-img" src="assets/images/error.svg" alt="">
+                      </div>
+                      <p class="form-registration__success-email">Ошибка: Название ошибки</p>
+                      <div class="form-registration__success-contact">
+                        <div class="form-registration__success-contact-title">Связь с нами</div>
+                        <div class="form-registration__success-contact-btns">
+                          <a class="btn btn--transparent" href="tel:+78432948306">
+                            <svg class="icon icon-icon__phone-call btn__icon-left" width="20px" height="20px">
+                              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__phone-call"></use>
+                            </svg>
+                            <div class="btn__text">+7 (843) 294-83-06</div>
+                          </a>
+                          <a class="btn btn--transparent" href="mailto:naukatisbi@yandex.ru">
+                            <svg class="icon icon-icon__envelope btn__icon-left" width="20px" height="20px">
+                              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__envelope"></use>
+                            </svg>
+                            <div class="btn__text">naukatisbi@yandex.ru</div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="form-registration__success-btns">
+                        <button class="btn btn--transparent form-registration__error-back">
+                          <svg class="icon icon-icon__angle-small-left btn__icon-left" width="20px" height="20px">
+                            <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-left"></use>
+                          </svg>
+                          <div class="btn__text">Назад</div>
+                        </button>
+                        <button class="btn form-registration__success-btn-ready">
+                          <div class="btn__text">Отправить заявку еще раз</div>
+                          <svg class="icon icon-icon__refresh btn__icon-right" width="20px" height="20px">
+                            <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__refresh"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <script src="assets/js/main.js?v=0.0.0.0"></script>
+  <script src="assets/js/backend.js?v=0.0.0.0"></script>
+</html>

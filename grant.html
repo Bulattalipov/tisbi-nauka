@@ -1,0 +1,1793 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Описание сайта">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Страница гранта | Тисби Наука</title>
+    <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.min.css?v=0.0.0.0">
+  </head>
+  <body>
+    <div class="page-wrapper">
+
+      <header class="header">
+        <div class="site-container">
+          <div class="header__wrapper">
+            <div class="logo logo-animations">
+              <a class="logo__left" href="#">
+                <img class="logo__img" src="assets/images/logo-tisbi-nauka.svg" alt="Logo">
+                <div class="logo__text">
+                  <img class="logo__text-img" src="assets/images/logo-tisbi-nauka-text.svg" alt="Logo">
+                </div>
+              </a>
+              <div class="logo__line"></div>
+              <a class="logo__right" href="http://localhost:3000/index.html">
+                <img class="logo__right-img" src="assets/images/science.svg" alt="Logo">
+              </a>
+            </div>
+            <nav class="nav header__nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="http://localhost:3000/about-science.html">О науке</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="http://localhost:3000/events.html">Мероприятия</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="http://localhost:3000/own-scientific-publications.html">Издания</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="http://localhost:3000/conferences.html">Конференции</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="http://localhost:3000/competitions.html">Гранты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__burger">
+              <button class="header__burger-btn"><span></span><span></span><span></span>
+              </button>
+              <div class="header__burger-text">Меню</div>
+            </div>
+            <div class="header__loss js-drop-down-list">
+              <div class="header__loss-base">
+                <svg class="icon icon-icon__lang" width="20px" height="21px">
+                  <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__lang"></use>
+                </svg>
+                <div class="header__loss-base-text">Русский</div>
+                <svg class="icon icon-icon__angle-small-down" width="20px" height="21px">
+                  <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-down"></use>
+                </svg>
+              </div>
+              <div class="header__loss-list">
+                <div class="header__loss-list-inner">
+                  <a class="header__loss-list-item" href="#">Русский</a>
+                  <a class="header__loss-list-item" href="#">English</a>
+                  <a class="header__loss-list-item" href="#">Deutsland</a>
+                  <a class="header__loss-list-item" href="#">Francais</a>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn--transparent btn--cube header__bnt-open-banner">
+              <svg class="icon icon-icon__angle-small-down btn__icon-right" width="20px" height="20px">
+                <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-down"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="timer-banner">
+            <div class="timer-banner__inner">
+              <div class="timer">
+                <div class="timer__completed">
+                  <div class="timer__completed-title">Регистрация завершена</div>
+                </div>
+                <div class="timer__current">
+                  <div class="timer__contain">
+                    <svg class="icon icon-icon__info" width="24px" height="24px">
+                      <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__info"></use>
+                    </svg>
+                    <div class="timer__text">До конца регистрации осталось</div>
+                  </div>
+                  <div class="timer__date loading timer-box" data-time="2024-11-14">
+                    <div class="timer__date-box"><span class="timer-days">00</span>
+                    </div>
+                    <div class="timer__date-line"></div>
+                    <div class="timer__date-box"><span class="timer-hours">00</span>
+                    </div>
+                    <div class="timer__date-line"></div>
+                    <div class="timer__date-box"><span class="timer-minutes">00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="timer-banner__list">
+                <li class="timer-banner__item">
+                  <a class="timer-banner__link" href="#intellgence">Основные сведения</a>
+                </li>
+                <li class="timer-banner__item">
+                  <a class="timer-banner__link" href="#regulations">Регламент работы</a>
+                </li>
+                <li class="timer-banner__item">
+                  <a class="timer-banner__link" href="#program">Программа</a>
+                </li>
+                <li class="timer-banner__item">
+                  <a class="timer-banner__link" href="#requirements">Требования к публикации</a>
+                </li>
+                <li class="timer-banner__item">
+                  <a class="timer-banner__link" href="#partners">Организаторы и партнеры</a>
+                </li>
+                <li class="timer-banner__item">
+                  <a class="timer-banner__link" href="#faq">Часто задаваемые вопросы</a>
+                </li>
+              </ul>
+              <div class="timer-banner__btns">
+                <button class="btn btn--transparent timer-banner__btn-close">
+                  <div class="btn__text">Скрыть</div>
+                  <svg class="icon icon-icon__angle-small-down btn__icon-right" width="20px" height="20px">
+                    <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-down"></use>
+                  </svg>
+                </button>
+                <a class="btn" href="#" data-path="modal-registration">
+                  <div class="btn__text">Зарегистрироваться</div>
+                  <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                    <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="menu">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="http://localhost:3000/about-science.html">О науке</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="http://localhost:3000/events.html">Мероприятия</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="http://localhost:3000/own-scientific-publications.html">Издания</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="http://localhost:3000/conferences.html">Конференции</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Гранты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu__langs">
+          <a class="btn btn--transparent" href="#">
+            <svg class="icon icon-icon__lang btn__icon-left" width="20px" height="20px">
+              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__lang"></use>
+            </svg>
+            <div class="btn__text">Русский</div>
+          </a>
+          <a class="btn btn--transparent" href="#">
+            <svg class="icon icon-icon__lang btn__icon-left" width="20px" height="20px">
+              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__lang"></use>
+            </svg>
+            <div class="btn__text">English</div>
+          </a>
+          <a class="btn btn--transparent" href="#">
+            <svg class="icon icon-icon__lang btn__icon-left" width="20px" height="20px">
+              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__lang"></use>
+            </svg>
+            <div class="btn__text">Deutsland</div>
+          </a>
+          <a class="btn btn--transparent" href="#">
+            <svg class="icon icon-icon__lang btn__icon-left" width="20px" height="20px">
+              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__lang"></use>
+            </svg>
+            <div class="btn__text">Francais</div>
+          </a>
+        </div>
+      </div>
+
+      <main class="page-main main">
+        <div class="sections-container">
+          <section class="breadcrumbs breadcrumbs--large-indentation">
+            <div class="site-container">
+              <div class="breadcrumbs__list">
+                <div class="breadcrumbs__item">
+                  <a class="breadcrumbs__item-link" href="/">Главная</a>
+                </div>
+                <div class="breadcrumbs__item">
+                  <a class="breadcrumbs__item-link" href="/">Конкурсы и гранты</a>
+                </div>
+                <div class="breadcrumbs__item"><span>Фонд президентских грантов</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section event">
+            <div class="site-container">
+              <div class="event__wrapper">
+                <div class="event__base">
+                  <div class="upcoming-events__item">
+                    <div class="upcoming-events__item-box">
+                      <img class="upcoming-events__item-box-img" src="assets/images/Logotype_fpg1.png" alt="">
+                    </div>
+                    <div class="upcoming-events__item-title">Фонд президентских грантов</div>
+                    <div class="upcoming-events__item-desc">Конкурс на предоставление субсидии из бюджета Астраханской области некоммерческим неправительственным организациям, участвующим в развитии институтов гражданского общества, в 2024 году.</div>
+                    <div class="upcoming-events__item-box-btns">
+                      <a class="btn btn--transparent" href="#">
+                        <div class="btn__text">Распечатать</div>
+                        <svg class="icon icon-icon__print btn__icon-right" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__print"></use>
+                        </svg>
+                      </a>
+                      <a class="btn btn--transparent" href="#">
+                        <div class="btn__text">Поделиться</div>
+                        <svg class="icon icon-icon__redo btn__icon-right" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__redo"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="upcoming-events__item-subblock">
+                      <div class="upcoming-events__item-subblock-title">Сумма</div>
+                      <div class="upcoming-events__item-subblock-texts">
+                        <p>до - 500 т.р. для организаций, которые действуют от 6 до 12 месяцев.</p>
+                        <p>до 1 м.р. — на проекты от организаций с опытом меньше одного года или на проекты, которые запланированы на небольшой территории, например, в пределах одного поселка, города, муниципального округа.</p>
+                        <p>от 1 до 5 м.р. — на региональные проекты.</p>
+                        <p>от 5 до 15 м.р. — на проекты, которые охватывают несколько регионов или федеральных округов.</p>
+                        <p>от 15 м.р. — на проекты федерального масштаба и значимости.</p>
+                      </div>
+                    </div>
+                    <div class="upcoming-events__item-subblock">
+                      <div class="upcoming-events__item-subblock-title">Примечания</div>
+                      <div class="upcoming-events__item-subblock-texts">
+                        <p>Срок реализации проекта - до 18 месяцев.</p>
+                        <p>До 3 лет для направлений: «Поддержка проектов в области науки, образования, просвещения», «Развитие институтов гражданского общества».</p>
+                        <p>Для организации только 1 грант в рамках 1 конкурса.</p>
+                        <p>На средства президентского гранта можно реализовывать одновременно не более двух проектов, поддержанных Фондом.</p>
+                        <p>Если снова участвовать в конкурсе, один из ранее поддержанных проектов должен завершиться до даты, которая прописана в Положении о конкурсе в качестве наиболее ранней возможной даты начала реализации проектов соответствующего конкурса.</p>
+                      </div>
+                    </div>
+                    <div class="upcoming-events__item-directions">
+                      <div class="upcoming-events__item-directions-title">Направления</div>
+                      <a class="upcoming-events__item-directions-link" href="#">https://поддержка.президентскиегранты.рф/Article/?id=43</a>
+                    </div>
+                  </div>
+                  <div class="grant-stages">
+                    <h2 class="title">
+                      <div class="title__inner">
+                        <svg class="icon icon-icon__time-fast title__icon" width="32px" height="32px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__time-fast"></use>
+                        </svg>
+                        <div class="title__text">Этапы</div>
+                      </div>
+                    </h2>
+                    <div class="grant-stages__inner">
+                      <table class="grant-stages__table">
+                        <thead class="grant-stages__table-thead">
+                          <tr class="grant-stages__table-row">
+                            <th>Даты этапа:</th>
+                            <th>Шаг:</th>
+                            <th>Этап<span>и даты</span>:</th>
+                          </tr>
+                        </thead>
+                        <tbody class="grant-stages__table-tbody">
+                          <tr class="grant-stages__table-row">
+                            <td>
+                              <div class="grant-stages__table-date">
+                                <div class="grant-stages__table-date-elem">От 29.05.2024</div>
+                                <div class="grant-stages__table-date-elem">До 28.06.2024</div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="grant-stages__table-number">1</div>
+                            </td>
+                            <td>
+                              <div class="grant-stages__table-info">
+                                <div class="grant-stages__table-info-title">Прием заявок</div>
+                                <div class="grant-stages__table-info-desc">Заявки заполняются на портале в личном кабинете, проверяются организатором на соответствие требованиям Порядка предоставления субсидий.</div>
+                                <div class="grant-stages__table-date">
+                                  <div class="grant-stages__table-date-elem">От 29.05.2024</div>
+                                  <div class="grant-stages__table-date-elem">До 28.06.2024</div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="grant-stages__table-row">
+                            <td>
+                              <div class="grant-stages__table-date">
+                                <div class="grant-stages__table-date-elem">От 29.05.2024</div>
+                                <div class="grant-stages__table-date-elem">До 28.06.2024</div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="grant-stages__table-number">2</div>
+                            </td>
+                            <td>
+                              <div class="grant-stages__table-info">
+                                <div class="grant-stages__table-info-title">Экспертиза проектов</div>
+                                <div class="grant-stages__table-info-desc">Заявки заполняются на портале в личном кабинете, проверяются организатором на соответствие требованиям Порядка предоставления субсидий.</div>
+                                <div class="grant-stages__table-date">
+                                  <div class="grant-stages__table-date-elem">От 29.05.2024</div>
+                                  <div class="grant-stages__table-date-elem">До 28.06.2024</div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="grant-stages__table-row">
+                            <td>
+                              <div class="grant-stages__table-date">
+                                <div class="grant-stages__table-date-elem">19.08.2024</div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="grant-stages__table-number">3</div>
+                            </td>
+                            <td>
+                              <div class="grant-stages__table-info">
+                                <div class="grant-stages__table-info-title">Определение победителей и публикация результатов</div>
+                                <div class="grant-stages__table-info-desc">Заявки заполняются на портале в личном кабинете, проверяются организатором на соответствие требованиям Порядка предоставления субсидий.</div>
+                                <div class="grant-stages__table-date">
+                                  <div class="grant-stages__table-date-elem">19.08.2024</div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="grant-stages__table-row">
+                            <td>
+                              <div class="grant-stages__table-date">
+                                <div class="grant-stages__table-date-elem">21.09.2024</div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="grant-stages__table-number">4</div>
+                            </td>
+                            <td>
+                              <div class="grant-stages__table-info">
+                                <div class="grant-stages__table-info-title">Даты начала и завершения заключения договора</div>
+                                <div class="grant-stages__table-info-desc">Заявки заполняются на портале в личном кабинете, проверяются организатором на соответствие требованиям Порядка предоставления субсидий.</div>
+                                <div class="grant-stages__table-date">
+                                  <div class="grant-stages__table-date-elem">21.09.2024</div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="grant-requirements">
+                    <h2 class="title">
+                      <div class="title__inner">
+                        <svg class="icon icon-icon__exclamation title__icon" width="32px" height="32px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__exclamation"></use>
+                        </svg>
+                        <div class="title__text">Требования к участникам</div>
+                      </div>
+                    </h2>
+                    <div class="grant-requirements__inner">
+                      <div class="grant-requirements__desc">Для участия в конкурсе некоммерческая неправительственная организация на дату подачи заявки должна соответствовать одновременно следующим требованиям:</div>
+                      <ul class="grant-requirements__list">
+                        <li class="grant-requirements__item">не является иностранным юридическим лицом, в том числе местом регистрации которого является государство или территория, включенные в утвержденный Министерством финансов Российской Федерации перечень государств и территорий, используемых для промежуточного (офшорного) владения активами в Российской Федерации (далее - офшорные компании), а также российским юридическим лицом, в уставном (складочном) капитале которого доля прямого или косвенного (через третьих лиц) участия офшорных компаний в совокупности превышает 25 процентов (если иное не предусмотрено законодательством Российской Федерации). При расчете доли участия офшорных компаний в капитале российских юридических лиц не учитывается прямое и (или) косвенное участие офшорных компаний в капитале публичных акционерных обществ (в том числе со статусом международной компании), акции которых обращаются на организованных торгах в Российской Федерации, а также косвенное участие офшорных компаний в капитале других российских юридических лиц, реализованное через участие в капитале указанных публичных акционерных обществ;</li>
+                        <li class="grant-requirements__item">не находится в перечне организаций и физических лиц, в отношении которых имеются сведения об их причастности к экстремистской деятельности или терроризму;</li>
+                        <li class="grant-requirements__item">не находится в состав составляемых в рамках реализации полномочий, предусмотренных главой VII Устава ООН, Советом Безопасности ООН или органами, специально созданными решениями Совета Безопасности ООН, перечнях организаций и физических лиц, связанных с террористическими организациями и террористами или с распространением оружия массового уничтожения;</li>
+                        <li class="grant-requirements__item">не получает средства из бюджета Астраханской области на основании нормативных правовых актов Астраханской области на цели, установленные пунктом 1.2 раздела l настоящего Порядка;</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="event__documents">
+                    <h2 class="title">
+                      <div class="title__inner">
+                        <svg class="icon icon-icon__file title__icon" width="32px" height="32px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__file"></use>
+                        </svg>
+                        <div class="title__text">Документы</div>
+                      </div>
+                    </h2>
+                    <div class="event__documents-inner">
+                      <div class="event__documents-item">
+                        <div class="event__documents-item-info">
+                          <svg class="icon icon-icon__document event__documents-item-img" width="24px" height="24px">
+                            <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__document"></use>
+                          </svg>
+                          <div class="event__documents-item-title">Длинное название файла</div>
+                        </div>
+                        <div class="event__documents-item-box">
+                          <div class="event__documents-item-type">PDF</div>
+                          <div class="event__documents-item-size">143,7КБ</div>
+                          <a class="btn btn--transparent btn--cube" href="#">
+                            <svg class="icon icon-icon__cloud-download btn__icon-right" width="20px" height="20px">
+                              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__cloud-download"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="event__documents-item">
+                        <div class="event__documents-item-info">
+                          <svg class="icon icon-icon__document event__documents-item-img" width="24px" height="24px">
+                            <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__document"></use>
+                          </svg>
+                          <div class="event__documents-item-title">Длинное название файла</div>
+                        </div>
+                        <div class="event__documents-item-box">
+                          <div class="event__documents-item-type">PDF</div>
+                          <div class="event__documents-item-size">143,7КБ</div>
+                          <a class="btn btn--transparent btn--cube" href="#">
+                            <svg class="icon icon-icon__cloud-download btn__icon-right" width="20px" height="20px">
+                              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__cloud-download"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="event__documents-item">
+                        <div class="event__documents-item-info">
+                          <svg class="icon icon-icon__document event__documents-item-img" width="24px" height="24px">
+                            <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__document"></use>
+                          </svg>
+                          <div class="event__documents-item-title">Длинное название файла</div>
+                        </div>
+                        <div class="event__documents-item-box">
+                          <div class="event__documents-item-type">PDF</div>
+                          <div class="event__documents-item-size">143,7КБ</div>
+                          <a class="btn btn--transparent btn--cube" href="#">
+                            <svg class="icon icon-icon__cloud-download btn__icon-right" width="20px" height="20px">
+                              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__cloud-download"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="event__right">
+                  <div class="event__info">
+                    <div class="event__info-title">
+                      <svg class="icon icon-icon__clock" width="24px" height="24px">
+                        <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__clock"></use>
+                      </svg>
+                      <div class="event__info-title-text">Срок реализации гранта</div>
+                    </div>
+                    <div class="event__date">
+                      <div class="event__date-item">14.04.2024</div>
+                      <div class="event__date-item">6.12.2024</div>
+                    </div>
+                    <div class="event__info-timer">
+                      <div class="timer" data-timer-show-later="5">
+                        <div class="timer__completed">
+                          <div class="timer__completed-title">Регистрация завершена</div>
+                        </div>
+                        <div class="timer__current">
+                          <div class="timer__contain">
+                            <svg class="icon icon-icon__info" width="24px" height="24px">
+                              <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__info"></use>
+                            </svg>
+                            <div class="timer__text">До конца регистрации осталось</div>
+                          </div>
+                          <div class="timer__date loading timer-box" data-time="2024-11-14">
+                            <div class="timer__date-box"><span class="timer-days">00</span>
+                            </div>
+                            <div class="timer__date-line"></div>
+                            <div class="timer__date-box"><span class="timer-hours">00</span>
+                            </div>
+                            <div class="timer__date-line"></div>
+                            <div class="timer__date-box"><span class="timer-minutes">00</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="event__info-box">
+                      <div class="event__info-box-title">Категории участников:</div>
+                      <div class="event__info-box-texts">
+                        <div class="event__info-box-text">Аспиранты</div>
+                        <div class="event__info-box-text">Молодые ученые</div>
+                        <div class="event__info-box-text">Преподаватели</div>
+                        <div class="event__info-box-text">Студенты</div>
+                      </div>
+                    </div>
+                    <div class="event__info-box">
+                      <div class="event__info-box-title">Категории конкурса:</div>
+                      <div class="event__info-box-texts">
+                        <div class="event__info-box-text">Казань, ул. Муштари, д.13</div>
+                      </div>
+                    </div>
+                    <a class="btn event__info-btn" href="#">
+                      <div class="btn__text">Подать заявку</div>
+                      <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                        <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="event__contacts">
+                    <div class="event__contacts-img-wrapper">
+                      <img class="event__contacts-img" src="assets/images/building.png" alt="">
+                    </div>
+                    <div class="event__contacts-info">
+                      <div class="event__contacts-info-title">Контактные данные</div>
+                      <div class="event__contacts-info-user">
+                        <div class="event__contacts-info-user-img">
+                          <img class="event__contacts-info-user-img-elem" src="assets/images/user-3.jpg" alt="">
+                        </div>
+                        <div class="event__contacts-info-user-box">
+                          <div class="event__contacts-info-user-name">Гонина Анастасия Алексеевна</div>
+                          <div class="event__contacts-info-user-prof">Специалист по сопровождению научной и гранатовой деятельности</div>
+                        </div>
+                      </div>
+                      <div class="event__contacts-info-contain">
+                        <svg class="icon icon-icon__phone-call" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__phone-call"></use>
+                        </svg>
+                        <div class="event__contacts-info-contain-text">+7 (843) 294-83-06</div>
+                      </div>
+                      <div class="event__contacts-info-contain">
+                        <svg class="icon icon-icon__envelope" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__envelope"></use>
+                        </svg>
+                        <div class="event__contacts-info-contain-text">anastasygonina@yandex.ru</div>
+                      </div>
+                      <div class="event__contacts-info-contain">
+                        <svg class="icon icon-icon__marker" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__marker"></use>
+                        </svg>
+                        <div class="event__contacts-info-contain-text">420012, г. Казань, ул. Муштари, дом 13, каб. 243</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section winners">
+            <div class="site-container">
+              <h2 class="title">
+                <div class="title__inner">
+                  <svg class="icon icon-icon__cup title__icon" width="32px" height="32px">
+                    <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__cup"></use>
+                  </svg>
+                  <div class="title__text">Победители</div>
+                </div>
+              </h2>
+              <div class="winners__slider swiper">
+                <div class="winners__slider-list swiper-wrapper">
+                  <div class="winners__slider-item swiper-slide">
+                    <div class="winners__slider-item-img">
+                      <img class="winners__slider-item-img-elem" src="assets/images/winners/img1.jpg">
+                    </div>
+                    <div class="winners__slider-item-content">
+                      <div class="winners__slider-item-title">Акселерационная программа "Путь к успеху"</div>
+                      <div class="winners__slider-item-desc">Популяризация молодежного предпринимательства в Республике Татарстан среди старшеклассников и студентов СПО через совместную работу над проектами по разработке цифровых инновационных решений, стартап-проектов с большим потенциалом, а также создание портфеля цифровых продуктов</div>
+                      <div class="winners__slider-item-tootip">Популяризация молодежного предпринимательства в Республике Татарстан среди старшеклассников и студентов СПО через совместную работу над проектами по разработке цифровых инновационных решений, стартап-проектов с большим потенциалом, а также создание портфеля цифровых продуктов</div>
+                      <div class="winners__slider-item-price">3 498 000,00 ₽</div>
+                      <button class="btn btn--transparent winners__slider-item-btn" data-path="modal-grant">
+                        <div class="btn__text">О проекте</div>
+                        <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="winners__slider-item swiper-slide">
+                    <div class="winners__slider-item-img">
+                      <img class="winners__slider-item-img-elem" src="assets/images/winners/img1.jpg">
+                    </div>
+                    <div class="winners__slider-item-content">
+                      <div class="winners__slider-item-title">Акселерационная программа "Путь к успеху"</div>
+                      <div class="winners__slider-item-desc">Популяризация молодежного предпринимательства в Республике Татарстан среди старшеклассников и студентов СПО через совместную работу над проектами по разработке цифровых инновационных решений, стартап-проектов с большим потенциалом, а также создание портфеля цифровых продуктов</div>
+                      <div class="winners__slider-item-tootip">Популяризация молодежного предпринимательства в Республике Татарстан среди старшеклассников и студентов СПО через совместную работу над проектами по разработке цифровых инновационных решений, стартап-проектов с большим потенциалом, а также создание портфеля цифровых продуктов</div>
+                      <div class="winners__slider-item-price">3 498 000,00 ₽</div>
+                      <button class="btn btn--transparent winners__slider-item-btn" data-path="modal-grant">
+                        <div class="btn__text">О проекте</div>
+                        <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="winners__slider-item swiper-slide">
+                    <div class="winners__slider-item-img">
+                      <img class="winners__slider-item-img-elem" src="assets/images/winners/img1.jpg">
+                    </div>
+                    <div class="winners__slider-item-content">
+                      <div class="winners__slider-item-title">Акселерационная программа "Путь к успеху"</div>
+                      <div class="winners__slider-item-desc">Популяризация молодежного предпринимательства в Республике Татарстан среди старшеклассников и студентов СПО через совместную работу над проектами по разработке цифровых инновационных решений, стартап-проектов с большим потенциалом, а также создание портфеля цифровых продуктов</div>
+                      <div class="winners__slider-item-tootip">Популяризация молодежного предпринимательства в Республике Татарстан среди старшеклассников и студентов СПО через совместную работу над проектами по разработке цифровых инновационных решений, стартап-проектов с большим потенциалом, а также создание портфеля цифровых продуктов</div>
+                      <div class="winners__slider-item-price">3 498 000,00 ₽</div>
+                      <button class="btn btn--transparent winners__slider-item-btn" data-path="modal-grant">
+                        <div class="btn__text">О проекте</div>
+                        <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="winners__slider-item swiper-slide">
+                    <div class="winners__slider-item-img">
+                      <img class="winners__slider-item-img-elem" src="assets/images/winners/img1.jpg">
+                    </div>
+                    <div class="winners__slider-item-content">
+                      <div class="winners__slider-item-title">Акселерационная программа "Путь к успеху"</div>
+                      <div class="winners__slider-item-desc">Популяризация молодежного предпринимательства в Республике Татарстан среди старшеклассников и студентов СПО через совместную работу над проектами по разработке цифровых инновационных решений, стартап-проектов с большим потенциалом, а также создание портфеля цифровых продуктов</div>
+                      <div class="winners__slider-item-tootip">Популяризация молодежного предпринимательства в Республике Татарстан среди старшеклассников и студентов СПО через совместную работу над проектами по разработке цифровых инновационных решений, стартап-проектов с большим потенциалом, а также создание портфеля цифровых продуктов</div>
+                      <div class="winners__slider-item-price">3 498 000,00 ₽</div>
+                      <button class="btn btn--transparent winners__slider-item-btn" data-path="modal-grant">
+                        <div class="btn__text">О проекте</div>
+                        <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="winners__slider-item swiper-slide">
+                    <div class="winners__slider-item-img">
+                      <img class="winners__slider-item-img-elem" src="assets/images/winners/img1.jpg">
+                    </div>
+                    <div class="winners__slider-item-content">
+                      <div class="winners__slider-item-title">Акселерационная программа "Путь к успеху"</div>
+                      <div class="winners__slider-item-desc">Популяризация молодежного предпринимательства в Республике Татарстан среди старшеклассников и студентов СПО через совместную работу над проектами по разработке цифровых инновационных решений, стартап-проектов с большим потенциалом, а также создание портфеля цифровых продуктов</div>
+                      <div class="winners__slider-item-tootip">Популяризация молодежного предпринимательства в Республике Татарстан среди старшеклассников и студентов СПО через совместную работу над проектами по разработке цифровых инновационных решений, стартап-проектов с большим потенциалом, а также создание портфеля цифровых продуктов</div>
+                      <div class="winners__slider-item-price">3 498 000,00 ₽</div>
+                      <button class="btn btn--transparent winners__slider-item-btn" data-path="modal-grant">
+                        <div class="btn__text">О проекте</div>
+                        <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="winners__slider-item swiper-slide">
+                    <div class="winners__slider-item-img">
+                      <img class="winners__slider-item-img-elem" src="assets/images/winners/img1.jpg">
+                    </div>
+                    <div class="winners__slider-item-content">
+                      <div class="winners__slider-item-title">Акселерационная программа "Путь к успеху"</div>
+                      <div class="winners__slider-item-desc">Популяризация молодежного предпринимательства в Республике Татарстан среди старшеклассников и студентов СПО через совместную работу над проектами по разработке цифровых инновационных решений, стартап-проектов с большим потенциалом, а также создание портфеля цифровых продуктов</div>
+                      <div class="winners__slider-item-tootip">Популяризация молодежного предпринимательства в Республике Татарстан среди старшеклассников и студентов СПО через совместную работу над проектами по разработке цифровых инновационных решений, стартап-проектов с большим потенциалом, а также создание портфеля цифровых продуктов</div>
+                      <div class="winners__slider-item-price">3 498 000,00 ₽</div>
+                      <button class="btn btn--transparent winners__slider-item-btn" data-path="modal-grant">
+                        <div class="btn__text">О проекте</div>
+                        <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="winners__slider-item swiper-slide">
+                    <div class="winners__slider-item-img">
+                      <img class="winners__slider-item-img-elem" src="assets/images/winners/img1.jpg">
+                    </div>
+                    <div class="winners__slider-item-content">
+                      <div class="winners__slider-item-title">Акселерационная программа "Путь к успеху"</div>
+                      <div class="winners__slider-item-desc">Популяризация молодежного предпринимательства в Республике Татарстан среди старшеклассников и студентов СПО через совместную работу над проектами по разработке цифровых инновационных решений, стартап-проектов с большим потенциалом, а также создание портфеля цифровых продуктов</div>
+                      <div class="winners__slider-item-tootip">Популяризация молодежного предпринимательства в Республике Татарстан среди старшеклассников и студентов СПО через совместную работу над проектами по разработке цифровых инновационных решений, стартап-проектов с большим потенциалом, а также создание портфеля цифровых продуктов</div>
+                      <div class="winners__slider-item-price">3 498 000,00 ₽</div>
+                      <button class="btn btn--transparent winners__slider-item-btn" data-path="modal-grant">
+                        <div class="btn__text">О проекте</div>
+                        <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="winners__slider-item swiper-slide">
+                    <div class="winners__slider-item-img">
+                      <img class="winners__slider-item-img-elem" src="assets/images/winners/img1.jpg">
+                    </div>
+                    <div class="winners__slider-item-content">
+                      <div class="winners__slider-item-title">Акселерационная программа "Путь к успеху"</div>
+                      <div class="winners__slider-item-desc">Популяризация молодежного предпринимательства в Республике Татарстан среди старшеклассников и студентов СПО через совместную работу над проектами по разработке цифровых инновационных решений, стартап-проектов с большим потенциалом, а также создание портфеля цифровых продуктов</div>
+                      <div class="winners__slider-item-tootip">Популяризация молодежного предпринимательства в Республике Татарстан среди старшеклассников и студентов СПО через совместную работу над проектами по разработке цифровых инновационных решений, стартап-проектов с большим потенциалом, а также создание портфеля цифровых продуктов</div>
+                      <div class="winners__slider-item-price">3 498 000,00 ₽</div>
+                      <button class="btn btn--transparent winners__slider-item-btn" data-path="modal-grant">
+                        <div class="btn__text">О проекте</div>
+                        <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-nav">
+                  <div class="swiper-nav__pagination"></div>
+                  <div class="swiper-nav__nav">
+                    <div class="swiper-nav__nav-btn swiper-nav__nav-prev">
+                      <svg class="icon icon-icon__angle-left" width="20px" height="20px">
+                        <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-left"></use>
+                      </svg>
+                    </div>
+                    <div class="swiper-nav__nav-btn swiper-nav__nav-next">
+                      <svg class="icon icon-icon__angle-left" width="20px" height="20px">
+                        <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-left"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section active-grants">
+            <div class="site-container">
+              <div class="active-grants__wrapper">
+                <h2 class="title">
+                  <div class="title__inner">
+                    <svg class="icon icon-icon__star-octogram title__icon" width="32px" height="32px">
+                      <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__star-octogram"></use>
+                    </svg>
+                    <div class="title__text">Активные гранты</div>
+                  </div>
+                </h2>
+                <div class="swiper active-grants__slider">
+                  <div class="swiper-wrapper active-grants__list">
+                    <div class="swiper-slide active-grants__item">
+                      <div class="active-grants__item-contain">
+                        <div class="active-grants__item-img-wrapper">
+                          <img class="active-grants__item-img" src="assets/images/active-grants/Grant-logo.png" alt="">
+                        </div>
+                        <div class="active-grants__item-title">Международная волонтерская программа «Послы русского языка в мире»</div>
+                      </div>
+                      <div class="active-grants__item-info">
+                        <div class="active-grants__item-info-box">
+                          <div class="active-grants__item-info-box-title">Категории участников:</div>
+                          <ul class="active-grants__item-info-box-list">
+                            <li class="active-grants__item-info-box-item">Аспиранты</li>
+                            <li class="active-grants__item-info-box-item">Преподаватели</li>
+                            <li class="active-grants__item-info-box-item">Молодые ученые</li>
+                            <li class="active-grants__item-info-box-item">Студенты</li>
+                          </ul>
+                        </div>
+                        <div class="active-grants__item-info-box">
+                          <div class="active-grants__item-info-box-title">Категории конкурса:</div>
+                          <ul class="active-grants__item-info-box-list">
+                            <li class="active-grants__item-info-box-item">Академическая мобильность: стажировка</li>
+                          </ul>
+                        </div>
+                        <div class="active-grants__item-info-box">
+                          <div class="active-grants__item-info-box-title">Дата окончания приема заявок</div>
+                          <div class="active-grants__item-info-box-date">14.05.2024</div>
+                        </div>
+                        <a class="btn active-grants__item-info-btn" href="#">
+                          <div class="btn__text">Подробнее</div>
+                          <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                            <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide active-grants__item">
+                      <div class="active-grants__item-contain">
+                        <div class="active-grants__item-img-wrapper">
+                          <img class="active-grants__item-img" src="assets/images/latest-news/image-2.jpg" alt="">
+                        </div>
+                        <div class="active-grants__item-title">Очень интересный текст</div>
+                      </div>
+                      <div class="active-grants__item-info">
+                        <div class="active-grants__item-info-box">
+                          <div class="active-grants__item-info-box-title">Категории участников:</div>
+                          <ul class="active-grants__item-info-box-list">
+                            <li class="active-grants__item-info-box-item">Аспиранты</li>
+                            <li class="active-grants__item-info-box-item">Преподаватели</li>
+                          </ul>
+                        </div>
+                        <div class="active-grants__item-info-box">
+                          <div class="active-grants__item-info-box-title">Категории конкурса:</div>
+                          <ul class="active-grants__item-info-box-list">
+                            <li class="active-grants__item-info-box-item">Академическая мобильность: стажировка</li>
+                          </ul>
+                        </div>
+                        <div class="active-grants__item-info-box">
+                          <div class="active-grants__item-info-box-title">Дата окончания приема заявок</div>
+                          <div class="active-grants__item-info-box-date">21.01.2025</div>
+                        </div>
+                        <a class="btn active-grants__item-info-btn" href="#">
+                          <div class="btn__text">Подробнее</div>
+                          <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                            <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-nav">
+                    <div class="swiper-nav__pagination"></div>
+                    <div class="swiper-nav__nav">
+                      <div class="swiper-nav__nav-btn swiper-nav__nav-prev">
+                        <svg class="icon icon-icon__angle-left" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-left"></use>
+                        </svg>
+                      </div>
+                      <div class="swiper-nav__nav-btn swiper-nav__nav-next">
+                        <svg class="icon icon-icon__angle-left" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-left"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="btn btn--transparent active-grants__btn" href="#">
+                  <div class="btn__text">Конкурсы и гранты</div>
+                  <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                    <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </section>
+          <section class="section latest-news">
+            <div class="site-container">
+              <div class="latest-news__wrapper">
+                <h2 class="title">
+                  <div class="title__inner">
+                    <svg class="icon icon-icon__document-signed title__icon" width="32px" height="32px">
+                      <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__document-signed"></use>
+                    </svg>
+                    <div class="title__text">Последние новости</div>
+                  </div>
+                </h2>
+                <div class="swiper latest-news__slider">
+                  <div class="swiper-wrapper latest-news__slider-list">
+                    <div class="swiper-slide latest-news__slider-item">
+                      <div class="latest-news__slider-item-contain">
+                        <img class="latest-news__slider-item-img" src="assets/images/latest-news/image-1.jpg" alt="">
+                        <div class="latest-news__slider-item-date">24.07<span>2024</span>
+                        </div>
+                      </div>
+                      <div class="latest-news__slider-item-info">
+                        <h5 class="latest-news__slider-item-info-title">
+                          <a href="#">Студенты «ТИСБИ» – номинанты Всероссийского конкурса</a>
+                        </h5>
+                        <div class="latest-news__slider-item-info-desc">Казани состоялась церемония награждения победителей конкурса научных работ имени Н.И. Лобачевского</div>
+                        <ul class="latest-news__slider-item-info-tags">
+                          <li class="latest-news__slider-item-info-tag">Фестиваль</li>
+                          <li class="latest-news__slider-item-info-tag">Конкурс</li>
+                          <li class="latest-news__slider-item-info-tag">Иностранный язык</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="swiper-slide latest-news__slider-item">
+                      <div class="latest-news__slider-item-contain">
+                        <img class="latest-news__slider-item-img" src="assets/images/latest-news/image-2.jpg" alt="">
+                        <div class="latest-news__slider-item-date">24.07<span>2024</span>
+                        </div>
+                      </div>
+                      <div class="latest-news__slider-item-info">
+                        <h5 class="latest-news__slider-item-info-title">
+                          <a href="#">XIII Молодежная премия в области науки и инноваций</a>
+                        </h5>
+                        <div class="latest-news__slider-item-info-desc">Прими участие и выиграй 100.000 рублей</div>
+                        <ul class="latest-news__slider-item-info-tags">
+                          <li class="latest-news__slider-item-info-tag">Фестиваль</li>
+                          <li class="latest-news__slider-item-info-tag">Конкурс</li>
+                          <li class="latest-news__slider-item-info-tag">Иностранный язык</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="swiper-slide latest-news__slider-item">
+                      <div class="latest-news__slider-item-contain">
+                        <img class="latest-news__slider-item-img" src="assets/images/latest-news/image-3.jpg" alt="">
+                        <div class="latest-news__slider-item-date">24.07<span>2024</span>
+                        </div>
+                      </div>
+                      <div class="latest-news__slider-item-info">
+                        <h5 class="latest-news__slider-item-info-title">
+                          <a href="#">Открытие ежегодной научно-практической конференции</a>
+                        </h5>
+                        <div class="latest-news__slider-item-info-desc">В «ТИСБИ» прошла научная конференция «Наука, образование: современные цифровые технологии формирования экосреды инновационного развития региона в условиях системных преобразований»</div>
+                        <ul class="latest-news__slider-item-info-tags">
+                          <li class="latest-news__slider-item-info-tag">Фестиваль</li>
+                          <li class="latest-news__slider-item-info-tag">Конкурс</li>
+                          <li class="latest-news__slider-item-info-tag">Иностранный язык</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="swiper-slide latest-news__slider-item">
+                      <div class="latest-news__slider-item-contain">
+                        <img class="latest-news__slider-item-img" src="assets/images/latest-news/image-4.jpg" alt="">
+                        <div class="latest-news__slider-item-date">24.07<span>2024</span>
+                        </div>
+                      </div>
+                      <div class="latest-news__slider-item-info">
+                        <h5 class="latest-news__slider-item-info-title">
+                          <a href="#">Опубликованы результаты Открытого Конкурса научных работ студентов им. Н.И. Лобачевского</a>
+                        </h5>
+                        <div class="latest-news__slider-item-info-desc">Студенты Университета управления «ТИСБИ» в числе победителей и призеров</div>
+                        <ul class="latest-news__slider-item-info-tags">
+                          <li class="latest-news__slider-item-info-tag">Фестиваль</li>
+                          <li class="latest-news__slider-item-info-tag">Конкурс</li>
+                          <li class="latest-news__slider-item-info-tag">Иностранный язык</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="btn btn--transparent latest-news__btn" href="#">
+                  <div class="btn__text">Все новости</div>
+                  <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                    <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <button class="btn btn--cube fixed-btn">
+        <svg class="icon icon-icon__caret-up btn__icon-right" width="20px" height="20px">
+          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__caret-up"></use>
+        </svg>
+      </button>
+
+      <footer class="footer">
+        <div class="site-container">
+          <div class="logo footer__logo">
+            <a class="logo__left" href="#">
+              <img class="logo__img" src="assets/images/logo-tisbi-nauka.svg" alt="Logo">
+              <div class="logo__text">
+                <img class="logo__text-img" src="assets/images/logo-tisbi-nauka-text.svg" alt="Logo">
+              </div>
+            </a>
+            <div class="logo__line"></div>
+            <a class="logo__right" href="http://localhost:3000/index.html">
+              <img class="logo__right-img" src="assets/images/science.svg" alt="Logo">
+            </a>
+          </div>
+          <div class="footer__inner">
+            <div class="footer__address">
+              <div class="footer__subtitle">Адреса</div>
+              <div class="footer__address-elem">ул. Муштари, 11/43</div>
+              <div class="footer__address-elem">ул. Муштари, 13 (вход с ул. Маяковского)</div>
+            </div>
+            <div class="footer__telephone">
+              <div class="footer__subtitle">Телефон</div>
+              <a class="footer__telephone-elem" href="tel:+78432948306">+7 (843) 294-83-06</a>
+            </div>
+            <div class="footer__socials">
+              <div class="footer__subtitle">Мы в социальных сетях</div>
+              <ul class="footer__socials-list">
+                <a class="btn btn--transparent btn--cube" href="#">
+                  <svg class="icon icon-vk btn__icon-right" width="20px" height="20px">
+                    <use xlink:href="assets/images/sprites/sprite-mono.svg#vk"></use>
+                  </svg>
+                </a>
+                <a class="btn btn--transparent btn--cube" href="#">
+                  <svg class="icon icon-telegram btn__icon-right" width="20px" height="20px">
+                    <use xlink:href="assets/images/sprites/sprite-mono.svg#telegram"></use>
+                  </svg>
+                </a>
+                <a class="btn btn--transparent btn--cube" href="#">
+                  <svg class="icon icon-youtube btn__icon-right" width="20px" height="20px">
+                    <use xlink:href="assets/images/sprites/sprite-mono.svg#youtube"></use>
+                  </svg>
+                </a>
+                <a class="btn btn--transparent btn--cube" href="#">
+                  <svg class="icon icon-rutube btn__icon-right" width="20px" height="20px">
+                    <use xlink:href="assets/images/sprites/sprite-mono.svg#rutube"></use>
+                  </svg>
+                </a>
+                <a class="btn btn--transparent btn--cube" href="#">
+                  <svg class="icon icon-dzen btn__icon-right" width="20px" height="20px">
+                    <use xlink:href="assets/images/sprites/sprite-mono.svg#dzen"></use>
+                  </svg>
+                </a>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <a class="footer__bottom-text" href="#">Политика конфиденциальности</a>
+            <a class="footer__bottom-text" href="#">Условиям использования Google</a>
+            <a class="footer__bottom-text" href="#">Политика конфиденциальности</a>
+            <a class="footer__bottom-text" href="#">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="modal">
+      <div class="modal__container" data-target="modal-registration">
+        <div class="site-container">
+          <div class="modal__content">
+            <div class="modal__registration">
+              <div class="modal__registration-inner">
+                <div class="form-registration">
+                  <div class="form-registration__wrapper form-registration--default">
+                    <h2 class="title">
+                      <div class="title__inner">
+                        <div class="title__text">Регистрация</div>
+                      </div>
+                    </h2>
+                    <button class="button-reset modal__close-btn modal-close" type="button"><span></span><span></span>
+                    </button>
+                    <div class="form-registration__steps">
+                      <div class="form-registration__step active-step">
+                        <div class="form-registration__step-number">1</div>
+                        <div class="form-registration__step-line"></div>
+                      </div>
+                      <div class="form-registration__step">
+                        <div class="form-registration__step-number">2</div>
+                        <div class="form-registration__step-line"></div>
+                      </div>
+                      <div class="form-registration__step">
+                        <div class="form-registration__step-number">3</div>
+                      </div>
+                    </div>
+                    <form class="form-registration__form">
+                      <div class="form-registration__form-box">
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Фамилия</div>
+                          <input class="input" type="text" name="surname" placeholder="Иванов" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Имя</div>
+                          <input class="input" type="text" name="name" placeholder="Иван" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title">Отчество</div>
+                          <input class="input" type="text" name="otchestvo" placeholder="Иванович" data-no-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Адрес электронной почты</div>
+                          <input class="input" type="email" name="email" placeholder="ivanov@mail.ru" data-no-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title">Номер телефона</div>
+                          <input class="input js-phone-mask" type="tel" name="tel" placeholder="+7 (***) ***-**-**" data-no-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Организация / место работы</div>
+                          <input class="input" type="text" name="organization" placeholder="Организация / место работы" data-must-validate="">
+                        </div>
+                      </div>
+                      <div class="form-registration__form-box">
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Должность</div>
+                          <input class="input" type="text" name="job-title" placeholder="Должность полностью" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Направление</div>
+                          <select class="form-registration__form-select" data-must-validate="">
+                            <option placeholder>Выбрать из списка</option>
+                            <option value="текст 1">абсолютом, иной реальностью. Феномен мистических переживаний рассматриваетсяdewdewdwew на примерах философов, психологов, религиозных деятелей, а также на</option>
+                            <option value="текст 2">текст 2</option>
+                            <option value="текст 3">текст 3</option>
+                          </select>
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Участие в пленарной сессии</div>
+                          <div class="form-registration__form-checkboxs" data-must-validate="">
+                            <label class="radio-button">
+                              <input class="radio-button__input" type="radio" name="plenarySession" value="Нет">
+                              <div class="radio-button__elem"></div>
+                              <div class="radio-button__text">Нет</div>
+                            </label>
+                            <label class="radio-button">
+                              <input class="radio-button__input" type="radio" name="plenarySession" value="Да">
+                              <div class="radio-button__elem"></div>
+                              <div class="radio-button__text">Да</div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="form-registration__form-label form-registration__form-label--form-participation">
+                          <div class="form-registration__form-title required-title">Форма участия</div>
+                          <div class="form-registration__form-checkboxs" data-must-validate="">
+                            <label class="radio-button" data-open-next="">
+                              <input class="radio-button__input" type="radio" name="formParticipation" value="Очное">
+                              <div class="radio-button__elem"></div>
+                              <div class="radio-button__text">Очное</div>
+                            </label>
+                            <label class="radio-button">
+                              <input class="radio-button__input" type="radio" name="formParticipation" value="Заочное (Только публикация статьи)">
+                              <div class="radio-button__elem"></div>
+                              <div class="radio-button__text">Заочное (Только публикация статьи)</div>
+                            </label>
+                            <label class="radio-button">
+                              <input class="radio-button__input" type="radio" name="formParticipation" value="Дистанционное">
+                              <div class="radio-button__elem"></div>
+                              <div class="radio-button__text">Дистанционное</div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="form-registration__form-label form-registration__form-label--method-participation hidden">
+                          <div class="form-registration__form-title required-title">Способ участия</div>
+                          <div class="form-registration__form-checkboxs" data-must-validate="">
+                            <label class="radio-button" data-open-next="">
+                              <input class="radio-button__input" type="radio" name="methodParticipation" value="Докладчик">
+                              <div class="radio-button__elem"></div>
+                              <div class="radio-button__text">Докладчик</div>
+                            </label>
+                            <label class="radio-button">
+                              <input class="radio-button__input" type="radio" name="methodParticipation" value="Слушатель">
+                              <div class="radio-button__elem"></div>
+                              <div class="radio-button__text">Слушатель</div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="form-registration__form-label form-registration__form-label--type-report hidden">
+                          <div class="form-registration__form-title required-title">Тип доклада</div>
+                          <div class="form-registration__form-checkboxs" data-must-validate="">
+                            <label class="radio-button">
+                              <input class="radio-button__input" type="radio" name="typeReport" value="Доклад на пленарной сессии">
+                              <div class="radio-button__elem"></div>
+                              <div class="radio-button__text">Доклад на пленарной сессии</div>
+                            </label>
+                            <label class="radio-button">
+                              <input class="radio-button__input" type="radio" name="typeReport" value="Доклад на дискуссионной площадке">
+                              <div class="radio-button__elem"></div>
+                              <div class="radio-button__text">Доклад на дискуссионной площадке</div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="form-registration__form-label form-registration__form-label--topic-report hidden">
+                          <div class="form-registration__form-title required-title">Тема доклада / публикации</div>
+                          <input class="input" type="text" name="topicReport" placeholder="Название темы" data-must-validate="">
+                        </div>
+                      </div>
+                      <div class="form-registration__form-box">
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Сертификат</div>
+                          <div class="form-registration__form-checkboxs" data-must-validate="">
+                            <label class="radio-button">
+                              <input class="radio-button__input" type="radio" name="certificate" value="Да">
+                              <div class="radio-button__elem"></div>
+                              <div class="radio-button__text">Да</div>
+                            </label>
+                            <label class="radio-button">
+                              <input class="radio-button__input" type="radio" name="certificate" value="Нет">
+                              <div class="radio-button__elem"></div>
+                              <div class="radio-button__text">Нет</div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="form-registration__form-label form-registration__form-label--printed-copy">
+                          <div class="form-registration__form-title required-title">Нужен ли печатный экземпляр?</div>
+                          <div class="form-registration__form-checkboxs" data-must-validate="">
+                            <label class="radio-button" data-open-next="">
+                              <input class="radio-button__input" type="radio" name="printedCopy" value="Да">
+                              <div class="radio-button__elem"></div>
+                              <div class="radio-button__text">Да</div>
+                            </label>
+                            <label class="radio-button">
+                              <input class="radio-button__input" type="radio" name="printedCopy" value="Нет">
+                              <div class="radio-button__elem"></div>
+                              <div class="radio-button__text">Нет</div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="form-registration__form-label form-registration__form-label--number-copies hidden">
+                          <div class="form-registration__form-title required-title">Количество</div>
+                          <input class="input" type="number" name="numberCopies" placeholder="Количество копий" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Почтовый адрес</div>
+                          <input class="input" type="number" name="postalAddress" placeholder="Ваш почтовый адрес" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title">Комментарии / предложения</div>
+                          <textarea class="form-registration__form-textarea" placeholder="Можете добавить информацию" data-no-must-validate=""></textarea>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="form-registration__btns">
+                      <button class="btn form-registration__btn-prev btn--transparent" data-prev="data-prev">
+                        <svg class="icon icon-icon__angle-small-left btn__icon-left" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-left"></use>
+                        </svg>
+                        <div class="btn__text">Назад</div>
+                      </button>
+                      <button class="btn form-registration__btn-clear btn--transparent" data-clear="data-clear">
+                        <svg class="icon icon-icon__cross-small btn__icon-left" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__cross-small"></use>
+                        </svg>
+                        <div class="btn__text">Очистить форму</div>
+                      </button>
+                      <button class="btn form-registration__btn-next" data-next="data-next">
+                        <div class="btn__text">Далее</div>
+                        <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                        </svg>
+                      </button>
+                      <button class="btn form-registration__btn-registration" data-next="data-next">
+                        <div class="btn__text">Зарегестрироваться</div>
+                        <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="form-registration__text">Нажимая кнопку «Зарегистрироваться» Вы даёте своё согласие на обработку персональных данных в соответствии с Политикой безопасности персональных данных и обязуетесь предоставить (и предоставлять в дальнейшем в случае изменения) свои достоверные и документированные персональные данные.</div>
+                  </div>
+                  <div class="form-registration__wrapper form-registration--success">
+                    <h2 class="title">
+                      <div class="title__inner">
+                        <div class="title__text">Регистрация прошла успешно</div>
+                      </div>
+                    </h2>
+                    <div class="form-registration__success">
+                      <div class="form-registration__success-subtitle">Международная научно-практическая конференция</div>
+                      <div class="form-registration__success-title">Наука и образование</div>
+                      <div class="form-registration__success-text">Взаимодействие бизнеса и общества в условиях трансформации информационных процессов и технологий</div>
+                      <div class="form-registration__success-img-wrapper">
+                        <img class="form-registration__success-img" src="assets/images/success.svg" alt="">
+                      </div>
+                      <p class="form-registration__success-email">Вы успешно зарегистрировались на конференцию! Мы выслали вам письмо, проверьте вашу почту:<a class="form-registration__success-email-elem" href="mailto:chiatoPochta@mail.ru">ChiatoPochta@mail.ru</a>
+                      </p>
+                      <div class="form-registration__success-contact">
+                        <div class="form-registration__success-contact-title">Связь с нами</div>
+                        <div class="form-registration__success-contact-btns">
+                          <a class="btn btn--transparent" href="tel:+78432948306">
+                            <svg class="icon icon-icon__phone-call btn__icon-left" width="20px" height="20px">
+                              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__phone-call"></use>
+                            </svg>
+                            <div class="btn__text">+7 (843) 294-83-06</div>
+                          </a>
+                          <a class="btn btn--transparent" href="mailto:naukatisbi@yandex.ru">
+                            <svg class="icon icon-icon__envelope btn__icon-left" width="20px" height="20px">
+                              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__envelope"></use>
+                            </svg>
+                            <div class="btn__text">naukatisbi@yandex.ru</div>
+                          </a>
+                        </div>
+                      </div>
+                      <a class="btn form-registration__success-btn-ready modal-close" href="">
+                        <div class="btn__text">Готово</div>
+                        <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="form-registration__wrapper form-registration--error">
+                    <h2 class="title">
+                      <div class="title__inner">
+                        <div class="title__text">Регистрация не удалась</div>
+                      </div>
+                    </h2>
+                    <div class="form-registration__success">
+                      <div class="form-registration__success-subtitle">Международная научно-практическая конференция</div>
+                      <div class="form-registration__success-title">Наука и образование</div>
+                      <div class="form-registration__success-text">Взаимодействие бизнеса и общества в условиях трансформации информационных процессов и технологий</div>
+                      <div class="form-registration__success-img-wrapper">
+                        <img class="form-registration__success-img" src="assets/images/error.svg" alt="">
+                      </div>
+                      <p class="form-registration__success-email">Ошибка: Название ошибки</p>
+                      <div class="form-registration__success-contact">
+                        <div class="form-registration__success-contact-title">Связь с нами</div>
+                        <div class="form-registration__success-contact-btns">
+                          <a class="btn btn--transparent" href="tel:+78432948306">
+                            <svg class="icon icon-icon__phone-call btn__icon-left" width="20px" height="20px">
+                              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__phone-call"></use>
+                            </svg>
+                            <div class="btn__text">+7 (843) 294-83-06</div>
+                          </a>
+                          <a class="btn btn--transparent" href="mailto:naukatisbi@yandex.ru">
+                            <svg class="icon icon-icon__envelope btn__icon-left" width="20px" height="20px">
+                              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__envelope"></use>
+                            </svg>
+                            <div class="btn__text">naukatisbi@yandex.ru</div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="form-registration__success-btns">
+                        <button class="btn btn--transparent form-registration__error-back">
+                          <svg class="icon icon-icon__angle-small-left btn__icon-left" width="20px" height="20px">
+                            <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-left"></use>
+                          </svg>
+                          <div class="btn__text">Назад</div>
+                        </button>
+                        <button class="btn form-registration__success-btn-ready">
+                          <div class="btn__text">Отправить заявку еще раз</div>
+                          <svg class="icon icon-icon__refresh btn__icon-right" width="20px" height="20px">
+                            <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__refresh"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal__registration-right">
+                  <div class="timer">
+                    <div class="timer__completed">
+                      <div class="timer__completed-title">Регистрация завершена</div>
+                    </div>
+                    <div class="timer__current">
+                      <div class="timer__contain">
+                        <svg class="icon icon-icon__info" width="24px" height="24px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__info"></use>
+                        </svg>
+                        <div class="timer__text">До конца регистрации осталось</div>
+                      </div>
+                      <div class="timer__date loading timer-box" data-time="2024-11-14">
+                        <div class="timer__date-box"><span class="timer-days">00</span>
+                        </div>
+                        <div class="timer__date-line"></div>
+                        <div class="timer__date-box"><span class="timer-hours">00</span>
+                        </div>
+                        <div class="timer__date-line"></div>
+                        <div class="timer__date-box"><span class="timer-minutes">00</span>
+                        </div>
+                      </div>
+                      <div class="timer__box">
+                        <div class="timer__box-title">Начало конференции</div>
+                        <div class="timer__box-date">
+                          <svg class="icon icon-icon__calendar" width="24px" height="24px">
+                            <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__calendar"></use>
+                          </svg>
+                          <div class="timer__box-date-text">26.04.2024</div>
+                          <div class="timer__box-date-add">11:30</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <img class="modal__registration-img" src="assets/images/planet.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal__container" data-target="modal-grant">
+        <div class="site-container">
+          <div class="modal__content">
+            <div class="modal__grant">
+              <div class="modal__grant-slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="modal__grant-slider-img" src="assets/images/grant-img.jpg">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="modal__grant-slider-img" src="assets/images/grant-img.jpg">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="modal__grant-slider-img" src="assets/images/grant-img.jpg">
+                  </div>
+                </div>
+                <div class="swiper-nav">
+                  <div class="swiper-nav__pagination"></div>
+                  <div class="swiper-nav__nav">
+                    <div class="swiper-nav__nav-btn swiper-nav__nav-prev">
+                      <svg class="icon icon-icon__angle-left" width="20px" height="20px">
+                        <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-left"></use>
+                      </svg>
+                    </div>
+                    <div class="swiper-nav__nav-btn swiper-nav__nav-next">
+                      <svg class="icon icon-icon__angle-left" width="20px" height="20px">
+                        <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-left"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal__grant-content">
+                <div class="modal__grant-contain">
+                  <img class="modal__grant-contain-img" src="assets/images/Logotype_fpg1.png">
+                  <div class="modal__grant-contain-info">
+                    <div class="modal__grant-contain-info-title">Фонд президентских грантов</div>
+                    <div class="modal__grant-contain-info-desc">Конкурс на предоставление субсидии из бюджета Астраханской области некоммерческим неправительственным организациям, участвующим в развитии институтов гражданского общества, в 2024 году.</div>
+                  </div>
+                </div>
+                <div class="modal__grant-title">Акция “волонетры труда”</div>
+                <div class="modal__grant-box">
+                  <div class="modal__grant-box-title">Цель проекта</div>
+                  <div class="modal__grant-box-text">Представить научной общественности, преподавателям университетов, молодым учёным и аспирантам как в России, так и за рубежом оригинальные результаты теоретических и прикладных исследований в области экономики, менеджмента, юриспруденции, образования, науки, культуры.</div>
+                </div>
+                <div class="modal__grant-box">
+                  <div class="modal__grant-box-title">Сумма</div>
+                  <div class="modal__grant-box-price">3 498 000,00 руб.</div>
+                </div>
+                <div class="modal__grant-box">
+                  <div class="modal__grant-box-title">Команда</div>
+                  <div class="modal__grant-box-tags">
+                    <div class="modal__grant-box-tag">Найда Анна Михайловна</div>
+                    <div class="modal__grant-box-tag">Прохорова Евгения Александровна</div>
+                    <div class="modal__grant-box-tag">Грязнов Алексей Николаевич</div>
+                  </div>
+                </div>
+                <div class="modal__grant-btns">
+                  <a class="btn btn--transparent" href="#">
+                    <div class="btn__text">Страница грантодателся</div>
+                    <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                      <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                    </svg>
+                  </a>
+                  <button class="btn modal-close">
+                    <div class="btn__text">Закрыть</div>
+                    <svg class="icon icon-icon__cross-small btn__icon-right" width="20px" height="20px">
+                      <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__cross-small"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal__container" data-target="modal-registration-event">
+        <div class="site-container">
+          <div class="modal__content">
+            <div class="modal__registration">
+              <h2 class="title">
+                <div class="title__inner">
+                  <svg class="icon icon-icon__message title__icon" width="32px" height="32px">
+                    <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__message"></use>
+                  </svg>
+                  <div class="title__text">Регистрация на олимпиаду</div>
+                </div><span class="title__add">8 сентября 2024</span>
+              </h2>
+              <div class="modal__registration-inner modal__registration-inner--event">
+                <div class="form-registration">
+                  <div class="form-registration__wrapper form-registration--default">
+                    <h2 class="title">
+                      <div class="title__inner">
+                        <div class="title__text">Регистрация</div>
+                      </div>
+                    </h2>
+                    <button class="button-reset modal__close-btn modal-close" type="button"><span></span><span></span>
+                    </button>
+                    <div class="form-registration__steps">
+                      <div class="form-registration__step active-step">
+                        <div class="form-registration__step-number">1</div>
+                        <div class="form-registration__step-line"></div>
+                      </div>
+                      <div class="form-registration__step">
+                        <div class="form-registration__step-number">2</div>
+                      </div>
+                    </div>
+                    <form class="form-registration__form">
+                      <div class="form-registration__form-box">
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Фамилия</div>
+                          <input class="input" type="text" name="surname" placeholder="Иванов" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Имя</div>
+                          <input class="input" type="text" name="name" placeholder="Иван" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Отчество</div>
+                          <input class="input" type="text" name="otchestvo" placeholder="Иванович" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label form-registration__form-label--number-copies">
+                          <div class="form-registration__form-title required-title">Возраст</div>
+                          <input class="input" type="number" name="age" placeholder="24" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Адрес электронной почты</div>
+                          <input class="input" type="email" name="email" placeholder="ivanov@mail.ru" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Номер телефона</div>
+                          <input class="input js-phone-mask" type="tel" name="tel" placeholder="+7 (***) ***-**-**" data-must-validate="">
+                        </div>
+                      </div>
+                      <div class="form-registration__form-box">
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Населенный пункт</div>
+                          <input class="input" type="text" name="settlement" placeholder="Казань" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Полное название школы</div>
+                          <input class="input" type="text" name="school-name" placeholder="Школа №43" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label form-registration__form-label--number-copies">
+                          <div class="form-registration__form-title required-title">Класс</div>
+                          <input class="input" type="number" name="school-class" placeholder="10" data-must-validate="">
+                        </div>
+                      </div>
+                    </form>
+                    <div class="form-registration__btns">
+                      <button class="btn form-registration__btn-prev btn--transparent" data-prev="data-prev">
+                        <svg class="icon icon-icon__angle-small-left btn__icon-left" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-left"></use>
+                        </svg>
+                        <div class="btn__text">Назад</div>
+                      </button>
+                      <button class="btn form-registration__btn-clear btn--transparent" data-clear="data-clear">
+                        <svg class="icon icon-icon__cross-small btn__icon-left" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__cross-small"></use>
+                        </svg>
+                        <div class="btn__text">Очистить форму</div>
+                      </button>
+                      <button class="btn form-registration__btn-next" data-next="data-next">
+                        <div class="btn__text">Далее</div>
+                        <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                        </svg>
+                      </button>
+                      <button class="btn form-registration__btn-registration" data-next="data-next">
+                        <div class="btn__text">Зарегестрироваться</div>
+                        <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="form-registration__text">Нажимая кнопку «Зарегистрироваться» Вы даёте своё согласие на обработку персональных данных в соответствии с Политикой безопасности персональных данных и обязуетесь предоставить (и предоставлять в дальнейшем в случае изменения) свои достоверные и документированные персональные данные.</div>
+                  </div>
+                  <div class="form-registration__wrapper form-registration--success">
+                    <h2 class="title">
+                      <div class="title__inner">
+                        <div class="title__text">Регистрация прошла успешно</div>
+                      </div>
+                    </h2>
+                    <div class="form-registration__success">
+                      <div class="form-registration__success-subtitle">Международная научно-практическая конференция</div>
+                      <div class="form-registration__success-text">Взаимодействие бизнеса и общества в условиях трансформации информационных процессов и технологий</div>
+                      <div class="form-registration__success-img-wrapper">
+                        <img class="form-registration__success-img" src="assets/images/success.svg" alt="">
+                      </div>
+                      <p class="form-registration__success-email">Вы успешно зарегистрировались на конференцию! Мы выслали вам письмо, проверьте вашу почту:<a class="form-registration__success-email-elem" href="mailto:chiatoPochta@mail.ru">ChiatoPochta@mail.ru</a>
+                      </p>
+                      <div class="form-registration__success-contact">
+                        <div class="form-registration__success-contact-title">Связь с нами</div>
+                        <div class="form-registration__success-contact-btns">
+                          <a class="btn btn--transparent" href="tel:+78432948306">
+                            <svg class="icon icon-icon__phone-call btn__icon-left" width="20px" height="20px">
+                              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__phone-call"></use>
+                            </svg>
+                            <div class="btn__text">+7 (843) 294-83-06</div>
+                          </a>
+                          <a class="btn btn--transparent" href="mailto:naukatisbi@yandex.ru">
+                            <svg class="icon icon-icon__envelope btn__icon-left" width="20px" height="20px">
+                              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__envelope"></use>
+                            </svg>
+                            <div class="btn__text">naukatisbi@yandex.ru</div>
+                          </a>
+                        </div>
+                      </div>
+                      <a class="btn form-registration__success-btn-ready modal-close" href="">
+                        <div class="btn__text">Готово</div>
+                        <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="form-registration__wrapper form-registration--error">
+                    <h2 class="title">
+                      <div class="title__inner">
+                        <div class="title__text">Регистрация не удалась</div>
+                      </div>
+                    </h2>
+                    <div class="form-registration__success">
+                      <div class="form-registration__success-subtitle">Международная научно-практическая конференция</div>
+                      <div class="form-registration__success-text">Взаимодействие бизнеса и общества в условиях трансформации информационных процессов и технологий</div>
+                      <div class="form-registration__success-img-wrapper">
+                        <img class="form-registration__success-img" src="assets/images/error.svg" alt="">
+                      </div>
+                      <p class="form-registration__success-email">Ошибка: Название ошибки</p>
+                      <div class="form-registration__success-contact">
+                        <div class="form-registration__success-contact-title">Связь с нами</div>
+                        <div class="form-registration__success-contact-btns">
+                          <a class="btn btn--transparent" href="tel:+78432948306">
+                            <svg class="icon icon-icon__phone-call btn__icon-left" width="20px" height="20px">
+                              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__phone-call"></use>
+                            </svg>
+                            <div class="btn__text">+7 (843) 294-83-06</div>
+                          </a>
+                          <a class="btn btn--transparent" href="mailto:naukatisbi@yandex.ru">
+                            <svg class="icon icon-icon__envelope btn__icon-left" width="20px" height="20px">
+                              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__envelope"></use>
+                            </svg>
+                            <div class="btn__text">naukatisbi@yandex.ru</div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="form-registration__success-btns">
+                        <button class="btn btn--transparent form-registration__error-back">
+                          <svg class="icon icon-icon__angle-small-left btn__icon-left" width="20px" height="20px">
+                            <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-left"></use>
+                          </svg>
+                          <div class="btn__text">Назад</div>
+                        </button>
+                        <button class="btn form-registration__success-btn-ready">
+                          <div class="btn__text">Отправить заявку еще раз</div>
+                          <svg class="icon icon-icon__refresh btn__icon-right" width="20px" height="20px">
+                            <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__refresh"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal__registration-right">
+                  <div class="upcoming-events__item">
+                    <div class="upcoming-events__item-top">
+                      <div class="upcoming-events__item-top-box">
+                        <div class="upcoming-events__item-top-box-type">Лекция</div>
+                        <div class="upcoming-events__item-top-box-title">Наука</div>
+                      </div>
+                      <ul class="upcoming-events__item-top-tags">
+                        <li class="upcoming-events__item-top-tag">Очное</li>
+                        <li class="upcoming-events__item-top-tag">Очное</li>
+                        <li class="upcoming-events__item-top-tag">Студенты</li>
+                      </ul>
+                    </div>
+                    <div class="upcoming-events__item-title">Международная научно-практическая конференция: “Переход от образовательной среды к образовательной экосистеме в интересах устойчивого развития”</div>
+                    <ul class="upcoming-events__item-info">
+                      <li class="upcoming-events__item-info-item">
+                        <svg class="icon icon-icon__clock" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__clock"></use>
+                        </svg>
+                        <div class="upcoming-events__item-info-item-text">18.04.2024</div><span>11:20</span>
+                      </li>
+                      <li class="upcoming-events__item-info-item">
+                        <svg class="icon icon-icon__marker" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__marker"></use>
+                        </svg>
+                        <div class="upcoming-events__item-info-item-text">Казань, ул. Муштари, д.13</div>
+                      </li>
+                      <li class="upcoming-events__item-info-item">
+                        <svg class="icon icon-icon__shuffle" width="16px" height="16px">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#icon__shuffle"></use>
+                        </svg>
+                        <div class="upcoming-events__item-info-item-text">Смешанная</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal__container" data-target="modal-materials">
+        <div class="site-container">
+          <div class="modal__content">
+            <div class="modal__registration">
+              <div class="modal__registration-inner modal__registration-inner--materials">
+                <div class="form-registration form-registration--material">
+                  <form class="form-registration__wrapper form-registration--default">
+                    <h2 class="title">
+                      <div class="title__inner">
+                        <div class="title__text">Подача материалов</div>
+                      </div>
+                    </h2>
+                    <button class="button-reset modal__close-btn modal-close" type="button"><span></span><span></span>
+                    </button>
+                    <div class="form-registration__form">
+                      <div class="form-registration__form-box">
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Имя</div>
+                          <input class="input" type="text" name="name" placeholder="Иван" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Адрес электронной почты</div>
+                          <input class="input" type="email" name="email" placeholder="ivanov@mail.ru" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Номер телефона</div>
+                          <input class="input js-phone-mask" type="tel" name="tel" placeholder="+7 (***) ***-**-**" data-must-validate="">
+                        </div>
+                        <div class="form-registration__form-label">
+                          <div class="form-registration__form-title required-title">Комментарии</div>
+                          <textarea class="form-registration__form-textarea" placeholder="Можете добавить информацию" data-no-must-validate=""></textarea>
+                        </div>
+                        <div class="form-registration__dropzone">
+                          <div class="form-registration__dropzone-inner">
+                            <div class="form-registration__dropzone-text">Внесите в файл в данную область, либо нажмите на кнопку</div>
+                            <label class="form-registration__dropzone-btn" for="file">
+                              <div class="form-registration__dropzone-btn-text">Выбрать файл</div>
+                              <svg class="icon icon-icon__file" width="20px" height="20px">
+                                <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__file"></use>
+                              </svg>
+                            </label>
+                            <input class="form-registration__dropzone-input visually-hidden" type="file" data-max-size="2" accept=".doc, .docx" name="file" id="file" data-no-must-validate="">
+                            <div class="form-registration__dropzone-recomen">Вы можете загрузить один файл размером не более 2 мегабайт в формате<span>.doc</span>или<span>.docx</span>
+                            </div>
+                            <div class="form-registration__dropzone-file-name"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-registration__btns">
+                      <button class="btn form-registration__btn-clear btn--transparent" data-clear="data-clear">
+                        <svg class="icon icon-icon__cross-small btn__icon-left" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__cross-small"></use>
+                        </svg>
+                        <div class="btn__text">Очистить форму</div>
+                      </button>
+                      <button class="btn form-registration__btn-registration" data-next="data-next">
+                        <div class="btn__text">Отправить</div>
+                        <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </form>
+                  <div class="form-registration__wrapper form-registration--success">
+                    <h2 class="title">
+                      <div class="title__inner">
+                        <div class="title__text">Регистрация прошла успешно</div>
+                      </div>
+                    </h2>
+                    <div class="form-registration__success">
+                      <div class="form-registration__success-subtitle">Международная научно-практическая конференция</div>
+                      <div class="form-registration__success-text">Взаимодействие бизнеса и общества в условиях трансформации информационных процессов и технологий</div>
+                      <div class="form-registration__success-img-wrapper">
+                        <img class="form-registration__success-img" src="assets/images/success.svg" alt="">
+                      </div>
+                      <p class="form-registration__success-email">Вы успешно зарегистрировались на конференцию! Мы выслали вам письмо, проверьте вашу почту:<a class="form-registration__success-email-elem" href="mailto:chiatoPochta@mail.ru">ChiatoPochta@mail.ru</a>
+                      </p>
+                      <div class="form-registration__success-contact">
+                        <div class="form-registration__success-contact-title">Связь с нами</div>
+                        <div class="form-registration__success-contact-btns">
+                          <a class="btn btn--transparent" href="tel:+78432948306">
+                            <svg class="icon icon-icon__phone-call btn__icon-left" width="20px" height="20px">
+                              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__phone-call"></use>
+                            </svg>
+                            <div class="btn__text">+7 (843) 294-83-06</div>
+                          </a>
+                          <a class="btn btn--transparent" href="mailto:naukatisbi@yandex.ru">
+                            <svg class="icon icon-icon__envelope btn__icon-left" width="20px" height="20px">
+                              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__envelope"></use>
+                            </svg>
+                            <div class="btn__text">naukatisbi@yandex.ru</div>
+                          </a>
+                        </div>
+                      </div>
+                      <a class="btn form-registration__success-btn-ready modal-close" href="">
+                        <div class="btn__text">Готово</div>
+                        <svg class="icon icon-icon__angle-small-right-white btn__icon-right" width="20px" height="20px">
+                          <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-right-white"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="form-registration__wrapper form-registration--error">
+                    <h2 class="title">
+                      <div class="title__inner">
+                        <div class="title__text">Регистрация не удалась</div>
+                      </div>
+                    </h2>
+                    <div class="form-registration__success">
+                      <div class="form-registration__success-subtitle">Международная научно-практическая конференция</div>
+                      <div class="form-registration__success-text">Взаимодействие бизнеса и общества в условиях трансформации информационных процессов и технологий</div>
+                      <div class="form-registration__success-img-wrapper">
+                        <img class="form-registration__success-img" src="assets/images/error.svg" alt="">
+                      </div>
+                      <p class="form-registration__success-email">Ошибка: Название ошибки</p>
+                      <div class="form-registration__success-contact">
+                        <div class="form-registration__success-contact-title">Связь с нами</div>
+                        <div class="form-registration__success-contact-btns">
+                          <a class="btn btn--transparent" href="tel:+78432948306">
+                            <svg class="icon icon-icon__phone-call btn__icon-left" width="20px" height="20px">
+                              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__phone-call"></use>
+                            </svg>
+                            <div class="btn__text">+7 (843) 294-83-06</div>
+                          </a>
+                          <a class="btn btn--transparent" href="mailto:naukatisbi@yandex.ru">
+                            <svg class="icon icon-icon__envelope btn__icon-left" width="20px" height="20px">
+                              <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__envelope"></use>
+                            </svg>
+                            <div class="btn__text">naukatisbi@yandex.ru</div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="form-registration__success-btns">
+                        <button class="btn btn--transparent form-registration__error-back">
+                          <svg class="icon icon-icon__angle-small-left btn__icon-left" width="20px" height="20px">
+                            <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__angle-small-left"></use>
+                          </svg>
+                          <div class="btn__text">Назад</div>
+                        </button>
+                        <button class="btn form-registration__success-btn-ready">
+                          <div class="btn__text">Отправить заявку еще раз</div>
+                          <svg class="icon icon-icon__refresh btn__icon-right" width="20px" height="20px">
+                            <use xlink:href="assets/images/sprites/sprite-mono.svg#icon__refresh"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <script src="assets/js/main.js?v=0.0.0.0"></script>
+  <script src="assets/js/backend.js?v=0.0.0.0"></script>
+</html>
