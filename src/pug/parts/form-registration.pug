@@ -1,0 +1,139 @@
+.form-registration
+    .form-registration__wrapper.form-registration--default
+        +title('', 'Регистрация', '')
+        button.button-reset.modal__close-btn.modal-close(type="button")
+          span
+          span
+        .form-registration__steps
+            .form-registration__step.active-step
+                .form-registration__step-number 1
+                .form-registration__step-line
+            .form-registration__step
+                .form-registration__step-number 2
+                .form-registration__step-line
+            .form-registration__step
+                .form-registration__step-number 3
+        form.form-registration__form
+            .form-registration__form-box
+                .form-registration__form-label
+                    .form-registration__form-title.required-title Фамилия
+                    +input('text', 'surname', 'Иванов')(data-must-validate='')
+                .form-registration__form-label
+                    .form-registration__form-title.required-title Имя
+                    +input('text', 'name', 'Иван')(data-must-validate='')
+                .form-registration__form-label
+                    .form-registration__form-title Отчество
+                    +input('text', 'otchestvo', 'Иванович')(data-no-must-validate='')
+                .form-registration__form-label
+                    .form-registration__form-title.required-title Адрес электронной почты
+                    +input('email', 'email', 'ivanov@mail.ru')(data-no-must-validate='')
+                .form-registration__form-label
+                    .form-registration__form-title Номер телефона
+                    +input('tel', 'tel', '+7 (***) ***-**-**')(class='js-phone-mask' data-no-must-validate='')
+                .form-registration__form-label
+                    .form-registration__form-title.required-title Организация / место работы
+                    +input('text', 'organization', 'Организация / место работы')(data-must-validate='')
+            .form-registration__form-box
+                .form-registration__form-label
+                    .form-registration__form-title.required-title Должность
+                    +input('text', 'job-title', 'Должность полностью')(data-must-validate='')
+                .form-registration__form-label
+                    .form-registration__form-title.required-title Направление
+                    select.form-registration__form-select(data-must-validate='')
+                        option(placeholder) Выбрать из списка
+                        option(value="текст 1")
+                            | абсолютом, иной реальностью. Феномен  мистических переживаний рассматриваетсяdewdewdwew на примерах философов,  психологов, религиозных деятелей, а также на
+                        option(value="текст 2") текст 2
+                        option(value="текст 3") текст 3
+                .form-registration__form-label
+                    .form-registration__form-title.required-title Участие в пленарной сессии
+                    .form-registration__form-checkboxs(data-must-validate='')
+                        +radio-button('Нет', 'plenarySession', 'Нет')
+                        +radio-button('Да', 'plenarySession', 'Да')
+                .form-registration__form-label.form-registration__form-label--form-participation
+                    .form-registration__form-title.required-title Форма участия
+                    .form-registration__form-checkboxs(data-must-validate='')
+                        +radio-button('Очное', 'formParticipation', 'Очное')(data-open-next='')
+                        +radio-button('Заочное (Только публикация статьи)', 'formParticipation', 'Заочное (Только публикация статьи)')
+                        +radio-button('Дистанционное', 'formParticipation', 'Дистанционное')
+                .form-registration__form-label.form-registration__form-label--method-participation.hidden
+                    .form-registration__form-title.required-title Способ участия
+                    .form-registration__form-checkboxs(data-must-validate='')
+                        +radio-button('Докладчик', 'methodParticipation', 'Докладчик')(data-open-next='')
+                        +radio-button('Слушатель', 'methodParticipation', 'Слушатель')
+                .form-registration__form-label.form-registration__form-label--type-report.hidden
+                    .form-registration__form-title.required-title Тип доклада
+                    .form-registration__form-checkboxs(data-must-validate='')
+                        +radio-button('Доклад на пленарной сессии', 'typeReport', 'Доклад на пленарной сессии')
+                        +radio-button('Доклад на дискуссионной площадке', 'typeReport', 'Доклад на дискуссионной площадке')
+                .form-registration__form-label.form-registration__form-label--topic-report.hidden
+                    .form-registration__form-title.required-title Тема доклада / публикации
+                    +input('text', 'topicReport', 'Название темы')(data-must-validate='')
+            .form-registration__form-box
+                .form-registration__form-label
+                    .form-registration__form-title.required-title Сертификат
+                    .form-registration__form-checkboxs(data-must-validate='')
+                        +radio-button('Да', 'certificate', 'Да')
+                        +radio-button('Нет', 'certificate', 'Нет')
+                .form-registration__form-label.form-registration__form-label--printed-copy
+                    .form-registration__form-title.required-title Нужен ли печатный экземпляр?
+                    .form-registration__form-checkboxs(data-must-validate='')
+                        +radio-button('Да', 'printedCopy', 'Да')(data-open-next='')
+                        +radio-button('Нет', 'printedCopy', 'Нет')
+                .form-registration__form-label.form-registration__form-label--number-copies.hidden
+                    .form-registration__form-title.required-title Количество
+                    +input('number', 'numberCopies', 'Количество копий')(data-must-validate='')
+                .form-registration__form-label
+                    .form-registration__form-title.required-title Почтовый адрес
+                    +input('number', 'postalAddress', 'Ваш почтовый адрес')(data-must-validate='')
+                .form-registration__form-label
+                    .form-registration__form-title Комментарии / предложения
+                    textarea.form-registration__form-textarea(placeholder='Можете добавить информацию' data-no-must-validate='')
+        .form-registration__btns
+            +button('button', 'form-registration__btn-prev btn--transparent', 'Назад', '', 'icon__angle-small-left', '')(data-prev)
+            +button('button', 'form-registration__btn-clear btn--transparent', 'Очистить форму', '', 'icon__cross-small', '')(data-clear)
+            +button('button', 'form-registration__btn-next', 'Далее', '', '', 'icon__angle-small-right-white')(data-next)
+            +button('button', 'form-registration__btn-registration', 'Зарегестрироваться', '', '', 'icon__angle-small-right-white')(data-next)
+        .form-registration__text
+            | Нажимая кнопку «Зарегистрироваться» Вы даёте своё согласие на обработку персональных  данных в соответствии с Политикой безопасности персональных данных и  обязуетесь предоставить (и предоставлять в дальнейшем в случае  изменения) свои достоверные и документированные персональные данные.
+    .form-registration__wrapper.form-registration--success
+        +title('', 'Регистрация прошла успешно', '')
+        .form-registration__success
+            .form-registration__success-subtitle
+                | Международная научно-практическая конференция
+            .form-registration__success-title
+                | Наука и образование
+            .form-registration__success-text
+                | Взаимодействие бизнеса и общества в условиях трансформации информационных процессов и технологий
+            .form-registration__success-img-wrapper
+                img.form-registration__success-img(src="assets/images/success.svg" alt="")
+            p.form-registration__success-email
+                | Вы успешно зарегистрировались на конференцию! Мы выслали вам письмо, проверьте вашу почту:
+                a.form-registration__success-email-elem(href="mailto:chiatoPochta@mail.ru") ChiatoPochta@mail.ru
+            .form-registration__success-contact
+                .form-registration__success-contact-title Связь с нами
+                .form-registration__success-contact-btns
+                    +button('a', 'btn--transparent', '+7 (843) 294-83-06', 'tel:+78432948306', 'icon__phone-call', '')
+                    +button('a', 'btn--transparent', 'naukatisbi@yandex.ru', 'mailto:naukatisbi@yandex.ru', 'icon__envelope', '')
+            +button('a', 'form-registration__success-btn-ready modal-close', 'Готово', '', '', 'icon__angle-small-right-white')
+    .form-registration__wrapper.form-registration--error
+        +title('', 'Регистрация не удалась', '')
+        .form-registration__success
+            .form-registration__success-subtitle
+                | Международная научно-практическая конференция
+            .form-registration__success-title
+                | Наука и образование
+            .form-registration__success-text
+                | Взаимодействие бизнеса и общества в условиях трансформации информационных процессов и технологий
+            .form-registration__success-img-wrapper
+                img.form-registration__success-img(src="assets/images/error.svg" alt="")
+            p.form-registration__success-email
+                | Ошибка: Название ошибки
+            .form-registration__success-contact
+                .form-registration__success-contact-title Связь с нами
+                .form-registration__success-contact-btns
+                    +button('a', 'btn--transparent', '+7 (843) 294-83-06', 'tel:+78432948306', 'icon__phone-call', '')
+                    +button('a', 'btn--transparent', 'naukatisbi@yandex.ru', 'mailto:naukatisbi@yandex.ru', 'icon__envelope', '')
+            .form-registration__success-btns
+                +button('button', 'btn--transparent form-registration__error-back', 'Назад', '', 'icon__angle-small-left', '')
+                +button('button', 'form-registration__success-btn-ready', 'Отправить заявку еще раз', '', '', 'icon__refresh')

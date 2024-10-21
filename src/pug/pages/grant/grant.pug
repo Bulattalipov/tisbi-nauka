@@ -1,0 +1,121 @@
+section.section.event
+    .site-container
+        .event__wrapper
+            .event__base
+                .upcoming-events__item
+                    .upcoming-events__item-box
+                      img.upcoming-events__item-box-img(src='assets/images/Logotype_fpg1.png' alt='')
+                    .upcoming-events__item-title
+                        | Фонд президентских грантов
+                    .upcoming-events__item-desc
+                        | Конкурс на предоставление субсидии из бюджета Астраханской области некоммерческим неправительственным организациям, участвующим в развитии институтов гражданского общества, в 2024 году.
+                    .upcoming-events__item-box-btns
+                        +button('a', 'btn--transparent', 'Распечатать', '#', '', 'icon__print')
+                        +button('a', 'btn--transparent', 'Поделиться', '#', '', 'icon__redo')
+                    .upcoming-events__item-subblock
+                        .upcoming-events__item-subblock-title
+                            | Сумма
+                        .upcoming-events__item-subblock-texts
+                            p
+                                | до - 500 т.р. для организаций, которые действуют от 6 до 12 месяцев.
+                            p
+                                | до 1 м.р. — на проекты от организаций с опытом меньше одного года или на проекты, которые запланированы на небольшой территории, например, в пределах одного поселка, города, муниципального округа.
+                            p
+                                | от 1 до 5 м.р. — на региональные проекты.
+                            p
+                                | от 5 до 15 м.р. — на проекты, которые охватывают несколько регионов или федеральных округов.
+                            p
+                                | от 15 м.р. — на проекты федерального масштаба и значимости.
+                    .upcoming-events__item-subblock
+                        .upcoming-events__item-subblock-title
+                            | Примечания
+                        .upcoming-events__item-subblock-texts
+                            p
+                                | Срок реализации проекта - до 18 месяцев.
+                            p
+                                | До 3 лет для направлений: «Поддержка проектов в области науки, образования, просвещения», «Развитие институтов гражданского общества».
+                            p
+                                | Для организации только 1 грант в рамках 1 конкурса.
+                            p
+                                | На средства президентского гранта можно реализовывать одновременно не более двух проектов, поддержанных Фондом.
+                            p
+                                | Если снова участвовать в конкурсе, один из ранее поддержанных проектов должен завершиться до даты, которая прописана в Положении о конкурсе в качестве наиболее ранней возможной даты начала реализации проектов соответствующего конкурса.
+                    .upcoming-events__item-directions
+                      .upcoming-events__item-directions-title
+                        | Направления
+                      a.upcoming-events__item-directions-link(href='#')
+                        | https://поддержка.президентскиегранты.рф/Article/?id=43
+                include grant-stages.pug
+                include grant-requirements.pug
+                .event__documents
+                    +title('icon__file', 'Документы')
+                    .event__documents-inner
+                        .event__documents-item
+                            .event__documents-item-info
+                                +icon-multi('icon__document')(width='24px' height='24px' class='event__documents-item-img')
+                                .event__documents-item-title Длинное название файла
+                            .event__documents-item-box
+                                .event__documents-item-type PDF
+                                .event__documents-item-size 143,7КБ
+                                +button('a', 'btn--transparent btn--cube', '', '#', '', 'icon__cloud-download')
+                        .event__documents-item
+                            .event__documents-item-info
+                                +icon-multi('icon__document')(width='24px' height='24px' class='event__documents-item-img')
+                                .event__documents-item-title Длинное название файла
+                            .event__documents-item-box
+                                .event__documents-item-type PDF
+                                .event__documents-item-size 143,7КБ
+                                +button('a', 'btn--transparent btn--cube', '', '#', '', 'icon__cloud-download')
+                        .event__documents-item
+                            .event__documents-item-info
+                                +icon-multi('icon__document')(width='24px' height='24px' class='event__documents-item-img')
+                                .event__documents-item-title Длинное название файла
+                            .event__documents-item-box
+                                .event__documents-item-type PDF
+                                .event__documents-item-size 143,7КБ
+                                +button('a', 'btn--transparent btn--cube', '', '#', '', 'icon__cloud-download')
+            .event__right
+                .event__info
+                    .event__info-title
+                        +icon-multi('icon__clock')(width='24px' height='24px')
+                        .event__info-title-text Срок реализации гранта
+                    .event__date
+                      .event__date-item 14.04.2024
+                      .event__date-item 6.12.2024
+                    .event__info-timer
+                        +timer()(data-timer-show-later="5")
+                    .event__info-box
+                         .event__info-box-title Категории участников:
+                         .event__info-box-texts
+                            .event__info-box-text Аспиранты
+                            .event__info-box-text Молодые ученые
+                            .event__info-box-text Преподаватели
+                            .event__info-box-text Студенты
+                    .event__info-box
+                        .event__info-box-title Категории конкурса:
+                        .event__info-box-texts
+                          .event__info-box-text Казань, ул. Муштари, д.13
+                    +button('a', 'event__info-btn', 'Подать заявку', '#', '', 'icon__angle-small-right-white')
+
+                .event__contacts
+                    .event__contacts-img-wrapper
+                        img.event__contacts-img(src="assets/images/building.png" alt='')
+                    .event__contacts-info
+                        .event__contacts-info-title Контактные данные
+                        .event__contacts-info-user
+                            .event__contacts-info-user-img
+                                img.event__contacts-info-user-img-elem(src='assets/images/user-3.jpg' alt='')
+                            .event__contacts-info-user-box
+                                .event__contacts-info-user-name
+                                    | Гонина Анастасия Алексеевна
+                                .event__contacts-info-user-prof
+                                    | Специалист по сопровождению научной и гранатовой деятельности
+                        .event__contacts-info-contain
+                            +icon-multi('icon__phone-call')(width='16px' height='16px')
+                            .event__contacts-info-contain-text +7 (843) 294-83-06
+                        .event__contacts-info-contain
+                            +icon-multi('icon__envelope')(width='16px' height='16px')
+                            .event__contacts-info-contain-text anastasygonina@yandex.ru
+                        .event__contacts-info-contain
+                            +icon-multi('icon__marker')(width='16px' height='16px')
+                            .event__contacts-info-contain-text 420012, г. Казань, ул. Муштари, дом 13, каб. 243

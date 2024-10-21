@@ -1,0 +1,6 @@
+main.page-main.main
+    .sections-container
+        +breadcrumbs([['Главная', "/"], ['Новости', '/'], ['Без науки практика слепа']])(class='breadcrumbs--large-indentation')
+        include open-news.pug
+        include persons-article.pug
+        include ../index/latest-news.pug

@@ -1,0 +1,99 @@
+mixin upcoming-events(notButton)
+    script
+      | let arrayEventDate = ['2024-08-20', '2024-09-25', '2024-09-27'];
+    section.section.upcoming-events
+        .site-container
+            .upcoming-events__wrapper
+                +title('icon__physics', 'Ближайшие мероприятия')
+                .upcoming-events__inner
+                    .upcoming-events__calendar(id='el' data-sticky-container)
+                    .upcoming-events__contain
+                        .upcoming-events__date 18 Апреля 2024
+                        ul.upcoming-events__list
+                            li.upcoming-events__item
+                                .upcoming-events__item-top
+                                    .upcoming-events__item-top-box
+                                        .upcoming-events__item-top-box-type Лекция
+                                        .upcoming-events__item-top-box-title Наука
+                                    ul.upcoming-events__item-top-tags
+                                        li.upcoming-events__item-top-tag Очное
+                                        li.upcoming-events__item-top-tag Очное
+                                        li.upcoming-events__item-top-tag Студенты
+                                .upcoming-events__item-title
+                                    | Международная научно-практическая конференция: “Переход от образовательной среды к образовательной экосистеме в интересах устойчивого развития”
+                                ul.upcoming-events__item-info
+                                    li.upcoming-events__item-info-item
+                                        +icon-multi("icon__clock")(width="16px" height="16px")
+                                        .upcoming-events__item-info-item-text 18.04.2024
+                                        span 11:20
+                                    li.upcoming-events__item-info-item
+                                        +icon-multi("icon__marker")(width="16px" height="16px")
+                                        .upcoming-events__item-info-item-text
+                                            | Казань, ул. Муштари, д.13
+                                    li.upcoming-events__item-info-item
+                                        +icon-multi("icon__shuffle")(width="16px" height="16px")
+                                        .upcoming-events__item-info-item-text
+                                            | Смешанная
+                                .upcoming-events__item-btns
+                                    +button('button', '', 'Записаться', '', '', 'icon__angle-small-right-white')(data-path='modal-registration-event')
+                                    +button('a', 'btn--transparent', 'Поделиться', '#', '', 'icon__redo')
+                            li.upcoming-events__item
+                                .upcoming-events__item-top
+                                    .upcoming-events__item-top-box
+                                        .upcoming-events__item-top-box-type Лекция
+                                        .upcoming-events__item-top-box-title Наука
+                                    ul.upcoming-events__item-top-tags
+                                        li.upcoming-events__item-top-tag Очное
+                                        li.upcoming-events__item-top-tag Очное
+                                        li.upcoming-events__item-top-tag Студенты
+                                .upcoming-events__item-title
+                                    | Международная научно-практическая конференция: “Переход от образовательной среды к образовательной экосистеме в интересах устойчивого развития”
+                                ul.upcoming-events__item-info
+                                    li.upcoming-events__item-info-item
+                                        +icon-multi("icon__clock")(width="16px" height="16px")
+                                        .upcoming-events__item-info-item-text 18.04.2024
+                                        span 11:20
+                                    li.upcoming-events__item-info-item
+                                        +icon-multi("icon__marker")(width="16px" height="16px")
+                                        .upcoming-events__item-info-item-text
+                                            | Казань, ул. Муштари, д.13
+                                    li.upcoming-events__item-info-item
+                                        +icon-multi("icon__shuffle")(width="16px" height="16px")
+                                        .upcoming-events__item-info-item-text
+                                            | Смешанная
+                                .upcoming-events__item-btns
+                                    +button('button', '', 'Записаться', '', '', 'icon__angle-small-right-white')(data-path='modal-registration-event')
+                                    +button('a', 'btn--transparent', 'Поделиться', '#', '', 'icon__redo')
+                            li.upcoming-events__item
+                                .upcoming-events__item-top
+                                    .upcoming-events__item-top-box
+                                        .upcoming-events__item-top-box-type Лекция
+                                        .upcoming-events__item-top-box-title Наука
+                                    ul.upcoming-events__item-top-tags
+                                        li.upcoming-events__item-top-tag Очное
+                                        li.upcoming-events__item-top-tag Очное
+                                        li.upcoming-events__item-top-tag Студенты
+                                .upcoming-events__item-title
+                                    | Международная научно-практическая конференция: “Переход от образовательной среды к образовательной экосистеме в интересах устойчивого развития”
+                                ul.upcoming-events__item-info
+                                    li.upcoming-events__item-info-item
+                                        +icon-multi("icon__clock")(width="16px" height="16px")
+                                        .upcoming-events__item-info-item-text 18.04.2024
+                                        span 11:20
+                                    li.upcoming-events__item-info-item
+                                        +icon-multi("icon__marker")(width="16px" height="16px")
+                                        .upcoming-events__item-info-item-text
+                                            | Казань, ул. Муштари, д.13
+                                    li.upcoming-events__item-info-item
+                                        +icon-multi("icon__shuffle")(width="16px" height="16px")
+                                        .upcoming-events__item-info-item-text
+                                            | Смешанная
+                                .upcoming-events__item-btns
+                                    +button('button', '', 'Записаться', '', '', 'icon__angle-small-right-white')(data-path='modal-registration-event')
+                                    +button('a', 'btn--transparent', 'Поделиться', '#', '', 'icon__redo')
+                        .upcoming-events__plug
+                            +icon-multi("icon__cross-circle")(width="24px" height="24px")
+                            .upcoming-events__plug-text
+                                | В этот день мероприятия отсутствуют
+                if !notButton
+                    +button('a', 'btn--transparent upcoming-events__btn', 'Все мероприятия', '#', '', 'icon__angle-small-right-white')

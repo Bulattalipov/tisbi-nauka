@@ -1,0 +1,8 @@
+mixin title(img, text, addText)
+    h2.title
+        .title__inner
+            if img
+                +icon-multi(img)(width="32px" height="32px" class="title__icon")
+            .title__text=text
+        if addText
+            span.title__add=addText

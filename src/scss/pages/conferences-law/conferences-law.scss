@@ -1,0 +1,196 @@
+.law-page  {
+  .conferences-intro__inner{
+    position: relative;
+
+    &::before,
+    &:after {
+      @include mq(custom, max, 1024) {
+        display: none;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      background-image: url('../images/Smoke_1.png');
+      top: -2rem;
+      left: -26rem;
+      height: 118.8rem;
+      width: 69.6rem;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      background-image: url('../images/Smoke_2.png');
+      top: -23.8rem;
+      right: -85.2rem;
+      height: 160rem;
+      width: 131.2rem;
+    }
+  }
+  .conferences-intro__img {
+    width: 80.7rem;
+    height: 108.7rem;
+    top: 3.6rem;
+    left: 69.8rem;
+    z-index: 0;
+
+    @include mq(xl) {
+      width: 57.7rem;
+      top: -5.4rem;
+    }
+
+    @include mq(custom, max, 1150) {
+      left: 60.8rem;
+    }
+  }
+
+  .conferences-regulations__right {
+    position: relative;
+    border-radius: 1.6rem;
+    overflow: hidden;
+
+    @include mq(custom, max, 1024) {
+      display: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      border-radius: 1.6rem;
+      padding: 0.14rem;
+      background: linear-gradient(to bottom, #989898, #202020);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: destination-out;
+      mask-composite: exclude;
+      opacity: 0.4;
+    }
+  }
+
+  .conferences-regulations__img {
+    position: static;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .conferences-requirements__right {
+    position: relative;
+    border-radius: 1.6rem;
+    overflow: hidden;
+
+    @include mq(custom, max, 1024) {
+      display: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      border-radius: 1.6rem;
+      padding: 0.14rem;
+      background: linear-gradient(to bottom, #989898, #202020);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: destination-out;
+      mask-composite: exclude;
+      opacity: 0.4;
+    }
+  }
+
+  .conferences-requirements__img {
+    position: static;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+
+  .conferences-faq__right {
+    position: relative;
+    grid-column: span 3;
+    border-radius: 1.6rem;
+    overflow: hidden;
+    max-height: 85.8rem;
+
+    @include mq(custom, max, 1024) {
+      display: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      border-radius: 1.6rem;
+      padding: 0.14rem;
+      background: linear-gradient(to bottom, #989898, #202020);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: destination-out;
+      mask-composite: exclude;
+      opacity: 0.4;
+    }
+  }
+
+  .conferences-faq__img {
+    position: static;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+
+  .modal__registration-inner {
+    position: relative;
+
+    &::before,
+    &:after {
+      @include mq(custom, max, 1024) {
+        display: none;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      background-image: url('../images/Smoke_1.png');
+      top: -2rem;
+      left: -26rem;
+      height: 92.8rem;
+      width: 69.6rem;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      background-image: url('../images/Smoke_2.png');
+      top: -18.8rem;
+      right: -65.2rem;
+      height: 110rem;
+      width: 131.2rem;
+    }
+  }
+
+  .modal__registration-img {
+    @include mq(custom, max, 1540) {
+      height: 85.9rem;
+    }
+
+    @include mq(lg) {
+      height: 83.9rem;
+    }
+  }
+}

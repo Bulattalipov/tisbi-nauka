@@ -1,0 +1,219 @@
+.conferences-faq {
+
+  &--modif {
+
+    .conferences-faq__inner {
+      align-items: flex-start;
+
+      @include mq(custom, max, 1024) {
+        gap: 2.4rem;
+      }
+    }
+
+    .conferences-faq__item {
+      backdrop-filter: blur(1.2rem);
+      background: var(--block);
+
+      &::before {
+        display: none;
+      }
+    }
+
+    .conferences-faq__right {
+      padding: 0;
+
+      @include mq(custom, max, 1024) {
+        width: 100%;
+        display: block;
+      }
+
+      @include mq(custom, max, 640) {
+        padding: 0 1.6rem;
+      }
+    }
+
+    .event__contacts {
+      width: 100%;
+
+      @include mq(custom, max, 640) {
+        width: auto;
+      }
+    }
+  }
+
+  &__inner {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 4.8rem;
+
+    @include mq(custom, max, 1024) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @include mq(custom, max, 640) {
+      margin: 0 -1.6rem;
+    }
+  }
+
+
+  &__right {
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 1.6rem;
+    padding: 2.4rem;
+
+    @include mq(custom, max, 1024) {
+      display: none;
+    }
+  }
+
+  &__right-title {
+    font-weight: 400;
+    font-size: 2.4rem;
+    color: var(--white);
+  }
+
+  &__right-desc {
+    color: var(--secondary);
+    padding-left: 2.4rem;
+    border-left: 0.2rem solid var(--yunesko-main);
+  }
+
+  &__list {
+    grid-column: span 5;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.6rem;
+    backdrop-filter: blur(12px);
+    background: var(--nauka-yuristy-block-70);
+
+    @include mq(custom, max, 640) {
+      border-radius: 0;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      border-radius: 1.6rem;
+      padding: 0.14rem;
+      background: linear-gradient(to bottom, #989898, #202020);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: destination-out;
+      mask-composite: exclude;
+      opacity: 0.4;
+    }
+
+    &.active {
+      .icon {
+        transform: rotate(180deg);
+        fill: var(--white);
+      }
+
+      .conferences-faq__item-title {
+        color: var(--white);
+      }
+    }
+
+    &.conferences-faq__item--change {
+      .conferences-faq__item-row {
+        cursor: default;
+      }
+
+      .conferences-faq__item-title {
+        font-weight: 400;
+        font-size: 2.4rem;
+        color: var(--white);
+      }
+
+      .conferences-faq__item-content {
+        height: 100%;
+      }
+    }
+
+    .icon {
+      fill: #A6ABBD;
+    }
+  }
+
+  &__item-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.4rem;
+    cursor: pointer;
+  }
+
+  &__item-title {
+    font-size: 1.8rem;
+    color: var(--secondary);
+    margin-right: 4.4rem;
+    transition: color 0.3s;
+  }
+
+  &__item-content {
+    height: 0;
+    overflow: hidden;
+  }
+
+  &__item-content-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin: 0 2.4rem 2.4rem 2.4rem;
+  }
+
+  &__item-text {
+    padding-left: 2.4rem;
+    color: var(--secondary);
+    border-left: 0.2rem solid var(--main);
+  }
+
+  &__item-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+
+    .btn {
+      @include mq(xs) {
+        width: 100%;
+        justify-content: start;
+      }
+    }
+  }
+
+  &__img {
+    position: absolute;
+    z-index: -1;
+    top: -23rem;
+    left: 70rem;
+    width: 95.9rem;
+    height: 99.1rem;
+
+    @include mq(custom, max, 1572) {
+      left: auto;
+      right: -26rem;
+    }
+
+    @include mq(lg) {
+      right: -26rem;
+    }
+
+    @include mq(custom, max, 1024) {
+      display: none;
+    }
+  }
+}

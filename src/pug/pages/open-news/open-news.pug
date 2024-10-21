@@ -1,0 +1,65 @@
+section.section.open-news
+    .site-container
+        .open-news__inner
+            .open-news__top
+                .open-news__top-box
+                    .open-news__top-title
+                        | Без науки практика слепа
+                    .open-news__top-tags
+                        .open-news__top-tag Десятилетие науки
+                        .open-news__top-tag Конференция
+                        .open-news__top-tag Студенты
+                .open-news__top-date
+                    +icon-multi('icon__clock')(width='24px' height='25px')
+                    .open-news__top-date-text 26.04.2024
+            h3.open-news__title
+                | В «ТИСБИ» прошла XXIV Национальная научно-практическая конференция студентов, магистрантов, аспирантов и молодых ученых
+            .open-news__base
+                .open-news__slider.swiper.simple-slider
+                    .swiper-wrapper.open-news__slider-wrapper
+                        for item in Array.from(Array(7).keys())
+                            .swiper-slide.open-news__slider-item
+                                img.open-news__slider-item-img(src="assets/images/conference.jpg" alt='')
+                    +swiper-nav
+            p.open-news__text 
+                | Темой этого года стало «Общество, государство, личность: механизмы  инновационной деятельности молодежи в решении задач  научно-технологического развития».
+            p.open-news__text 
+                | На пленарной дискуссии модератором выступила первый проректор  Университета управления «ТИСБИ» Анна Найда. Членами президиума стали  проректор по науке, доктор экономических наук, профессор Фарид  Хамидуллин, заместитель проректора по науке, доктор психологических  наук, профессор Алексей Грязнов, советник ректора по науке, доктор  экономических наук, профессор Леонид Ельшин, председатель студенческого  научного общества Алина Хусаинова и директор Центра студенческого  творчества Наталья Пивоварова.
+            .open-news__blockquote
+                blockquote.open-news__blockquote-text
+                    | Мы собрались здесь, чтобы обсудить будущее и определить способы  достижения успеха. Важно то, что мы вместе разрабатываем стратегии для  вашего благополучия и процветания университета. Ведь вуз успешен только  тогда, когда успешны его студенты и выпускники
+                img.open-news__blockquote-icon(src='assets/images/icon__quote-right.svg')
+                .open-news__blockquote-user
+                    .open-news__blockquote-user-img
+                        img.open-news__blockquote-user-img-elem(src="assets/images/user-4.png")
+                    .open-news__blockquote-user-box
+                        .open-news__blockquote-user-post Первый проректор
+                        .open-news__blockquote-user-title Найда Анна Михайловна
+                        .open-news__blockquote-user-profession кандидат педагогических наук, профессор
+            .open-news__document
+                .open-news__document-item-info
+                    +icon-multi('icon__document')(width='24px' height='24px' class='event__document-item-img')
+                    .open-news__document-item-title Длинное название файла
+                .open-news__document-item-box
+                    .open-news__document-item-contain
+                        .open-news__document-item-type PDF
+                        .open-news__document-item-size 143,7КБ
+                    +button('a', 'btn--transparent btn--cube open-news__document-item-btn', '', '#', '', 'icon__download')
+            .open-news__box
+                p.open-news__text
+                    | В рамках конференции прошли круглые столы, дебаты, дискуссионные площадки и мастер-классы:
+                ul.open-news__list
+                    li.open-news__list-item
+                        | Синергия гуманитарных ценностей и инновационной активности молодежи: особенности и перспективы
+                    li.open-news__list-item
+                        | Экономические аспекты научно-технологического развития региона
+                    li.open-news__list-item
+                        | Актуальные проблемы российского и международного права в условиях научно-технологического развития
+                    li.open-news__list-item
+                        | Современные аспекты цифровых технологий
+                    li.open-news__list-item
+                        | Проблемы и пути реализации инновационного потенциала молодежи в научно-технологической среде
+                    li.open-news__list-item
+                        | Конкурс на лучшую научную студенческую работу
+            p.open-news__text 
+                | Студенты и преподаватели представили множество исследовательских работ по различным темам, рассмотрели спорные вопросы и получили новые знания.

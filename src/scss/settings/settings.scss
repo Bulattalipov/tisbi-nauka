@@ -1,0 +1,362 @@
+/* stylelint-disable order/properties-order */
+/* stylelint-disable property-no-vendor-prefix */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font-size: 10px;
+
+  // @include mq('custom', max, 413) {
+  //   font-size: calc(var(--index) * 0.92);
+  // }
+}
+
+body {
+  position: relative;
+  color: var(--color-grey);
+  font: var(--font-body);
+  background-size: cover;
+  background-color: var(--background);
+  letter-spacing: 0.03rem;
+
+  @include mq(sm) {
+    &.body--blur {
+      overflow: hidden;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+
+      &::before {
+        content: '';
+        position: absolute;
+        z-index: 9;
+        inset: 0;
+        height: 100vh;
+        backdrop-filter: blur(1.2rem);
+        background: var(--nauka-yuristy-block-70);
+      }
+    }
+  }
+
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+ol {
+  counter-reset: ordered-list;
+
+  &>li {
+    counter-increment: ordered-list;
+
+    &::before {
+      content: counter(ordered-list, decimal-leading-zero) ".";
+    }
+  }
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  overflow: auto;
+  box-shadow: none;
+  resize: none;
+
+  @include customScrollbar();
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  font: inherit;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  transition: background-color 5000000000s, color 5000000000s ease-in-out 0s;
+  background-color: transparent !important;
+  color: var(--white) !important;
+}
+
+input:not([type="checkbox"]):not([type="radio"]) {
+  appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  margin: 0;
+  appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="search"] {
+  /* 1 */
+  outline-offset: -2px;
+
+  /* 2 */
+  -webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+  -webkit-appearance: none;
+}
+
+button {
+  position: relative;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: color 0.2s;
+  user-select: none;
+  -webkit-appearance: none;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  transition: color 0.2s;
+  color: inherit;
+  outline: none;
+}
+
+svg {
+  flex-shrink: 0;
+  display: block;
+  user-select: none;
+  fill: currentcolor;
+  transition: fill 0.2s;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  user-select: none;
+}
+
+.list-rest {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+
+.section {
+  margin-bottom: 9.6rem;
+
+  @include mq(lg) {
+    margin-bottom: 4.8rem;
+  }
+}
+
+.site-container {
+  width: 100%;
+  max-width: 1616px;
+  margin: 0 auto;
+  padding: 0 12.8rem;
+
+  @include mq(custom, max, 1439) {
+    padding: 0 6.4rem;
+  }
+
+  @include mq(custom, max, 1239) {
+    padding: 0 3.2rem;
+  }
+
+  @include mq(sm) {
+    padding: 0 2.4rem;
+  }
+
+  @include mq(custom, max, 640) {
+    padding: 0 1.6rem;
+  }
+}
+
+.sections-container {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    background-position: center;
+  }
+
+  &--before {
+    &::before {
+      top: -9.6rem;
+      width: 100%;
+      height: 200rem;
+      background-image: url('../images/Top - University building BG.png');
+    }
+  }
+
+  &--after {
+    &::after {
+      bottom: -9.6rem;
+      width: 100%;
+      height: 239.2rem;
+      background-image: url('../images/Bottom - University building BG.png');
+    }
+  }
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.page-main {
+  flex-grow: 1;
+}
+
+.disable-scroll {
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+button:focus {
+  outline: none;
+
+  &.focus-visible {
+    outline: 1px solid red;
+  }
+}
+
+a:focus {
+  outline: none;
+
+  &.focus-visible {
+    outline: 1px solid red;
+  }
+}
+
+.js-focus-visible button:focus:not(.focus-visible),
+.js-focus-visible a:focus:not(.focus-visible) {
+  outline: none;
+}
+
+
+.fixed-btn {
+  position: fixed;
+  z-index: 10;
+  bottom: -5rem;
+  right: 12.8rem;
+  transition: bottom 3s;
+
+  @include mq(custom, max, 1439) {
+    right: 6.4rem;
+  }
+
+  @include mq(custom, max, 1239) {
+    right: 3.2rem;
+  }
+
+  @include mq(sm) {
+    right: 2.4rem;
+  }
+
+  @include mq(custom, max, 640) {
+    right: 1.6rem;
+  }
+
+  &.active {
+    bottom: 6.4rem;
+  }
+}
+
+
+.debug {
+
+  div:not(.page-content):not(.hystmodal__shadow),
+  ul:not(.debug-grid),
+  li,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    outline: 1px dotted red;
+  }
+
+  a,
+  button {
+    outline: 1px dotted green;
+  }
+
+  img {
+    outline: 1px dotted blue;
+  }
+}
+
+.debug-grid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 4.8rem;
+
+  pointer-events: none;
+
+  &>* {
+    background-color: #FF4141;
+    opacity: 0.1;
+  }
+}

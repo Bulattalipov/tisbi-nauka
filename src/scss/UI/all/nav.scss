@@ -1,0 +1,15 @@
+.nav {
+  &__list {
+    display: flex;
+    gap: 2.4rem;
+    align-items: center;
+  }
+
+  &__link {
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--main);
+    }
+  }
+}

@@ -1,0 +1,55 @@
+-
+  navLinks = [
+    {title: "О науке", link: "http://localhost:3000/about-science.html"},
+    {title: "Мероприятия", link: "http://localhost:3000/events.html"},
+    {title: "Издания", link: "http://localhost:3000/own-scientific-publications.html"},
+    {title: "Конференции", link: "http://localhost:3000/conferences.html"},
+    {title: "Гранты", link: "http://localhost:3000/competitions.html"},
+  ]
+
+header.header
+  .site-container
+    .header__wrapper
+      +logo('logo-animations')
+      nav.nav.header__nav
+        ul.nav__list
+          for item in navLinks
+            li.nav__item
+              a.nav__link(href=item.link)= item.title
+      .header__burger
+        button.header__burger-btn
+          span
+          span
+          span
+        .header__burger-text Меню
+      .header__loss.js-drop-down-list
+        .header__loss-base
+          +icon-mono('icon__lang')(width="20px" height="21px")
+          .header__loss-base-text Русский
+          +icon-mono('icon__angle-small-down')(width="20px" height="21px")
+        .header__loss-list
+          .header__loss-list-inner
+            a.header__loss-list-item(href="#") Русский
+            a.header__loss-list-item(href="#") English
+            a.header__loss-list-item(href="#") Deutsland
+            a.header__loss-list-item(href="#") Francais
+      +button('button', 'btn--transparent btn--cube header__bnt-open-banner', '', '', '', 'icon__angle-small-down')
+    .timer-banner
+      .timer-banner__inner
+        +timer()
+        ul.timer-banner__list
+          li.timer-banner__item
+            a.timer-banner__link(href='#intellgence') Основные сведения
+          li.timer-banner__item
+            a.timer-banner__link(href='#regulations') Регламент работы
+          li.timer-banner__item
+            a.timer-banner__link(href='#program') Программа
+          li.timer-banner__item
+            a.timer-banner__link(href='#requirements') Требования к публикации
+          li.timer-banner__item
+            a.timer-banner__link(href='#partners') Организаторы и партнеры
+          li.timer-banner__item
+            a.timer-banner__link(href='#faq') Часто задаваемые вопросы
+        .timer-banner__btns
+          +button('button', 'btn--transparent timer-banner__btn-close', 'Скрыть', '', '', 'icon__angle-small-down')
+          +button('a', '', 'Зарегистрироваться', '#', '', 'icon__angle-small-right-white')(data-path="modal-registration")

@@ -1,0 +1,216 @@
+.directions {
+   &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        margin-bottom: 4.8rem;
+
+        @include mq(md) {
+            margin-bottom: 2.4rem;
+        }
+
+        @include mq(custom, max, 640) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .title {
+            margin-bottom: 0;
+        }
+
+        .btn {
+            flex-shrink: 0;
+
+            @include mq(custom, max, 640) {
+                width: 100%;
+            }
+        }
+   }
+
+   &__accardions {
+        border-radius: 1.6rem;
+        overflow: hidden;
+   }
+
+   &__accardion {
+        background: var(--block);
+
+        &.active {
+            .directions__accardion-base {
+                background: var(--main);
+            }
+
+            .directions__accardion-title {
+                color: var(--white);
+            }
+
+            .directions__accardion-btn-open {
+                display: none;
+            }
+
+            .directions__accardion-btn-close {
+                display: flex;
+            }
+
+            &:last-child {
+                .directions__accardion-base {
+                    border-bottom: .1rem solid var(--secondary);
+                }
+            }
+        }
+
+        &:last-child {
+            .directions__accardion-base {
+                border-bottom: 0;
+            }
+        }
+   }
+
+   &__accardion-base {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2.4rem;
+        padding: 2.4rem;
+        background: var(--block);
+        border-bottom: .1rem solid var(--secondary);
+
+        @include mq(custom, max, 640) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+   }
+
+   &__accardion-title {
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 3.2rem;
+        color: var(--secondary);
+        line-height: 136%;
+
+        @include mq(custom, max, 1024) {
+            font-size: 2rem;
+        }
+   }
+
+   &__accardion-link {
+        margin-right: auto;
+
+        @include mq(custom, max, 1024) {
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        @include mq(custom, max, 640) {
+            margin-left: 0;
+            width: 100%;
+        }
+   }
+
+   &__accardion-btn-open {
+        @include mq(custom, max, 640) {
+            width: 100%;
+        }
+   }
+
+   &__accardion-btn-close {
+        display: none;
+
+        svg {
+            transform: rotate(180deg);
+        }
+
+        @include mq(custom, max, 640) {
+            width: 100%;
+        }
+   }
+
+   &__accardion-content {
+        height: 0;
+        overflow: hidden;
+   }
+
+   &__accardion-box {
+        display: flex;
+        gap: 2.4rem;
+        padding: 2.4rem;
+        color: var(--white);
+
+        @include mq(custom, max, 640) {
+            flex-direction: column;
+        }
+
+        &:not(:last-child) {
+            border-bottom: .1rem solid var(--secondary);
+        }
+   }
+
+   &__accardion-box-name {
+        width: 100%;
+        max-width: 33.6rem;
+        font-size: 2.4rem;
+        line-height: 136%;
+
+        @include mq(custom, max, 1024) {
+            font-size: 1.8rem;
+            max-width: 17.2rem;
+        }
+
+        @include mq(custom, max, 640) {
+            max-width: none;
+        }
+   }
+
+   &__accardion-box-info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+   }
+
+   &__accardion-box-info-title {
+        font-weight: 400;
+        font-size: 2.4rem;
+        color: var(--secondary);
+        line-height: 136%;
+
+        @include mq(custom, max, 1024) {
+            font-size: 1.6rem;
+        }
+   }
+
+   &__accardion-box-info-item {
+        position: relative;
+        display: flex;
+        gap: 1.6rem;
+        font-size: 2.4rem;
+        padding-left: 1.6rem;
+        line-height: 136%;
+
+        @include mq(custom, max, 1024) {
+            gap: 1.1rem;
+            padding-left: 1.1rem;
+        }
+
+        &::before {
+            content: '';
+            position: relative;
+            top: 1.2rem;
+            width: 0.5rem;
+            height: 0.5rem;
+            background-color: var(--white);
+            border-radius: 50%;
+            flex-shrink: 0;
+
+            @include mq(custom, max, 1024) {
+                top: 0.9rem;
+                width: 0.4rem;
+                height: 0.4rem;
+            }
+        }
+
+        @include mq(custom, max, 1024) {
+            font-size: 1.6rem;
+        }
+   }
+}

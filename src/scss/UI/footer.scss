@@ -1,0 +1,110 @@
+.footer {
+  padding: 4.8rem 0;
+  backdrop-filter: blur(12px);
+  background: var(--nauka-yuristy-block-70);
+
+  &__logo {
+    margin-bottom: 4.8rem;
+
+    @include mq(md) {
+      margin-bottom: 2.4rem;
+    }
+
+    @include mq(custom, max, 413) {
+      .logo__text {
+        display: none;
+      }
+    }
+
+  }
+
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 4.8rem;
+    gap: 4.8rem;
+
+    @include mq(custom, max, 1096) {
+      flex-direction: column;
+    }
+
+    @include mq(md) {
+      gap: 2.4rem;
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.8rem;
+    color: var(--white);
+    margin-bottom: 2.4rem;
+
+    @include mq(md) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__address {
+    flex: 1;
+  }
+
+  &__address-elem {
+    color: var(--secondary);
+
+    &:not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &__telephone {
+    margin-left: auto;
+
+    @include mq(custom, max, 1096) {
+      margin-left: 0;
+    }
+  }
+
+  &__telephone-elem {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: var(--main);
+    transition: color 0.3s;
+
+    &:hover {
+      color: #FF5C00CC
+    }
+
+    @include mq(md) {
+      font-size: 2rem;
+    }
+  }
+
+  &__socials {
+
+  }
+
+  &__socials-list {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+    border-top: 1px solid var(--secondary);
+    padding-top: 2.4rem;
+  }
+
+  &__bottom-text {
+    color: var(--secondary);
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--main);
+    }
+  }
+}

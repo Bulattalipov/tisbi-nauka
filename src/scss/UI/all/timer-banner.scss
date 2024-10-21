@@ -1,0 +1,91 @@
+.timer-banner {
+  height: 0;
+  overflow: hidden;
+
+  @include mq(custom, max, 1024) {
+    display: none;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2.4rem;
+    padding: 2.4rem 0 0;
+  }
+
+  .timer {
+    max-width: 30rem;
+    background-color: transparent;
+    padding: 0;
+    backdrop-filter: none;
+    box-shadow: none;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .timer__current {
+    gap: 1.3rem;
+  }
+
+  .timer__date-box {
+    span {
+      font-weight: 800;
+      font-size: 3.2rem;
+      line-height: 1.675;
+      color: var(--main);
+
+      &:after {
+        font-weight: 400;
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+  }
+
+  &__link {
+    position: relative;
+    font-size: 1.8rem;
+    color: var(--secondary);
+    padding-left: 2.2rem;
+    transition: color .3rem;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0.7rem;
+      left: 0.9rem;
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      background-color: var(--white);
+    }
+
+    &:hover {
+      color: var(--main);
+    }
+  }
+
+
+  &__btns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.6rem;
+    flex-shrink: 0;
+  }
+
+  &__btn-close {
+
+    .icon {
+      transform: rotate(180deg);
+    }
+  }
+}

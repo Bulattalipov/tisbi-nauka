@@ -1,0 +1,14 @@
+section.section.presentations
+  .site-container
+    +title('icon__picture', 'Галерея')
+    .presentations__inner
+      each item in Array.from(Array(6).keys())
+        .presentations__item
+          h4.presentations__item-title
+            | Синергия гуманитарных ценностей и инновационной активности молодежи: особенности и перспективы.
+          .presentations__item-user
+            .presentations__item-user-name
+              | Катекина А. А.
+            .presentations__item-user-prof
+              | канд. пед. наук, доцент
+          +button('a', 'btn--transparent', 'Скачать', '#', '', 'icon__cloud-download')

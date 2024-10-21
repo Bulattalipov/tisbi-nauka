@@ -1,0 +1,50 @@
+section.section.active-grants
+    .site-container
+        .active-grants__wrapper
+            +title('icon__star-octogram', 'Активные гранты')
+            .swiper.active-grants__slider
+                .swiper-wrapper.active-grants__list
+                    .swiper-slide.active-grants__item
+                        .active-grants__item-contain
+                            .active-grants__item-img-wrapper
+                                img.active-grants__item-img(src='assets/images/active-grants/Grant-logo.png' alt='')
+                            .active-grants__item-title
+                                | Международная волонтерская программа «Послы русского языка в мире»
+                        .active-grants__item-info
+                            .active-grants__item-info-box
+                                .active-grants__item-info-box-title Категории участников:
+                                ul.active-grants__item-info-box-list
+                                    li.active-grants__item-info-box-item Аспиранты
+                                    li.active-grants__item-info-box-item Преподаватели
+                                    li.active-grants__item-info-box-item Молодые ученые
+                                    li.active-grants__item-info-box-item Студенты
+                            .active-grants__item-info-box
+                                .active-grants__item-info-box-title Категории конкурса:
+                                ul.active-grants__item-info-box-list
+                                    li.active-grants__item-info-box-item Академическая мобильность: стажировка
+                            .active-grants__item-info-box
+                                .active-grants__item-info-box-title Дата окончания приема заявок
+                                .active-grants__item-info-box-date 14.05.2024
+                            +button('a', 'active-grants__item-info-btn', 'Подробнее', '#', '', 'icon__angle-small-right-white') 
+                    .swiper-slide.active-grants__item
+                        .active-grants__item-contain
+                            .active-grants__item-img-wrapper
+                                img.active-grants__item-img(src='assets/images/latest-news/image-2.jpg' alt='')
+                            .active-grants__item-title
+                                | Очень интересный текст
+                        .active-grants__item-info
+                            .active-grants__item-info-box
+                                .active-grants__item-info-box-title Категории участников:
+                                ul.active-grants__item-info-box-list
+                                    li.active-grants__item-info-box-item Аспиранты
+                                    li.active-grants__item-info-box-item Преподаватели
+                            .active-grants__item-info-box
+                                .active-grants__item-info-box-title Категории конкурса:
+                                ul.active-grants__item-info-box-list
+                                    li.active-grants__item-info-box-item Академическая мобильность: стажировка
+                            .active-grants__item-info-box
+                                .active-grants__item-info-box-title Дата окончания приема заявок
+                                .active-grants__item-info-box-date 21.01.2025
+                            +button('a', 'active-grants__item-info-btn', 'Подробнее', '#', '', 'icon__angle-small-right-white') 
+                +swiper-nav
+            +button('a', 'btn--transparent active-grants__btn', 'Конкурсы и гранты', '#', '', 'icon__angle-small-right-white') 

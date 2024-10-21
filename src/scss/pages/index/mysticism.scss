@@ -1,0 +1,341 @@
+.mysticism {
+  &__inner {
+    position: relative;
+    border-radius: 1.6rem;
+    padding: 4.8rem;
+    backdrop-filter: blur(1.2rem);
+    background: var(--block);
+    color: var(--white);
+
+    @include mq(custom, max, 1024) {
+      padding: 2.4rem;
+    }
+
+    @include mq(custom, max, 640) {
+      margin: 0 -1.6rem;
+      padding: 1.6rem;
+      border-radius: 0;
+    }
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.4rem;
+  }
+
+  &__desc {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: var(--main);
+
+    @include mq(custom, max, 1024) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__title {
+    font-family: var(--second-family);
+    font-weight: 800;
+    font-size: 4.8rem;
+    color: var(--white);
+    line-height: 122%;
+
+    @include mq(custom, max, 1024) {
+      font-size: 3.2rem;
+    }
+  }
+
+  &__box {
+    display: flex;
+    gap: 2.4rem;
+
+    @include mq(custom, max, 1024) {
+      flex-direction: column;
+    }
+  }
+
+  &__user {
+    display: flex;
+    gap: 1.6rem;
+    max-width: 45.6rem;
+    min-width: 45.6rem;
+    flex: 1;
+
+    @include mq(custom, max, 1024) {
+      max-width: none;
+      min-width: auto;
+    }
+  }
+
+  &__user-img-wrapper {
+    position: relative;
+    border-radius: 1.6rem;
+    width: 12.8rem;
+    height: 12.8rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: var(--background);
+  }
+
+  &__user-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+  }
+
+  &__user-post {
+    font-size: 1.8rem;
+    color: var(--main);
+
+    @include mq(custom, max, 1024) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__user-name {
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: var(--white);
+    line-height: 121%;
+    word-break: break-word;
+
+    @include mq(custom, max, 1024) {
+      font-size: 2rem;
+    }
+  }
+
+  &__user-educ {
+    color: var(--secondary);
+  }
+
+  &__info-name {
+    font-size: 1.8rem;
+    color: var(--secondary);
+    margin-bottom: 0.8rem;
+  }
+
+  &__info-box {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  &__info-quantity {
+    border-radius: .4rem;
+    padding: .8rem 1.2rem;
+    background: rgba(255, 92, 0, 0.16);
+    text-align: center;
+    color: var(--main);
+    flex-shrink: 0;
+  }
+
+  &__info-text {
+    position: relative;
+    padding-left: 1.6rem;
+    border-left: 0.1rem solid var(--main);
+    color: var(--white);
+  }
+
+  &__annotation-title {
+    font-size: 18px;
+    color: var(--secondary);
+    margin-bottom: 0.8rem;
+  }
+
+  &__annotation-text {
+    border-left: .1rem solid var(--main);
+    padding-left: 2.4rem;
+    color: var(--white);
+  }
+
+  &__numbers {
+    display: flex;
+    gap: 4.8rem;
+    width: 100%;
+
+    @include mq(custom, max, 1024) {
+      flex-direction: column;
+      gap: 2.4rem;
+    }
+  }
+
+  &__number {
+    flex: 1;
+  }
+
+  &__number-title {
+    font-size: 1.8rem;
+    color: var(--secondary);
+    margin-bottom: 1.6rem;
+
+    @include mq(custom, max, 1024) {
+      color: var(--white);
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  &__number-elem {
+    display: inline-block;
+    border-radius: .4rem;
+    padding: .8rem 1.2rem;
+    background: var(--secondary-10);
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: var(--white);
+    line-height: 122%;
+
+    @include mq(custom, max, 1024) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__participants-title {
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: var(--white);
+    margin-bottom: 1.6rem;
+    line-height: 122%;
+
+    @include mq(custom, max, 1024) {
+      font-size: 2rem;
+    }
+  }
+
+  &__participants-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+
+    @include mq(custom, max, 1200) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mq(custom, max, 1024) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__participant-item {
+    display: flex;
+    gap: 1.6rem;
+  }
+
+  &__participant-item-img-wrapper {
+    position: relative;
+    border-radius: 1.6rem;
+    width: 9.6rem;
+    height: 9.6rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: var(--background);
+  }
+
+  &__participant-item-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+  }
+
+  &__participant-item-title {
+    font-size: 1.8rem;
+    line-height: 122%;
+    color: var(--white);
+  }
+
+  &__participant-item-educ {
+    color: var(--secondary);
+  }
+
+  &__btn {
+    @include mq(custom, max, 640) {
+      display: none;
+    }
+  }
+
+  &__btn-mobile {
+    display: none;
+
+    @include mq(custom, max, 640) {
+      display: flex;
+    }
+  }
+
+  .btn {
+    margin-top: 2.4rem;
+
+    @include mq(custom, max, 640) {
+      width: 100%;
+    }
+  }
+
+  .swiper-nav {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 37rem;
+    right: 0;
+
+    @include mq(custom, max, 1024) {
+      position: relative;
+      left: 0;
+      margin-top: 2.4rem;
+    }
+  }
+
+  &__awards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
+
+    .btn {
+      display: none;
+    }
+  }
+
+
+  &__awards-title {
+    font-size: 18px;
+    color: var(--white);
+  }
+
+  &__awards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  &__awards-item {
+    display: none;
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  &__awards-item-date {
+    border-radius: .4rem;
+    padding: .8rem 1.2rem;
+    background: rgba(255, 92, 0, 0.16);
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: var(--main);
+    flex-shrink: 0;
+  }
+
+  &__awards-item-text {
+    color: var(--white);
+  }
+
+}

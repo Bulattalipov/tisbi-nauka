@@ -1,0 +1,29 @@
+-
+  resultsItems = [
+      {title: '> 630 статей', text: 'опубликовано  научно- педагогическими работниками Университета', class: 'results__item--big'},
+      {title: '36', text: 'индекс цитируемости', class: ''},
+      {title: '27', text: 'индексируемых статей в ИАС НЦ', class: ''},
+      {title: '125', text: 'статей в журналах ВАК', class: ''},
+      {title: '> 200', text: 'научных мероприятий', class: ''},
+      {title: '464 статей', text: 'в Российском индексе научного цитирования', class: 'results__item--big'},
+  ]
+
+mixin section-results(smallList)
+  section.section.results
+      .site-container
+          +title('icon__trophy', 'Результаты за 2022 год')
+          if !smallList
+            .swiper.results__slider
+                .swiper-wrapper.results__list
+                    each item in resultsItems
+                        .swiper-slide.results__item(class= item.class)
+                            .results__item-title= item.title
+                            p.results__item-text= item.text
+          else
+            .swiper.results__slider
+                .swiper-wrapper.results__list
+                     each item in Array.from(Array(4).keys())
+                        .swiper-slide.results__item
+                            .results__item-title 36
+                            p.results__item-text индекс цитируемости
+            +charts()

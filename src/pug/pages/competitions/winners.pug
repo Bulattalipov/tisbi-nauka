@@ -1,0 +1,21 @@
+section.section.winners
+  .site-container
+    +title('icon__cup', 'Победители')
+    .winners__slider.swiper
+      .winners__slider-list.swiper-wrapper
+        each item in Array.from(Array(8).keys())
+          .winners__slider-item.swiper-slide
+            .winners__slider-item-img
+              img.winners__slider-item-img-elem(src='assets/images/winners/img1.jpg')
+            .winners__slider-item-content
+              .winners__slider-item-title
+                | Акселерационная программа "Путь к успеху"
+              .winners__slider-item-desc
+                | Популяризация молодежного предпринимательства в Республике Татарстан среди старшеклассников и студентов СПО через совместную работу над проектами по разработке цифровых инновационных решений, стартап-проектов с большим потенциалом, а также создание портфеля цифровых продуктов
+              .winners__slider-item-tootip
+                | Популяризация молодежного предпринимательства в Республике Татарстан среди старшеклассников и студентов СПО через совместную работу над проектами по разработке цифровых инновационных решений, стартап-проектов с большим потенциалом, а также создание портфеля цифровых продуктов
+              .winners__slider-item-price
+                | 3 498 000,00 ₽
+              +button('button', 'btn--transparent winners__slider-item-btn', 'О проекте', '', '', 'icon__angle-small-right-white')(data-path='modal-grant')
+      +swiper-nav
+

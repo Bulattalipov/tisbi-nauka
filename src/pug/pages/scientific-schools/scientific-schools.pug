@@ -1,0 +1,139 @@
+section.section.scientific-schools.js-tabs-funcs
+    .site-container
+        .scientific-schools__wrapper
+            .scientific-schools__menu.js-tabs-funcs-contain(data-sticky-container)
+                .scientific-schools__btn.js-tabs-funcs-btn
+                    .scientific-schools__btn-text.js-tabs-funcs-btn-text Мистицизм как феномен культуры
+                    .scientific-schools__btn-icon
+                        +icon-mono('icon__angle-small-down')(width="20px" height="21px")
+                ul.scientific-schools__menu-list.js-sticky
+                    each item in Array.from(Array(6).keys())
+                        - var current = item + 1
+                        - var activeClass = current == 1 ? 'active' : '';
+                        li.scientific-schools__menu-item.js-tabs-funcs-tag(class=activeClass data-tab="tab" + current)
+                            .scientific-schools__menu-item-title
+                                | Мистицизм как феномен культуры
+                            .scientific-schools__menu-item-fio
+                                | Фамилия И.О.
+            .scientific-schools__inner
+                each elem in Array.from(Array(6).keys())
+                    - var current = elem + 1
+                    - var activeClass = current == 1 ? 'active' : '';
+                    .scientific-schools__content.js-tabs-funcs-content(class=activeClass data-content-tab="tab" + current)
+                        .mysticism__slide
+                            .mysticism__top
+                                .mysticism__desc Научная школа
+                                .mysticism__title Мистицизм как феномен культуры
+                            .mysticism__box
+                                .mysticism__annotation
+                                    .mysticism__annotation-title Аннотация
+                                    .mysticism__annotation-text
+                                        | Рассматривает феномен «мистическое» как духовный опыт человека, как  особое состояние сознания и особый тип знания, в основе которых лежит  ощущение слияния человека с абсолютом, иной реальностью. Феномен  мистических переживаний рассматривается на примерах философов,  психологов, религиозных деятелей, а также на анализе концептуальных  доктрин (Упанишад, Бхагавад-гиты, махаянье, христианского мистицизма, в  которых выявляется их философское, религиозное, этическое содержание,  истоком которого являются интуитивные прозрения мистиков.
+                            .mysticism__participants
+                                .mysticism__participants-title Уастники
+                                ul.mysticism__participants-list
+                                    li.mysticism__participant-item
+                                        .mysticism__participant-item-img-wrapper
+                                            img.mysticism__participant-item-img(src='assets/images/user.jpg' alt='')
+                                        .mysticism__participant-item-info
+                                            .mysticism__participant-item-title Фамилия Имя Отчество
+                                            .mysticism__participant-item-educ кандидат педагогических наук, профессор
+                                    li.mysticism__participant-item
+                                        .mysticism__participant-item-img-wrapper
+                                            img.mysticism__participant-item-img(src='assets/images/user.jpg' alt='')
+                                        .mysticism__participant-item-info
+                                            .mysticism__participant-item-title Фамилия Имя Отчество
+                                            .mysticism__participant-item-educ кандидат педагогических наук, профессор
+                                    li.mysticism__participant-item
+                                        .mysticism__participant-item-img-wrapper
+                                            img.mysticism__participant-item-img(src='assets/images/user.jpg' alt='')
+                                        .mysticism__participant-item-info
+                                            .mysticism__participant-item-title Фамилия Имя Отчество
+                                            .mysticism__participant-item-educ кандидат педагогических наук, профессор
+                            .mysticism__info
+                                .mysticism__info-name
+                                    | Количество опубликованных работ участниками школы
+                                .mysticism__info-box
+                                    .mysticism__info-quantity Более 250
+                                    .mysticism__info-text
+                                        | Из них: учебно-методических работ – 28, монографий – 16, статьи в журналах (SKOPUS, ВАК, РИНЦ) – 36.
+                        .mysticism__slide
+                            .mysticism__box
+                                .mysticism__user
+                                    .mysticism__user-img-wrapper
+                                        img.mysticism__user-img(src='assets/images/user.jpg' alt='')
+                                    .mysticism__user-info
+                                        .mysticism__user-post Руководитель
+                                        .mysticism__user-name Фамилия Имя Отчество
+                                        .mysticism__user-educ кандидат педагогических наук, профессор
+                            .mysticism__box
+                                .mysticism__annotation
+                                    .mysticism__annotation-text
+                                        | президент УВО «Университет управления «ТИСБИ», кандидат педагогических  наук (2003г.), профессор, профессор академик Российской академии  гуманитарных наук, академик Международной Академии Управления,  Заслуженный работник высшей школы РФ, заведующая Международной кафедрой  ЮНЕСКО, Национальный координатор Сети «Ассоциированные школы ЮНЕСКО» в  Российской Федерации.
+                            .mysticism__awards
+                                .mysticism__awards-title Награды
+                                ul.mysticism__awards-list(data-open-items=3)
+                                    li.mysticism__awards-item
+                                        .mysticism__awards-item-date 2005 г.
+                                        .mysticism__awards-item-text
+                                            | Медаль «В память 1000-летия Казани»
+                                    li.mysticism__awards-item
+                                        .mysticism__awards-item-date 2005 г.
+                                        .mysticism__awards-item-text
+                                            | Почётный знак «Ректор года  —  2005»
+                                    li.mysticism__awards-item
+                                        .mysticism__awards-item-date 2005 г.
+                                        .mysticism__awards-item-text
+                                            | Почетный диплом Всероссийского конкурса деловых женщин «Успех» в номинации «Лучшая представительница деловых женщин России»
+                                    li.mysticism__awards-item
+                                        .mysticism__awards-item-date 2005 г.
+                                        .mysticism__awards-item-text
+                                            | Медаль «В память 1000-летия Казани»
+                                    li.mysticism__awards-item
+                                        .mysticism__awards-item-date 2005 г.
+                                        .mysticism__awards-item-text
+                                            | Почётный знак «Ректор года  —  2005»
+                                    li.mysticism__awards-item
+                                        .mysticism__awards-item-date 2005 г.
+                                        .mysticism__awards-item-text
+                                            | Почетный диплом Всероссийского конкурса деловых женщин «Успех» в номинации «Лучшая представительница деловых женщин России»
+                                +button('button', 'btn--transparent mysticism__awards-btn-open', 'Показать больше наград', '', '', '')
+                                +button('button', 'btn--transparent mysticism__awards-btn-close', 'Скрыть', '', '', '')
+                            .mysticism__numbers
+                                .mysticism__number
+                                    .mysticism__number-title Под руководством подготовлено диссертационных исследований
+                                    .mysticism__number-elem 8
+                                .mysticism__number
+                                    .mysticism__number-title Индекс Хирша
+                                    .mysticism__number-elem 3
+                        .scientific-schools__box
+                            +title('icon__physics', 'Связанные мероприятия')
+                            +button('a', 'btn--transparent', 'Все мероприятия', '#', '', 'icon__angle-small-right-white')
+                        each elem in Array.from(Array(3).keys())
+                            .upcoming-events__item
+                                .upcoming-events__item-top
+                                    .upcoming-events__item-top-box
+                                        .upcoming-events__item-top-box-type Лекция
+                                        .upcoming-events__item-top-box-title Наука
+                                    ul.upcoming-events__item-top-tags
+                                        li.upcoming-events__item-top-tag Очное
+                                        li.upcoming-events__item-top-tag Очное
+                                        li.upcoming-events__item-top-tag Студенты
+                                .upcoming-events__item-title
+                                    | Международная научно-практическая конференция: “Переход от образовательной среды к образовательной экосистеме в интересах устойчивого развития”
+                                ul.upcoming-events__item-info
+                                    li.upcoming-events__item-info-item
+                                        +icon-multi("icon__clock")(width="16px" height="16px")
+                                        .upcoming-events__item-info-item-text 18.04.2024
+                                        span 11:20
+                                    li.upcoming-events__item-info-item
+                                        +icon-multi("icon__marker")(width="16px" height="16px")
+                                        .upcoming-events__item-info-item-text
+                                            | Казань, ул. Муштари, д.13
+                                    li.upcoming-events__item-info-item
+                                        +icon-multi("icon__shuffle")(width="16px" height="16px")
+                                        .upcoming-events__item-info-item-text
+                                            | Смешанная
+                                .upcoming-events__item-btns
+                                    +button('a', '', 'Записаться', '', '', 'icon__angle-small-right-white')
+                                    +button('a', 'btn--transparent', 'Поделиться', '#', '', 'icon__redo')

@@ -1,0 +1,31 @@
+mixin archives-item(nextBtn)
+  .archives__item
+    .archives__item-box1
+      h5.archives__item-small-text
+        | Международная научно-практическая конференция
+      .archives__item-title
+        | Наука и образование
+      h2.archives__item-subtitle
+        | Взаимодействие бизнеса и общества в условиях трансформации информационных процессов и технологий
+      ul.archives__item-tags
+        li.archives__item-tag Русский
+        li.archives__item-tag Английский
+        li.archives__item-tag Татарский
+    .archives__item-box2
+      ul.archives__item-info
+        li.archives__item-info-elem
+            +icon-multi("icon__calendar")(width="16px" height="16px")
+            .archives__item-info-elem-text 18.04.2024
+            span 11:20
+        li.archives__item-info-elem
+            +icon-multi("icon__marker")(width="16px" height="16px")
+            .archives__item-info-elem-text
+                | Казань, ул. Муштари, д.13
+        li.archives__item-info-elem
+            +icon-multi("icon__shuffle")(width="16px" height="16px")
+            .archives__item-info-elem-text
+                | Смешанная
+      if !nextBtn
+        +button('a', '', 'Архив', '#', '', 'icon__angle-small-right-white')
+      else
+        +button('a', 'btn--transparent', 'Открыть список конференций', '#', '', 'icon__angle-small-right-white')

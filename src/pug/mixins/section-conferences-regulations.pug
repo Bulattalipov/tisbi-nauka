@@ -1,0 +1,39 @@
+mixin conferences-regulations(urlImg, rightText)
+  section.section.conferences-regulations(id='regulations')
+    .site-container
+        +title('icon__time-fast', 'Регламент работы конференции')
+        .conferences-regulations__inner
+            .conferences-regulations__item
+                ul.conferences-regulations__item-list
+                    li.conferences-regulations__item-elem
+                        .conferences-regulations__item-elem-date
+                            | 09:00 - 13:00
+                        .conferences-regulations__item-elem-title
+                            | Регистрация на конференцию
+                    li.conferences-regulations__item-elem
+                        .conferences-regulations__item-elem-date
+                            | 14:00- 19:00
+                        .conferences-regulations__item-elem-title
+                            | Пленарная сессия в Большом актовом зале
+                    li.conferences-regulations__item-elem
+                        .conferences-regulations__item-elem-date
+                            | 09:00 - 13:00
+                        .conferences-regulations__item-elem-title
+                            | Регистрация на конференцию
+                    li.conferences-regulations__item-elem
+                        .conferences-regulations__item-elem-date
+                            | 09:00 - 13:00
+                        .conferences-regulations__item-elem-title
+                            | Регистрация на конференцию
+                    li.conferences-regulations__item-elem
+                        .conferences-regulations__item-elem-date
+                            | 09:00 - 13:00
+                        .conferences-regulations__item-elem-title
+                            | Регистрация на конференцию
+            .conferences-regulations__right
+                img.conferences-regulations__img(src=urlImg alt="alt")
+                if rightText
+                  .conferences-regulations__right-title
+                    | Историко-архитектурный комплекс Казанского кремля
+                  .conferences-regulations__right-desc
+                    | В 2000 году внесен в список объектов всемирного наследия ЮНЕСКО в России

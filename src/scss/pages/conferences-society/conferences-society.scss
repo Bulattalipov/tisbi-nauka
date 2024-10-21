@@ -1,0 +1,455 @@
+.society-page {
+  .header {
+    background: linear-gradient(129deg, #8078cb 0%, #8b6db1 48.5%, #5e62bb 100%);
+  }
+
+  .timer-banner {
+    .timer {
+      max-width: 30rem;
+      background-color: transparent;
+      box-shadow: none;
+    }
+    .timer__date-box span  {
+      color:  var(--whte);
+    }
+  }
+
+  .conferences-intro__inner {
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: 5;
+      top: 2rem;
+      right: 6rem;
+      width: 42.1rem;
+      height: 42.1rem;
+      background-image: url('../images/rocket.png');
+      background-size: contain;
+
+      @include mq(custom, max, 1024) {
+        display: none;
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -47.6rem;
+      width: 66rem;
+      height: 106.7rem;
+      background-image: url('../images/hand-and-card.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @include mq(xl) {
+        display: none;
+      }
+    }
+  }
+
+  .conferences-intro__small-text {
+    color: var(--obschestvo,-gosudarstvo,-lichnost-dark-secondary);
+  }
+
+  .conferences-intro__title  {
+    color: var(--obschestvo-society,-gosudarstvo,-lichnost-main);
+  }
+
+  .conferences-intro__subtitle {
+    color: var(--obschestvo,-gosudarstvo,-lichnost-dark-secondary);
+  }
+
+  .conferences-intro__tag {
+    color: var(--obschestvo,-gosudarstvo,-lichnost-default);
+  }
+
+  .title {
+    color: var(--obschestvo,-gosudarstvo,-lichnost-default);
+  }
+
+  .btn:not(.btn--transparent) {
+    background: var(--white);
+    color: var(--yunesko-default);
+  }
+
+  .btn--transparent {
+    border: 1px solid var(--yunesko-light-secondary);
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: rgba(142, 150, 175, 0.2);
+      .icon {
+        color: var(--obschestvo,-gosudarstvo,-lichnost-default);
+      }
+    }
+  }
+
+  .conferences-intro__info-item {
+    box-shadow: 0 8px 30px 0 rgba(48, 48, 48, 0.3);
+    background: linear-gradient(129deg, #4874b7 0%, #658cc1 48.5%, #79a5d2 100%);
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .conferences-intro__info-item-add {
+    color: var(--white);
+  }
+
+  .conferences-intro__text {
+    color: var(--obschestvo,-gosudarstvo,-lichnost-dark-secondary);
+    border-left: 0.2rem solid var(--obschestvo-society,-gosudarstvo,-lichnost-main);
+  }
+
+  .conferences-intro__img {
+    width: 119.1rem;
+    height: 119.1rem;
+    top: 11.5rem;
+
+    @include mq(custom, max, 1580) {
+      width: 73rem;
+      height: 73rem;
+      top: 5rem;
+    }
+
+    @include mq(xl) {
+      right: -22rem;
+    }
+  }
+
+  .conferences-intellgence__item {
+    box-shadow: 0 8px 30px 0 rgba(48, 48, 48, 0.3);
+    background: linear-gradient(129deg, #4874b7 0%, #658cc1 48.5%, #79a5d2 100%);
+
+    &::before {
+      display: none;
+    }
+
+    &:nth-child(even) {
+      box-shadow: 0 8px 30px 0 rgba(48, 48, 48, 0.3);
+      background: linear-gradient(129deg, #8078cb 0%, #8b6db1 48.5%, #5e62bb 100%);
+    }
+  }
+
+  .conferences-intellgence__item-elem {
+    color: var(--white);
+
+    &::before {
+      background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='16' cy='16' r='8' fill='%23AABCC9' /%3E%3Ccircle opacity='0.4' cx='16' cy='16' r='16' fill='%23AABCC9' /%3E%3C/svg%3E");
+    }
+  }
+
+  .conferences-regulations__item {
+    box-shadow: 0 8px 30px 0 rgba(48, 48, 48, 0.3);
+    background: linear-gradient(129deg, #8078cb 0%, #8b6db1 48.5%, #5e62bb 100%);
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .conferences-regulations__item-elem {
+    &::before {
+      background: var(--white);
+      color: var(--obschestvo,-gosudarstvo,-lichnost-default);
+    }
+
+    &:not(:last-child)::after {
+      background-color: var(--white);
+    }
+  }
+
+  .conferences-regulations__item-elem-title {
+    color: var(--obschestvo-gray,-gosudarstvo,-lichnost-light-secondary);
+  }
+
+  .conferences-regulations__img {
+    width: 87rem;
+    height: 79rem;
+    top: -14rem;
+
+    @include mq(lg) {
+      width: 82rem;
+      height: 74rem;
+      right: -18rem;
+    }
+  }
+
+  .conferences-program {
+    box-shadow: 0 8px 30px 0 rgba(48, 48, 48, 0.3);
+    background: linear-gradient(129deg, #4874b7 0%, #658cc1 48.5%, #79a5d2 100%);
+
+    .title {
+      color: var(--white);
+    }
+
+    .btn:hover {
+      .icon {
+        fill: var(--obschestvo,-gosudarstvo,-lichnost-default);
+      }
+    }
+
+    .btn {
+      color: var(--obschestvo,-gosudarstvo,-lichnost-default);
+    }
+  }
+
+  .conferences-program__row--background {
+    background: var(--white);
+  }
+
+  .conferences-program__col-info-title {
+    color: var(--obschestvo,-gosudarstvo,-lichnost-default);
+  }
+
+  .conferences-program__col-info-tag {
+    border: .1rem solid var(--secondary);
+  }
+
+  .conferences-program__col-info-tag--orange {
+    background: var(--obschestvo-society,-gosudarstvo,-lichnost-main);
+    border: .1rem solid var(--obschestvo-society,-gosudarstvo,-lichnost-main);
+
+    .conferences-program__col-info-tag-title {
+      color: var(--white);
+    }
+  }
+
+  .conferences-program__col-info-tag-title {
+    color: var(--obschestvo,-gosudarstvo,-lichnost-default);
+  }
+
+  .conferences-program__col-info-tag-add {
+    color: var(--obschestvo-society,-gosudarstvo,-lichnost-main);
+  }
+
+  .conferences-program__col-user-name {
+    color: var(--obschestvo-society,-gosudarstvo,-lichnost-main);
+  }
+
+  .conferences-program__col-user-speciality {
+    color: var(--obschestvo,-gosudarstvo,-lichnost-default);
+  }
+
+  .conferences-program__note {
+    color: var(--white);
+    border-left: 0.2rem solid var(--white);
+  }
+
+  .conferences-requirements__list {
+    box-shadow: 0 8px 30px 0 rgba(48, 48, 48, 0.3);
+    background: linear-gradient(129deg, #8078cb 0%, #8b6db1 48.5%, #5e62bb 100%);
+
+    &::before  {
+      display: none;
+    }
+  }
+
+  .conferences-requirements__item-text {
+    color: var(--obschestvo-gray,-gosudarstvo,-lichnost-light-secondary);
+    border-left: 0.2rem solid var(--white);
+  }
+
+  .conferences-partners {
+    .swiper-slide {
+      box-shadow: 0 8px 30px 0 rgba(48, 48, 48, 0.3);
+      background: var(--white);
+      border-radius: 1.6rem;
+    }
+  }
+
+  .conferences-requirements__img {
+    width: 104.9rem;
+    height: 61rem;
+    top: -2rem;
+    left: 44%;
+  }
+
+  .conferences-faq__item {
+    box-shadow: 0 8px 30px 0 rgba(48, 48, 48, 0.3);
+    background: linear-gradient(129deg, #8078cb 0%, #8b6db1 48.5%, #5e62bb 100%);
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .conferences-faq__item-title {
+    color: var(--obschestvo-gray,-gosudarstvo,-lichnost-light-secondary);
+  }
+
+  .conferences-faq__item-text  {
+    color: var(--obschestvo-gray,-gosudarstvo,-lichnost-light-secondary);
+    border-left: 0.2rem solid var(--white);
+  }
+
+  .conferences-faq__img {
+    width: 104.4rem;
+    height: 104.4rem;
+    top: -17rem;
+
+    @include mq(xl) {
+      width: 90rem;
+      height: 90rem;
+    }
+
+    @include mq(lg) {
+      width: 80rem;
+      height: 80rem;
+    }
+  }
+
+  .modal {
+    .timer__box-date {
+      background-color: var(--white);
+      color: var(--obschestvo,-gosudarstvo,-lichnost-default);
+    }
+
+    .timer__box-date-text {
+      color: var(--obschestvo,-gosudarstvo,-lichnost-default);
+    }
+
+    .timer__box-date-add {
+      color: var(--obschestvo-society,-gosudarstvo,-lichnost-default);
+    }
+  }
+
+  .modal__content {
+    &:before {
+      content: '';
+      position: absolute;
+      top: 10rem;
+      left: -42rem;
+      width: 40rem;
+      height: 83.5rem;
+      background-image: url('../images/checkbox-and-card.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: 5;
+      top: -7rem;
+      left: 68rem;
+      width: 42.1rem;
+      height: 42.1rem;
+      background-image: url('../images/rocket.png');
+      background-size: contain;
+
+      @include mq(custom, max, 1024) {
+        display: none;
+      }
+    }
+  }
+
+  .modal__registration-img {
+    width: 119.1rem;
+    height: 119.1rem;
+    left: 71rem;
+  }
+
+  .modal__close-btn {
+    span {
+      background-color: #C2C5CD;
+    }
+  }
+
+  .form-registration {
+    box-shadow: 0 8px 30px 0 rgba(48, 48, 48, 0.3);
+    background: linear-gradient(129deg, #4874b7 0%, #658cc1 48.5%, #79a5d2 100%);
+
+    .title {
+      color: var(--white);
+    }
+
+    .input {
+      background: var(--white);
+      color: var(--obschestvo,-gosudarstvo,-lichnost-default);
+    }
+  }
+
+  .form-registration__step-number {
+    border: 0.1rem solid var(--yunesko-light-secondary);
+    color: var(--yunesko-light-secondary);
+  }
+
+  .form-registration__step.active-step {
+    .form-registration__step-number {
+      background: var(--white);
+      border: 0.1rem solid var(--white);
+      color: var(--yunesko-default);
+    }
+
+    .form-registration__step-line {
+      background-color: var(--yunesko-light-secondary);
+    }
+  }
+
+  .form-registration__step.past-step {
+    .form-registration__step-number {
+      border: 0.1rem solid var(--white);
+    }
+
+    .form-registration__step-line  {
+      background-color: var(--white);
+      opacity: 1;
+    }
+  }
+
+  .form-registration__success-title,
+  .form-registration__success-email-elem {
+    color: var(--white);
+  }
+
+  .choices.is-open {
+    .choices__inner {
+      border: .2rem solid transparent !important;
+    }
+  }
+
+  .choices__inner {
+    background-color: var(--white);
+
+    &:hover {
+      background-color: var(--white);
+    }
+  }
+
+  .choices__list--dropdown.choices__list {
+    background-color: var(--white);
+  }
+
+  .choices__list--dropdown .choices__item {
+    color: #000 !important;
+  }
+
+  .choices__list--dropdown .choices__item:not(:last-child) {
+    border-bottom: 1px solid #000;
+  }
+
+  .choices__list--single .choices__item {
+    color: #000;
+  }
+
+  .radio-button__input:checked + .radio-button__elem {
+    border: 0.1rem solid var(--white);
+
+    &::before {
+      background-color: var(--white);
+    }
+  }
+
+  .form-registration__form-textarea {
+    background-color: var(--white);
+    color: var(--yunesko-default);
+
+    &::placeholder {
+      color: var(--inklyuziya-dark-secondary);
+    }
+  }
+}

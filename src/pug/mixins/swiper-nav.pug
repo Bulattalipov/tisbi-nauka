@@ -1,0 +1,10 @@
+mixin swiper-nav(noNavigation, noPagination)
+    .swiper-nav
+        if !noPagination
+          .swiper-nav__pagination
+        if !noNavigation
+            .swiper-nav__nav
+                .swiper-nav__nav-btn.swiper-nav__nav-prev
+                    +icon-mono("icon__angle-left")(width="20px" height="20px")
+                .swiper-nav__nav-btn.swiper-nav__nav-next
+                    +icon-mono("icon__angle-left")(width="20px" height="20px")

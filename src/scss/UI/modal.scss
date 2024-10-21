@@ -1,0 +1,431 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(2rem);
+  background: var(--nauka-yuristy-block-70);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity var(--transition-time), visibility var(--transition-time);
+  overflow-y: auto;
+
+  &.is-open {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity var(--transition-time), visibility var(--transition-time);
+  }
+
+  &__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.6rem;
+    transform: translate(-50%, -50%);
+
+    &.modal-open {
+      display: block;
+    }
+
+    .site-container {
+      height: inherit;
+    }
+  }
+
+  &__content {
+    position: relative;
+    // padding: 3.4rem 4rem;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mq(cutom, max, 640) {
+      width: 100%;
+    }
+  }
+
+  &__close-btn {
+    position: absolute;
+    top: 2.4rem;
+    right: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+      /** span {
+        background-color: var(--color-light-green);
+      }
+      **/
+    }
+
+    &:active {
+      /**  span {
+        background-color: var(--color-dark-green);
+      } **/
+    }
+
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      width: 2.3rem;
+      height: 0.1rem;
+      background-color: var(--main);
+      transform: translate(-50%, -50%);
+      transition: background-color var(--transition);
+
+      &:nth-child(1) {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+
+      &:nth-child(2) {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+    }
+  }
+
+  &__legend {
+    text-align: center;
+  }
+
+  &__registration {
+    position: relative;
+    padding: 4rem 0;
+    margin: auto 0;
+
+    @include mq(custom, max, 640) {
+      width: inherit;
+    }
+  }
+
+  &__registration-inner {
+    display: grid;
+    grid-template-columns: minmax(45.6rem, 83.2rem) 1fr;
+    color: var(--white);
+    gap: 4.8rem;
+
+    @include mq(xl) {
+        grid-template-columns: minmax(45.6rem, 72.2rem) 1fr;
+    }
+
+    @include mq(custom, max, 1024) {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+    }
+
+    @include mq(custom, max, 640) {
+      margin: 0 -1.6rem;
+    }
+
+    .timer {
+      margin-top: 26rem;
+
+      @include mq(custom, max, 1024) {
+        margin-top: 0;
+      }
+
+      @include mq(custom, max, 640) {
+        margin: 0;
+      }
+    }
+
+    &.modal__registration-inner--event {
+      grid-template-columns: repeat(8, 1fr);
+
+      .form-registration {
+        grid-column: span 4;
+        backdrop-filter: blur(1.2rem);
+        background: var(--block);
+      }
+
+      .modal__registration-right {
+        grid-column: span 4;
+
+        .upcoming-events__item {
+          @include mq(custom, max, 640) {
+            border-radius: 0;
+          }
+        }
+      }
+    }
+
+    &.modal__registration-inner--materials {
+      display: block;
+      width: 65.6rem;
+
+      @include mq(custom, max, 730) {
+        width: auto;
+      }
+
+      .form-registration {
+        backdrop-filter: blur(1.2rem);
+        background: var(--block);
+      }
+
+      .form-registration__form-textarea {
+        border: 0.2rem solid var(--secondary-10);
+        background: var(--secondary-10);
+      }
+
+      .form-registration__btn-registration {
+        display: flex;
+      }
+    }
+  }
+
+  &__registration-img {
+    position: absolute;
+    z-index: -1;
+    object-fit: contain;
+    width: 78.6rem;
+    height: 88.9rem;
+    top: 1.6rem;
+    left: 76.8rem;
+
+    @include mq(custom, max, 1580) {
+        left: auto;
+        top: 4.2rem;
+        right: -23rem;
+    }
+
+    @include mq(xl) {
+        right: -15%;
+    }
+
+    @include mq(lg) {
+        right: -25rem;
+        top: 7.2rem;
+    }
+
+    @include mq(custom, max, 1024) {
+        display: none;
+    }
+  }
+
+  &__grant {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 4.8rem;
+    backdrop-filter: blur(1.2rem);
+    background: #2a314d;
+    border-radius: 1.6rem;
+    overflow: hidden;
+    min-height: 48rem;
+    margin: 4rem 0;
+
+    @include mq(custom, max, 1100) {
+      display: flex;
+    }
+  }
+
+  &__grant-slider {
+    position: relative;
+    grid-column: span 3;
+    overflow: hidden;
+    height: inherit;
+    width: 100%;
+
+    @include mq(custom, max, 1100) {
+      display: none;
+    }
+
+    .swiper-nav {
+      position: absolute;
+      right: 0;
+      z-index: 1;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .swiper-nav__pagination {
+      position: absolute;
+      left: 0;
+      width: auto;
+      padding: 1.6rem;
+    }
+
+    .swiper-nav__nav {
+      position: absolute;
+      right: 0;
+      bottom: 1.6rem;
+      display: flex;
+    }
+
+    .swiper-nav__nav-btn {
+      position: static;
+    }
+
+
+    .swiper-nav__pagination {
+      gap: 1.6rem;
+    }
+
+    .swiper-pagination-bullet {
+      width: 0.8rem;
+      height: 0.8rem;
+    }
+  }
+
+  &__grant-slider-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__grant-content  {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 5;
+    margin-left: -46px;
+    padding: 2.4rem;
+
+    @include mq(custom, max, 1100) {
+      margin-left: 0;
+    }
+  }
+
+  &__grant-contain {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.6rem;
+    padding-bottom: 2.4rem;
+    margin-bottom: 2.4rem;
+    border-bottom: .1rem solid rgba(166, 171, 189, 0.2);
+
+    @include mq(custom, max, 1024) {
+      flex-direction: column;
+    }
+  }
+
+  &__grant-contain-img {
+    width: 40.8rem;
+    height: 14.4rem;
+    border-radius: 0.8rem;
+    padding: 2.4rem;
+    background: var(--white);
+    flex-shrink: 0;
+    object-fit: contain;
+    object-position: left;
+
+    @include mq(xl) {
+      width: 35rem;
+    }
+
+    @include mq(custom, max, 1024) {
+      width: 100%;
+    }
+
+    @include mq(custom, max, 640) {
+      padding: 1.6rem;
+    }
+  }
+
+  &__grant-contain-info  {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  &__grant-contain-info-title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: var(--white);
+
+    @include mq(custom, max, 1024) {
+      font-size: 2rem;
+    }
+  }
+
+  &__grant-contain-info-desc {
+    color: var(--secondary);
+  }
+
+  &__grant-title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: var(--white);
+    margin-bottom: 2.4rem;
+
+    @include mq(custom, max, 1024) {
+      font-size: 2rem;
+    }
+  }
+
+  &__grant-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
+
+  &__grant-box-title {
+    font-size: 1.8rem;
+    color: var(--white);
+  }
+
+  &__grant-box-text {
+    border-left: .2rem solid var(--main);
+    padding-left: 2.4rem;
+    color: var(--secondary);
+  }
+
+  &__grant-box-price {
+    border-radius: .8rem;
+    padding: .8rem 1.6rem;
+    background: rgba(255, 92, 0, 0.16);
+    align-self: flex-start;
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--main);
+  }
+
+  &__grant-box-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  &__grant-box-tag {
+    border-radius: .4rem;
+    padding: .8rem 1.6rem;
+    background: rgba(142, 150, 175, 0.16);
+    color: var(--white);
+    word-break: keep-all;
+  }
+
+  &__grant-btns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.6rem;
+    padding-top: 2.4rem;
+    border-top: .1rem solid rgba(166, 171, 189, 0.2);
+    margin-top: auto;
+
+    @include mq(custom, max, 640) {
+      flex-direction: column;
+
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+}

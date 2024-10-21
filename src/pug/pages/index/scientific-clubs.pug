@@ -1,0 +1,62 @@
+-
+    scientificClubsTag = [
+        {title: 'Экологический кружок', attValue: 'tab1'},
+        {title: 'Право и бизнес', attValue: 'tab2'},
+        {title: 'Интегративаня юриспруденция в познании социально-правовых явлений', attValue: 'tab3'},
+        {title: 'Кружок международного права и международных отношений', attValue: 'tab4'},
+        {title: 'Международно-правовой киноклуб', attValue: 'tab5'},
+        {title: 'Секреты гостеприимства', attValue: 'tab6'},
+        {title: 'Клуб научных дебатов на иностранном языке “Active Voice”', attValue: 'tab7'},
+        {title: 'Научная лаборатория молодежных международно-политических исследований ТИСБИ', attValue: 'tab8'},
+        {title: 'Психологические методы исследований в управлении персоналом', attValue: 'tab9'},
+        {title: 'Кружок “Экономист”', attValue: 'tab10'},
+        {title: 'Цифровые финансы', attValue: 'tab11'},
+        {title: 'Цифровые финансы - продвинутый уровень', attValue: 'tab12'}]
+
+section.section.scientific-clubs.js-tabs-funcs
+    .site-container
+        +title('icon__bulb', 'Студенческие научные кружки')
+        .scientific-clubs__inner
+            .scientific-clubs__contain.js-tabs-funcs-contain
+                .scientific-clubs__btn.js-tabs-funcs-btn
+                    .scientific-clubs__btn-text.js-tabs-funcs-btn-text Экологический кружок
+                    .scientific-clubs__btn-icon
+                        +icon-mono('icon__angle-small-down')(width="20px" height="21px")
+                .scientific-clubs__tags
+                    each item, i in scientificClubsTag
+                        - var activeClass = i == 0 ? 'active' : '';
+                        .scientific-clubs__tag.js-tabs-funcs-tag(class=activeClass data-tab=item.attValue)= item.title
+            .scientific-clubs__contents
+                each elem, i in scientificClubsTag
+                    - var activeClass = i == 0 ? 'active' : '';
+                    .scientific-clubs__content.js-tabs-funcs-content(class=activeClass data-content-tab=elem.attValue)
+                        .swiper.scientific-clubs__content-slider
+                            .swiper-wrapper.scientific-clubs__content-slider-wrapper
+                                .swiper-slide.scientific-clubs__content-slider-item
+                                    img.scientific-clubs__content-slider-item-img(src='assets/images/students.jpg', alt="")
+                                .swiper-slide.scientific-clubs__content-slider-item
+                                    img.scientific-clubs__content-slider-item-img(src='assets/images/students.jpg', alt="")
+                            +swiper-nav()
+                        .scientific-clubs__content-title
+                            | Студенческий научный кружок “Психологические методы исследований в управлении персоналом”
+                        .scientific-clubs__content-desc
+                            | Повседневная практика показывает, что реализация намеченных плановых  заданий требуют от нас анализа форм развития. Значимость этих проблем настолько очевидна, что рамки и место  обучения кадров требуют определения и уточнения направлений  прогрессивного развития.
+                        .scientific-clubs__content-users
+                            .scientific-clubs__content-user
+                                .scientific-clubs__content-user-img-wrapper
+                                    img.scientific-clubs__content-user-img(src='assets/images/user.jpg' alt='')
+                                .scientific-clubs__content-user-info
+                                    .scientific-clubs__content-user-post Руководитель
+                                    .scientific-clubs__content-user-name Фамилия Имя Отчество
+                                    .scientific-clubs__content-user-educ кандидат педагогических наук, профессор
+                            .scientific-clubs__content-user
+                                .scientific-clubs__content-user-img-wrapper
+                                    img.scientific-clubs__content-user-img(src='assets/images/user.jpg' alt='')
+                                .scientific-clubs__content-user-info
+                                    .scientific-clubs__content-user-post Руководитель
+                                    .scientific-clubs__content-user-name Фамилия Имя Отчество
+                                    .scientific-clubs__content-user-educ кандидат педагогических наук, профессор
+                        .scientific-clubs__content-box
+                            +button('a', 'scientific-clubs__content-btn', 'Записаться на кружок', '#', '', 'icon__angle-small-right-white')
+                            +button('a', 'btn--transparent btn--cube', '', '#',  '', 'vk')
+                            +button('a', 'btn--transparent btn--cube', '', '#',  '', 'telegram')

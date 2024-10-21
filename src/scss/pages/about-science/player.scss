@@ -1,0 +1,16 @@
+.player {
+    &__inner {
+        position: relative;
+        padding-bottom: 52%;
+
+        @include mq(custom, max, 640) {
+            margin: 0 -1.6rem;
+        }
+
+        iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,441 @@
+.conferences-intro {
+  min-height: 100vh;
+
+  &.inklyuziya-page {
+    .conferences-intro__inner {
+      overflow: hidden;
+    }
+
+    .conferences-intro__img {
+      top: -7.4rem;
+      left: 75.8rem;
+
+      @include mq(custom, max, 1580) {
+        right: -13rem;
+        left: auto;
+      }
+    }
+
+    .conferences-intro__tag {
+      background: rgba(52, 86, 198, 0.1);
+      color: var(--inklyuziya-main);
+    }
+  }
+
+  &.law-page {
+    .conferences-intro__inner {
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    .conferences-intro__img {
+      width: 61.8rem;
+      height: 65.5rem;
+
+      @include mq(custom, max, 1580) {
+        left: auto;
+        right: -5rem;
+        height: 58.5rem;
+      }
+    }
+  }
+
+  &.society-page  {
+    .conferences-intro__inner {
+      &::before {
+        top: 1rem;
+        right: 37rem;
+        width: 22.1rem;
+        height: 22.1rem;
+
+        @include mq(custom, max, 1580) {
+          top: -3rem;
+          right: 25rem;
+        }
+
+      }
+      &::after {
+        display: none;
+      }
+    }
+
+    .conferences-intro__img {
+      top: 2.6rem;
+      left: 82.8rem;
+
+      @include mq(custom, max, 1580) {
+        right: -13rem;
+        left: auto;
+      }
+    }
+
+    .conferences-intro__tag {
+      color: var(--obschestvo,-gosudarstvo,-lichnost-default);
+      border: 1px solid var(--obschestvo,-gosudarstvo,-lichnost-default);
+      background-color: transparent;
+    }
+
+    .timer {
+      background: linear-gradient(129deg, #8078cb 0%, #8b6db1 48.5%, #5e62bb 100%);
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &.yunesko-page {
+    .conferences-intro__right {
+      margin-top: 4.8rem;
+      margin-bottom: 4.8rem;
+      padding-right: 4.8rem;
+
+      @include mq(custom, max, 1024) {
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    .conferences-intro__img {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      padding-right: 4.8rem;
+
+      @include mq(custom, max, 1024) {
+        padding-right: 0;
+      }
+    }
+
+    .conferences-intro__subtitle {
+      color: var(--yunesko-default);
+    }
+
+    .conferences-intro__tag {
+      background: rgba(48, 48, 48, 0.1);
+      border-radius: 0;
+    }
+  }
+
+  &--mini {
+    min-height: auto;
+
+    .conferences-intro__inner {
+      padding: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 1.6rem;
+
+      @include mq(custom, max, 1024) {
+        padding: 2.4rem;
+        column-gap: 1.6rem;
+      }
+
+      @include mq(custom, max, 640) {
+        border-radius: 0;
+        gap: 1.6rem;
+      }
+    }
+
+    .conferences-intro__box:nth-child(1) {
+      padding-left: 4.8rem;
+      padding-top: 4.8rem;
+
+      @include mq(custom, max, 1024) {
+        padding: 0;
+      }
+    }
+
+    .conferences-intro__box:nth-child(3) {
+      padding-left: 4.8rem;
+      padding-bottom: 4.8rem;
+      padding-right: 2rem;
+
+      @include mq(custom, max, 1024) {
+        padding: 0;
+      }
+    }
+
+    .conferences-intro__box {
+      @include mq(custom, max, 640) {
+        margin: 0;
+      }
+    }
+
+    .conferences-intro__title {
+      @include mq(custom, max, 1024) {
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+    }
+
+    .conferences-intro__tags {
+      margin-bottom: 5.8rem;
+
+      @include mq(xl) {
+        margin-bottom: 0;
+      }
+    }
+
+    .conferences-intro__tag {
+      border: none;
+      background: var(--block-10-blur);
+    }
+
+    .conferences-intro__info {
+      gap: 1.6rem;
+    }
+
+    .conferences-intro__right {
+      padding-right: 4.8rem;
+
+      @include mq(custom, max, 1024) {
+        padding: 0;
+      }
+    }
+
+    .conferences-intro__img {
+      width: 65.8rem;
+      height: 73.5rem;
+      z-index: 0;
+      top: -3.4rem;
+
+      @include mq(custom, max, 1580) {
+        right: -14rem;
+      }
+    }
+
+    .timer {
+      @include mq(custom, max, 640) {
+        border-radius: 1.6rem
+      }
+    }
+  }
+
+  &__inner {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(45.6rem, 83.2rem) 1fr;
+    gap: 4.8rem;
+    padding-top: 19.2rem;
+    padding-bottom: 9.6rem;
+
+    @include mq(xl) {
+      grid-template-columns: minmax(45.6rem, 72.2rem) 1fr;
+    }
+
+    @include mq(lg) {
+      padding-top: 14.4rem;
+      padding-bottom: 4.8rem;
+    }
+
+    @include mq(custom, max, 1024) {
+      gap: 2.4rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mq(custom, max, 640) {
+      display: flex;
+      flex-direction: column;
+      margin: 0 -1.6rem;
+    }
+  }
+
+  &__logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+  }
+
+  &__logo-item {
+
+    &:nth-child(1) {
+      width: 30rem;
+      height: 6.4rem;
+    }
+
+    &:nth-child(2) {
+      width: 25.4rem;
+      height: 6.4rem;
+    }
+  }
+
+  &__box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.4rem;
+    z-index: 2;
+
+    &:nth-child(1) {
+      @include mq(custom, max, 1024) {
+        grid-column: span 2;
+      }
+    }
+
+    @include mq(custom, max, 640) {
+      margin: 0 1.6rem;
+    }
+  }
+
+  &__small-text {
+    font-size: 1.8rem;
+    color: var(--secondary);
+
+    @include mq(custom, max, 1024) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__title {
+    font-family: var(--second-family);
+    font-weight: 800;
+    font-size: 4.8rem;
+    line-height: 122%;
+    color: var(--main);
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid var(--secondary);
+
+    @include mq(custom, max, 1024) {
+      font-size: 3.2rem;
+    }
+  }
+
+  &__subtitle {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 120%;
+    color: var(--white);
+
+    @include mq(custom, max, 1024) {
+      font-size: 2rem;
+    }
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 12.3rem;
+
+    @include mq(xl) {
+      margin-bottom: 4.2rem;
+    }
+
+    @include mq(custom, max, 1024) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__tag {
+    border: 0.1rem solid var(--secondary);
+    border-radius: 0.4rem;
+    padding: 0.4rem 0.8rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: var(--white);
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+  }
+
+  &__info-item {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    border-radius: 1.6rem;
+    padding: 1.6rem 2.4rem;
+    backdrop-filter: blur(1.2rem);
+    background: var(--nauka-yuristy-block-70);
+
+    @include mq(custom, max, 1024) {
+      width: 100%;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      border-radius: 1.6rem;
+      padding: 0.14rem;
+      background: linear-gradient(to bottom, #989898, #202020);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: destination-out;
+      mask-composite: exclude;
+      opacity: 0.4;
+    }
+  }
+
+  &__info-item-text {
+    color: var(--white);
+    font-size: 1.8rem;
+  }
+
+  &__info-item-add {
+    color: var(--main);
+    margin-left: 0.8rem;
+  }
+
+  &__right {
+    grid-row: span 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+
+    @include mq(custom, max, 1024) {
+      align-self: start;
+      order: 3;
+      grid-row: span 1;
+    }
+
+    @include mq(custom, max, 640) {
+      margin: 0 -1.6rem;
+    }
+  }
+
+  &__text {
+    color: var(--secondary);
+    padding-left: 2.4rem;
+    border-left: 0.2rem solid var(--main);
+  }
+
+  &__img {
+    position: absolute;
+    z-index: -1;
+    object-fit: contain;
+    width: 78.6rem;
+    height: 88.9rem;
+    top: 5.6rem;
+    left: 76.8rem;
+
+    @include mq(custom, max, 1580) {
+      left: auto;
+      top: 4.2rem;
+      right: -23rem;
+    }
+
+    @include mq(xl) {
+      right: -29rem;
+    }
+
+    @include mq(lg) {
+      right: -25rem;
+      height: 73rem;
+      top: 7.2rem;
+    }
+
+    @include mq(custom, max, 1024) {
+      display: none;
+    }
+  }
+}

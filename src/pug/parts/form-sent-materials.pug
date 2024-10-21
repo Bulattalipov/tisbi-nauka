@@ -1,0 +1,71 @@
+.form-registration.form-registration--material
+    form.form-registration__wrapper.form-registration--default
+        +title('', 'Подача материалов', '')
+        button.button-reset.modal__close-btn.modal-close(type="button")
+          span
+          span
+        .form-registration__form
+            .form-registration__form-box
+                .form-registration__form-label
+                    .form-registration__form-title.required-title Имя
+                    +input('text', 'name', 'Иван')(data-must-validate='')
+                .form-registration__form-label
+                    .form-registration__form-title.required-title Адрес электронной почты
+                    +input('email', 'email', 'ivanov@mail.ru')(data-must-validate='')
+                .form-registration__form-label
+                    .form-registration__form-title.required-title Номер телефона
+                    +input('tel', 'tel', '+7 (***) ***-**-**')(class='js-phone-mask' data-must-validate='')
+                .form-registration__form-label
+                    .form-registration__form-title.required-title Комментарии
+                    textarea.form-registration__form-textarea(placeholder='Можете добавить информацию' data-no-must-validate='')
+                .form-registration__dropzone
+                    .form-registration__dropzone-inner
+                        .form-registration__dropzone-text
+                            | Внесите в файл в данную область, либо нажмите на кнопку
+                        label.form-registration__dropzone-btn(for='file')
+                            .form-registration__dropzone-btn-text Выбрать файл
+                            +icon-mono('icon__file')(width='20px' height='20px')
+                        input.form-registration__dropzone-input.visually-hidden(type='file' data-max-size='2'  accept=".doc, .docx" name='file' id='file')(data-no-must-validate='')
+                        .form-registration__dropzone-recomen
+                            | Вы можете загрузить один файл размером не более 2 мегабайт в формате #[span .doc] или #[span .docx]
+                        .form-registration__dropzone-file-name
+        .form-registration__btns
+            +button('button', 'form-registration__btn-clear btn--transparent', 'Очистить форму', '', 'icon__cross-small', '')(data-clear)
+            +button('button', 'form-registration__btn-registration', 'Отправить', '', '', 'icon__angle-small-right-white')(data-next)
+    .form-registration__wrapper.form-registration--success
+        +title('', 'Регистрация прошла успешно', '')
+        .form-registration__success
+            .form-registration__success-subtitle
+                | Международная научно-практическая конференция
+            .form-registration__success-text
+                | Взаимодействие бизнеса и общества в условиях трансформации информационных процессов и технологий
+            .form-registration__success-img-wrapper
+                img.form-registration__success-img(src="assets/images/success.svg" alt="")
+            p.form-registration__success-email
+                | Вы успешно зарегистрировались на конференцию! Мы выслали вам письмо, проверьте вашу почту:
+                a.form-registration__success-email-elem(href="mailto:chiatoPochta@mail.ru") ChiatoPochta@mail.ru
+            .form-registration__success-contact
+                .form-registration__success-contact-title Связь с нами
+                .form-registration__success-contact-btns
+                    +button('a', 'btn--transparent', '+7 (843) 294-83-06', 'tel:+78432948306', 'icon__phone-call', '')
+                    +button('a', 'btn--transparent', 'naukatisbi@yandex.ru', 'mailto:naukatisbi@yandex.ru', 'icon__envelope', '')
+            +button('a', 'form-registration__success-btn-ready modal-close', 'Готово', '', '', 'icon__angle-small-right-white')
+    .form-registration__wrapper.form-registration--error
+        +title('', 'Регистрация не удалась', '')
+        .form-registration__success
+            .form-registration__success-subtitle
+                | Международная научно-практическая конференция
+            .form-registration__success-text
+                | Взаимодействие бизнеса и общества в условиях трансформации информационных процессов и технологий
+            .form-registration__success-img-wrapper
+                img.form-registration__success-img(src="assets/images/error.svg" alt="")
+            p.form-registration__success-email
+                | Ошибка: Название ошибки
+            .form-registration__success-contact
+                .form-registration__success-contact-title Связь с нами
+                .form-registration__success-contact-btns
+                    +button('a', 'btn--transparent', '+7 (843) 294-83-06', 'tel:+78432948306', 'icon__phone-call', '')
+                    +button('a', 'btn--transparent', 'naukatisbi@yandex.ru', 'mailto:naukatisbi@yandex.ru', 'icon__envelope', '')
+            .form-registration__success-btns
+                +button('button', 'btn--transparent form-registration__error-back', 'Назад', '', 'icon__angle-small-left', '')
+                +button('button', 'form-registration__success-btn-ready', 'Отправить заявку еще раз', '', '', 'icon__refresh')

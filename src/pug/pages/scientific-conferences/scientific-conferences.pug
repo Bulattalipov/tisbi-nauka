@@ -1,0 +1,30 @@
+section.section.scientific-conferences
+  .site-container
+    .scientific-conferences__inner
+      .scientific-conferences__box
+        .scientific-conferences__box-title
+          | Какой-то текст про активную позицию университета по популяризации науки
+        .scientific-conferences__box-lavel
+          .scientific-conferences__box-lavel-title
+            | Уровни научно-практических конференций
+          ul.scientific-conferences__box-lavel-items
+            li.scientific-conferences__box-lavel-item
+              | Международная
+            li.scientific-conferences__box-lavel-item
+              | Национальная
+            li.scientific-conferences__box-lavel-item
+              | Всероссийская
+        .scientific-conferences__box-text
+          | Рыба текст который расскажет об Архиве, чтобы пользователь мог посмотреть прошлые конференции
+        +button('a', '', 'Перейти к списку конференций', '#', '', 'icon__angle-small-right-white')
+      .scientific-conferences__contain
+        .scientific-conferences__item
+          h5.scientific-conferences__item-title
+            | Динамика научных конференций
+          .scientific-conferences__item-tag
+            | 8 за прошлый год
+          img.scientific-conferences__item-graphic(src='assets/images/line-graph.svg' alt='')
+        .scientific-conferences__item
+          img.scientific-conferences__item-img.scientific-conferences__item-img--doctor(src='assets/images/doctor.png')
+        .scientific-conferences__item
+          img.scientific-conferences__item-img.scientific-conferences__item-img--ofis-man(src='assets/images/ofis-man.png')

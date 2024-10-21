@@ -1,0 +1,23 @@
+mixin charts
+  script
+    include ../../js/helpers/dataCharts.js
+  .charts
+    .charts__inner
+      .charts__item
+        .charts__item-title
+          | Количество студентов
+        .charts__item-desc
+          | С каждым годом все больше студентов
+        canvas(id='myChart' width='100%' height='100px')
+      .charts__item
+        .charts__item-title
+          | Количество студентов
+        .charts__item-desc
+          | #[span 2023 год] Java-разработчики
+        .charts__item-desc
+          | Популярные специальности:
+        canvas(id='myChart2' width='100%' height='100px')
+      .charts__item
+        .charts__item-title
+          | Зарплаты наших студентов
+        canvas(id='myChart3' width='100%' height='100px')

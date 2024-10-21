@@ -1,0 +1,29 @@
+section.section.conferences-faq
+    .site-container
+        +title('icon__interrogation', 'Часто задаваемые вопросы')
+        .conferences-faq__inner
+            .conferences-faq__list.js-faq-accordions
+                each i in Array.from(Array(7).keys())
+                    .conferences-faq__item.js-accordion
+                        .conferences-faq__item-row.js-accordion-btn
+                            .conferences-faq__item-title
+                                | Где будет проходить конференция?
+                            +icon-multi('icon__angle-small-down')(width="20px" height="21px")
+                        .conferences-faq__item-content.js-accordion-content
+                            .conferences-faq__item-content-inner
+                                .conferences-faq__item-text
+                                    | Конференция будет проходить в университете управления «ТИСБИ». Адрес: г. Казань, ул. Муштари, д.13
+                .conferences-faq__item.conferences-faq__item--change
+                    .conferences-faq__item-row
+                        .conferences-faq__item-title
+                            | Остались вопросы?
+                    .conferences-faq__item-content
+                        .conferences-faq__item-content-inner
+                            .conferences-faq__item-text
+                                | Наша команда поможет вам с любым вопросом по проекту “ТИСБИ Наука”
+                            .conferences-faq__item-btns
+                                +button('a', 'btn--transparent', '+7 (843) 294-83-06', 'tel:+78432948306', 'icon__envelope', '')
+                                +button('a', 'btn--transparent', 'naukatisbi@yandex.ru', 'mailto:naukatisbi@yandex.ru', 'icon__phone-call', '')
+            .conferences-faq__right
+                img.conferences-faq__img(src="assets/images/big-drops.png" alt="alt")
+

@@ -1,0 +1,48 @@
+main.page-main.main
+    .sections-container
+        +breadcrumbs([['Главная', "/"], ['Научные конференции']])(class='breadcrumbs--large-indentation')
+        include scientific-conferences.pug
+        +section-results(true)
+        include without-conferences.pug
+        include ../index/latest-news.pug
+        +upcoming-events
+        section.section.conferences-faq.conferences-faq--modif
+          .site-container
+              +title('icon__interrogation', 'Часто задаваемые вопросы')
+              .conferences-faq__inner
+                  .conferences-faq__list.js-faq-accordions
+                      each i in Array.from(Array(4).keys())
+                          .conferences-faq__item.js-accordion
+                              .conferences-faq__item-row.js-accordion-btn
+                                  .conferences-faq__item-title
+                                      | Где будет проходить конференция?
+                                  +icon-multi('icon__angle-small-down')(width="20px" height="21px")
+                              .conferences-faq__item-content.js-accordion-content
+                                  .conferences-faq__item-content-inner
+                                      .conferences-faq__item-text
+                                          | Конференция будет проходить в университете управления «ТИСБИ». Адрес: г. Казань, ул. Муштари, д.13
+                  .conferences-faq__right
+                    .event__contacts
+                      .event__contacts-img-wrapper
+                          img.event__contacts-img(src="assets/images/building.png" alt='')
+                      .event__contacts-info
+                          .event__contacts-info-title Остались вопросы?
+                          .event__contacts-info-text
+                            | Наша команда поможет вам с любым вопросом по проекту “ТИСБИ Наука”
+                          .event__contacts-info-user
+                              .event__contacts-info-user-img
+                                  img.event__contacts-info-user-img-elem(src='assets/images/user-3.jpg' alt='')
+                              .event__contacts-info-user-box
+                                  .event__contacts-info-user-name
+                                      | Ржевская Юлия Евгеньевна
+                                  .event__contacts-info-user-prof
+                                      | Заместитель проректора по науке
+                          .event__contacts-info-contain
+                              +icon-multi('icon__phone-call')(width='16px' height='16px')
+                              .event__contacts-info-contain-text +7 (843) 294-83-06
+                          .event__contacts-info-contain
+                              +icon-multi('icon__envelope')(width='16px' height='16px')
+                              .event__contacts-info-contain-text anastasygonina@yandex.ru
+                          .event__contacts-info-contain
+                              +icon-multi('icon__marker')(width='16px' height='16px')
+                              .event__contacts-info-contain-text 420012, г. Казань, ул. Муштари, дом 13, каб. 244

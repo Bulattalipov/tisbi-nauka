@@ -1,0 +1,17 @@
+mixin button(tag, className, text, hrefText, beforeIcon, afterIcon)
+    if tag == 'button'
+        button(class='btn ' + className)&attributes(attributes)
+            if beforeIcon
+                +icon-mono(beforeIcon)(class="btn__icon-left" width="20px" height="20px")
+            if text
+                .btn__text=text
+            if afterIcon
+                +icon-mono(afterIcon)(class="btn__icon-right" width="20px" height="20px")
+    if tag == 'a'
+        a(class='btn ' + className, href=hrefText)&attributes(attributes)
+            if beforeIcon
+                +icon-mono(beforeIcon)(class="btn__icon-left" width="20px" height="20px")
+            if text
+                .btn__text=text
+            if afterIcon
+                +icon-mono(afterIcon)(class="btn__icon-right" width="20px" height="20px")

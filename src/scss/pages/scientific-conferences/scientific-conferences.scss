@@ -1,0 +1,134 @@
+.scientific-conferences {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4.8rem;
+
+    @include mq(custom, max, 1024) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.4rem;
+    border-radius: 1.6rem;
+    padding: 2.4rem;
+    backdrop-filter: blur(1.2rem);
+    background: var(--block-10-blur);
+
+    @include mq(custom, max, 640) {
+      margin: 0 -1.6rem;
+      padding: 1.6rem;
+      border-radius: 0;
+    }
+
+    .btn {
+      margin-top: 2.4rem;
+
+      @include mq(custom, max, 640) {
+        margin-top: 0;
+      }
+
+      .btn__text {
+        text-align: start
+      }
+    }
+  }
+
+  &__box-title {
+    font-family: var(--second-family);
+    font-weight: 800;
+    font-size: 4.8rem;
+    color: var(--white);
+
+    @include mq(custom, max, 1024) {
+      font-size: 2rem;
+    }
+  }
+
+  &__box-lavel-title {
+    font-size: 1.8rem;
+    color: var(--secondary);
+    margin-bottom: 0.8rem;
+  }
+
+  &__box-lavel-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  &__box-lavel-item {
+    border-radius: 0.4rem;
+    padding: 0.8rem 1.2rem;
+    background: var(--secondary-10);
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: var(--white);
+  }
+
+  &__box-text {
+    padding-left: 2.4rem;
+    color: var(--secondary);
+    border-left: 0.1rem solid var(--main);
+  }
+
+  &__contain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+
+    @include mq(custom, max, 1024) {
+      display: none;
+    }
+  }
+
+  &__item {
+    position: relative;
+    min-height: 25.4rem;
+    padding: 2.4rem;
+    border-radius: 1.6rem;
+    background: var(--block-10-blur);
+
+    &:first-child {
+      grid-column: span 2;
+    }
+  }
+
+  &__item-title {
+    font-size: 1.8rem;
+    color: var(--secondary);
+    margin-bottom: 0.8rem;
+  }
+
+  &__item-tag {
+    display: inline-block;
+    border-radius: 0.4rem;
+    padding: 0.8rem 1.2rem;
+    background: rgba(255, 92, 0, 0.16);
+    text-align: center;
+    color: var(--main);
+  }
+
+  &__item-graphic {
+    position: absolute;
+    top: 2rem;
+    left: 2.4rem;
+    width: 53.3rem;
+    max-width: 90%;
+    height: 20.4rem;
+  }
+
+  &__item-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    &--ofis-man {
+      left: 1rem;
+    }
+  }
+}

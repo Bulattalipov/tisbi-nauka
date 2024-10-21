@@ -1,0 +1,44 @@
+.conferences-partners {
+    &__wrapper {
+        width: 100%;
+        min-width: 0;
+    }
+
+    &__swiper {
+        width: 100%;
+        min-width: 0;
+        overflow: visible;
+    }
+
+    .swiper-wrapper {
+        display: flex;
+        transition-timing-function: linear !important;
+    }
+
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4rem;
+        width: 30.4rem;
+        height: 20rem;
+        background: var(--white);
+        overflow: hidden;
+
+        @include mq(custom, max, 413) {
+            width: 24rem;
+        }
+
+        &:hover {
+            .conferences-partners__swiper-item-img {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+
+    &__swiper-item-img {
+        object-fit: cover;
+        transition: transform 0.5s ease-out;
+    }
+}

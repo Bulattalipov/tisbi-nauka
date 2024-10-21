@@ -1,0 +1,50 @@
+-
+    programItems = [
+        {title: "Синергия гуманитарных ценностей и инновационной активности молодежи: особенности и перспективы.", img: "user-1.jpg", userName: "Катекина А. А.", userSpeciality: "канд. пед. наук, доцент", userMail: "el.faizr@mail.ru", useMailHref: "mailto:el.faizr@mail.ru"},
+        {title: "Экономические аспекты научно-технологического развития региона.", img: "plug.png", userName: "Файзрахманова Э. А.", userSpeciality: "канд. эконом. наук, доцент", userMail: "el.faizr@mail.ru", useMailHref: "mailto:el.faizr@mail.ru"},
+        {title: "Актуальные проблемы российского и международного права в условиях научно-технологического развития.", img: "user-3.jpg", userName: "Солдатов Я. В.", userSpeciality: "канд. ист. наук, доцент", userMail: "yacovsoldatov@yandex.ru", useMailHref: "mailto:yacovsoldatov@yandex.ru"},
+        {title: "Современные аспекты цифровых технологий.", img: "user-4.jpg", userName: "Сафиуллина Ф. Ф.", userSpeciality: "канд. хим. наук, доцент", userMail: "fsafiullina@yandex.ru", useMailHref: "mailto:fsafiullina@yandex.ru"},
+        {title: "Проблемы и пути реализации инновационного потенциала молодежи в научно-технологической среде.", img: "user-5.jpg", userName: "Елесин Е. Ю.", userSpeciality: "канд. экон. наук, доцент", userMail: "nauka_management@mail.ru", useMailHref: "mailto:nauka_management@mail.ru"},
+        {title: "Инновационная деятельность молодежи в спорте и физической культуре современной России.", img: "user-6.jpg", userName: "Максимова Е. Ф.", userSpeciality: "канд.пед.наук, доцент", userMail: "elena.maksimova.00@bk.ru", useMailHref: "mailto:elena.maksimova.00@bk.ru"},
+        {title: "III тур VI Конкурса на «Лучшая научная студенческая работа».", img: "user-7.jpg", userName: "Грузкова С. Ю.", userSpeciality: "канд. техн. наук, доцент", userMail: "naukatisbi@yandex.ru", useMailHref: "mailto:naukatisbi@yandex.ru"},
+    ]
+
+section.section.conferences-program(id='program')
+    .site-container
+        .conferences-program__inner
+            +title('icon__apps', 'Программа панельной дискуссии')
+            .conferences-program__box
+                +button('a', '', 'Скачать программу', '#', '', 'icon__download')
+                .conferences-program__box-text Обновлен 14.05.2024
+        .conferences-program__table
+            .conferences-program__row
+                .conferences-program__col
+                    .conferences-program__col-title Название
+                .conferences-program__col
+                    .conferences-program__col-title Модераторы
+            each item in programItems
+                .conferences-program__row.conferences-program__row--background
+                    .conferences-program__col
+                        .conferences-program__col-info
+                            .conferences-program__col-info-title= item.title
+                            ul.conferences-program__col-info-tags
+                                li.conferences-program__col-info-tag.conferences-program__col-info-tag--orange
+                                    .conferences-program__col-info-tag-title Лекция
+                                li.conferences-program__col-info-tag
+                                    +icon-multi("icon__clock")(width="16px" height="16px")
+                                    .conferences-program__col-info-tag-title 18.04.2024
+                                    span.conferences-program__col-info-tag-add 11:20
+                                li.conferences-program__col-info-tag
+                                    +icon-multi("icon__home-location")(width="16px" height="16px")
+                                    .conferences-program__col-info-tag-title Казань, ул. Муштари, д.13
+                                li.conferences-program__col-info-tag
+                                    +icon-multi("icon__shuffle-mini")(width="16px" height="16px")
+                                    .conferences-program__col-info-tag-title Смешанная
+                    .conferences-program__col
+                        .conferences-program__col-user
+                            img.conferences-program__col-user-img(src="assets/images/conferences-program/" + item.img, alt="user")
+                            .conferences-program__col-user-box
+                                .conferences-program__col-user-name= item.userName
+                                .conferences-program__col-user-speciality= item.userSpeciality
+                                +button('a', 'btn--transparent', item.userMail, item.useMailHref, 'icon__envelope', '')
+        .conferences-program__note Время проведения может варьироваться в пределах 30 минут

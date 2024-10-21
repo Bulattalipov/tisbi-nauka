@@ -1,0 +1,95 @@
+.persons-article {
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+        border-radius: 1.6rem;
+        padding: 2.4rem 4.8rem;
+        background: var(--block);
+
+        @include mq(custom, max, 1024) {
+          padding: 2.4rem;
+        }
+
+        @include mq(custom, max, 640) {
+          margin: 0 -1.6rem;
+          padding: 1.6rem;
+          border-radius: 0;
+        }
+    }
+
+    &__title {
+      font-family: var(--second-family);
+      font-weight: 700;
+      font-size: 3.2rem;
+      color: var(--white);
+
+      @include mq(custom, max, 1024) {
+        font-size: 2rem;
+      }
+    }
+
+    &__users {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.6rem;
+
+      @include mq(xl) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @include mq(custom, max, 1024) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include mq(custom, max, 640) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    &__user {
+      display: flex;
+      gap: 0.8rem;
+    }
+
+    &__user-img {
+      position: relative;
+      border-radius: 1.6rem;
+      width: 6.4rem;
+      height: 6.4rem;
+      overflow: hidden;
+      flex-shrink: 0;
+      background-color: var(--background);
+
+      @include mq(custom, max, 1024) {
+        width: 4.8rem;
+        height: 4.8rem;
+      }
+    }
+
+    &__user-img-elem {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+
+    &__user-box {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    &__user-title {
+      color: var(--white);
+    }
+
+    &__user-desc {
+      font-weight: 400;
+      font-size: 1.4rem;
+      color: var(--secondary);
+    }
+}

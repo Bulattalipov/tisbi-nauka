@@ -1,0 +1,65 @@
+.winners {
+  &__slider {
+
+  }
+
+  &__slider-item {
+    border-radius: 1.6rem;
+    background: var(--block-10-blur);
+    overflow: hidden;
+  }
+
+  &__slider-item-img {
+    position: relative;
+    width: 100%;
+    height: 20rem;
+  }
+
+  &__slider-item-img-elem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__slider-item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 1.6rem;
+  }
+
+  &__slider-item-title  {
+    font-size: 18px;
+    color: var(--white);
+    line-height: 136%;
+  }
+
+  &__slider-item-desc {
+    color: var(--secondary);
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  &__slider-item-price {
+    border-left: .1rem solid var(--main);
+    padding: .8rem 1.6rem;
+    background: var(--secondary-10);
+    color: var(--secondary);
+    text-align: center;
+  }
+
+  .swiper-nav {
+    margin-top: 4.8rem;
+  }
+
+  &__slider-item-title  {
+
+
+  }
+}

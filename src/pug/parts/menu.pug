@@ -1,0 +1,20 @@
+-
+  navLinks = [
+    {title: "О науке", link: "http://localhost:3000/about-science.html"},
+    {title: "Мероприятия", link: "http://localhost:3000/events.html"},
+    {title: "Издания", link: "http://localhost:3000/own-scientific-publications.html"},
+    {title: "Конференции", link: "http://localhost:3000/conferences.html"},
+    {title: "Гранты", link: "#"},
+  ]
+
+.menu
+  nav.nav
+    ul.nav__list
+      for item in navLinks
+        li.nav__item
+          a.nav__link(href=item.link)= item.title
+  .menu__langs
+    +button('a', 'btn--transparent', 'Русский', '#', 'icon__lang', '')
+    +button('a', 'btn--transparent', 'English', '#', 'icon__lang', '')
+    +button('a', 'btn--transparent', 'Deutsland', '#', 'icon__lang', '')
+    +button('a', 'btn--transparent', 'Francais', '#', 'icon__lang', '')

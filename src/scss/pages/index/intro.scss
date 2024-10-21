@@ -1,0 +1,110 @@
+.intro {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+
+  &__img-slider {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+  }
+
+  &__img-slider-item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    z-index: 2;
+    height: 100vh;
+    padding-bottom: 9.6rem;
+
+    @include mq(lg) {
+      padding-bottom: 6.4rem;
+    }
+
+    @include mq(custom, max, 1024) {
+      padding-bottom: 3.2rem;
+    }
+
+    @media screen and (max-height: 800px) {
+      padding-bottom: 4.8rem;
+    }
+  }
+
+  &__text-slider {
+    width: 83.2rem;
+    border-radius: 1.6rem;
+    padding: 2.4rem;
+    backdrop-filter: blur(1.2rem);
+    background: var(--nauka-yuristy-block-70);
+    color: var(--white);
+    margin-left: 0;
+
+    @include mq(xl) {
+      width: 65.6rem;
+    }
+
+    @include mq(sm) {
+      width: 100%;
+    }
+
+    @include mq(custom, max, 640) {
+      padding: 1.6rem;
+    }
+  }
+
+  &__text-slider-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.4rem;
+  }
+
+  &__text-slider-item-title {
+    font-family: var(--second-family);
+    font-weight: 800;
+    font-size: 4.8rem;
+    color: var(--white);
+    line-height: 122.5%;
+
+    @include mq(custom, max, 1024) {
+      font-size: 3.2rem;
+    }
+
+    @include mq(sm) {
+      font-weight: 700;
+      font-size: 2rem;
+    }
+
+    @include mq(custom, max, 640) {
+      font-weight: 800;
+      font-size: 3.2rem;
+    }
+  }
+
+  &__text-slider-item-text {
+    font-weight: 400;
+    font-size: 3.2rem;
+    color: var(--secondary);
+    line-height: 122.5%;
+
+    @include mq(xl) {
+      font-weight: 600;
+      font-size: 1.8rem;
+    }
+
+    @include mq(custom, max, 1024) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__text-slider-wrapper {
+    margin-bottom: 2.4rem;
+  }
+}

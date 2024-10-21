@@ -1,0 +1,96 @@
+.modal__container(data-target="modal-registration")
+  .site-container
+    .modal__content
+      //- button.button-reset.modal__close-btn.modal-close(type="button")
+      //-   span
+      //-   span
+      .modal__registration
+        //- +title('icon__message', 'Регистрация на коференцию', '26.04.2024')
+        .modal__registration-inner
+          include ../form-registration
+          .modal__registration-right
+            +timer(false, true)
+            img.modal__registration-img(src="assets/images/planet.png" alt="")
+.modal__container(data-target="modal-grant")
+  .site-container
+    .modal__content
+      .modal__grant
+        .modal__grant-slider.swiper
+          .swiper-wrapper
+            each item in Array.from(Array(3).keys())
+              .swiper-slide
+                img.modal__grant-slider-img(src='assets/images/grant-img.jpg')
+          +swiper-nav
+        .modal__grant-content
+          .modal__grant-contain
+            img.modal__grant-contain-img(src='assets/images/Logotype_fpg1.png')
+            .modal__grant-contain-info
+              .modal__grant-contain-info-title Фонд президентских грантов
+              .modal__grant-contain-info-desc
+                | Конкурс на предоставление субсидии из бюджета Астраханской области некоммерческим неправительственным организациям, участвующим в развитии институтов гражданского общества, в 2024 году.
+          .modal__grant-title
+            | Акция “волонетры труда”
+          .modal__grant-box
+            .modal__grant-box-title Цель проекта
+            .modal__grant-box-text
+              | Представить научной общественности, преподавателям университетов, молодым учёным и аспирантам как в России, так и за рубежом оригинальные результаты теоретических и прикладных исследований в области экономики, менеджмента, юриспруденции, образования, науки, культуры.
+          .modal__grant-box
+            .modal__grant-box-title Сумма
+            .modal__grant-box-price 3 498 000,00 руб.
+          .modal__grant-box
+            .modal__grant-box-title Команда
+            .modal__grant-box-tags
+              .modal__grant-box-tag Найда Анна Михайловна
+              .modal__grant-box-tag Прохорова Евгения Александровна
+              .modal__grant-box-tag Грязнов Алексей Николаевич
+          .modal__grant-btns
+            +button('a', 'btn--transparent', 'Страница грантодателся', '#', '', 'icon__angle-small-right-white')
+            +button('button', '', 'Закрыть', '', '', 'icon__cross-small')(class='modal-close')
+.modal__container(data-target="modal-registration-event")
+  .site-container
+    .modal__content
+      .modal__registration
+        +title('icon__message', 'Регистрация на олимпиаду', '8 сентября 2024')
+        .modal__registration-inner.modal__registration-inner--event
+          include ../form-registration-2
+          .modal__registration-right
+            .upcoming-events__item
+              .upcoming-events__item-top
+                  .upcoming-events__item-top-box
+                      .upcoming-events__item-top-box-type Лекция
+                      .upcoming-events__item-top-box-title Наука
+                  ul.upcoming-events__item-top-tags
+                      li.upcoming-events__item-top-tag Очное
+                      li.upcoming-events__item-top-tag Очное
+                      li.upcoming-events__item-top-tag Студенты
+              .upcoming-events__item-title
+                  | Международная научно-практическая конференция: “Переход от образовательной среды к образовательной экосистеме в интересах устойчивого развития”
+              ul.upcoming-events__item-info
+                  li.upcoming-events__item-info-item
+                      +icon-multi("icon__clock")(width="16px" height="16px")
+                      .upcoming-events__item-info-item-text 18.04.2024
+                      span 11:20
+                  li.upcoming-events__item-info-item
+                      +icon-multi("icon__marker")(width="16px" height="16px")
+                      .upcoming-events__item-info-item-text
+                          | Казань, ул. Муштари, д.13
+                  li.upcoming-events__item-info-item
+                      +icon-multi("icon__shuffle")(width="16px" height="16px")
+                      .upcoming-events__item-info-item-text
+                          | Смешанная
+.modal__container(data-target="modal-materials")
+  .site-container
+    .modal__content
+      .modal__registration
+        .modal__registration-inner.modal__registration-inner--materials
+          include ../form-sent-materials
+
+
+
+//- .modal__container(data-target="modal-grant")
+//-   .modal__content
+//-     button.button-reset.modal__close-btn.modal-close(type="button")
+//-       span
+//-       span
+//-     .modal__legend
+

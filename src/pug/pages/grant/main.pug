@@ -1,0 +1,7 @@
+main.page-main.main
+    .sections-container
+        +breadcrumbs([['Главная', "/"], ['Конкурсы и гранты', "/"], ['Фонд президентских грантов ']])(class='breadcrumbs--large-indentation')
+        include grant.pug
+        include ../competitions/winners.pug
+        include ../index/active-grants.pug
+        include ../index/latest-news.pug

@@ -1,0 +1,69 @@
+mixin search-filter(select)
+    script
+      | let arrayEventDate = ['2024-10-20', '2024-10-25', '2024-10-27'];
+    section.search-filter
+        .site-container
+            form.search-filter__wrapper
+                .search-filter__box
+                    .search-filter__input
+                        +icon-multi('icon__search')(width='20px' height='20px' class='search-filter__input-icon')
+                        input.input.search-filter__input-elem(type='text' placeholder='Поиск')
+                    +button('button', 'btn--transparent btn--cube search-filter__btn-filter active', '', '', '', 'icon__filter')
+                .search-filter__extended
+                  .search-filter__extended-inner
+                    .search-filter__extended-calendar(id='filter-calendar')
+                      input.search-filter__extended-calendar-input.visually-hidden(type='text' name='filter-calendar')
+                      .search-filter__extended-calendar-btns
+                        +button('button', 'btn--transparent search-filter__extended-calendar-btn1', 'Переключить на выбор периода', '', '', '')
+                        +button('button', 'btn--transparent search-filter__extended-calendar-btn2', 'Переключить на выбор даты', '', '', '')
+                    .search-filter__extended-selects
+                      .search-filter__extended-select
+                        .search-filter__extended-select-title Рубрики
+                        select.choices-select.choices-select--multi(multiple='')
+                          option(placeholder) Выбрать из списка
+                          option(value="element1") element13uh f4u3hf uh34uhf u4i3hf iu4h3ufhu43hfui43hf uh uh43u fh4u3h
+                          option(value="element2") element2
+                          option(value="element3") element3
+                          option(value="element4") element4
+                      .search-filter__extended-select
+                        .search-filter__extended-select-title Тип участия
+                        select.choices-select.choices-select--multi(multiple='')
+                          option(placeholder) Выбрать из списка
+                          option(value="element1") element1
+                          option(value="element2") element2
+                          option(value="element3") element3
+                          option(value="element4") element4
+                      .search-filter__extended-select
+                        .search-filter__extended-select-title Участники
+                        select.choices-select.choices-select--multi(multiple='')
+                          option(placeholder) Выбрать из списка
+                          option(value="element1") element1
+                          option(value="element2") element2
+                          option(value="element3") element3
+                          option(value="element4") element4
+                      .search-filter__extended-select
+                        .search-filter__extended-select-title Вид мероприятий
+                        select.choices-select.choices-select--multi(multiple='')
+                          option(placeholder) Выбрать из списка
+                          option(value="element1") element1
+                          option(value="element2") element2
+                          option(value="element3") element3
+                          option(value="element4") element4
+                    +button('button', 'search-filter__extended-btn', 'Применить фильтры', '', '', '')
+                ul.search-filter__tags
+                    li.search-filter__tag
+                        .search-filter__tag-text
+                            | Категория конкурса: Стажировка
+                        +icon-mono('icon__cross-small')(width='17px' height='16px' class='search-filter__tag-btn-close')
+                    li.search-filter__tag
+                        .search-filter__tag-text
+                            | Уровень: Региональный
+                        +icon-mono('icon__cross-small')(width='17px' height='16px' class='search-filter__tag-btn-close')
+                    li.search-filter__tag
+                        .search-filter__tag-text
+                            | Дата: 20.09.2023 - 20.09.2024
+                        +icon-mono('icon__cross-small')(width='17px' height='16px' class='search-filter__tag-btn-close')
+                    li.search-filter__tag
+                        .search-filter__tag-text
+                            | Категории участников: Доктора наук, Студенты
+                        +icon-mono('icon__cross-small')(width='17px' height='16px' class='search-filter__tag-btn-close')

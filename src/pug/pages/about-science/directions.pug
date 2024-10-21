@@ -1,0 +1,36 @@
+-
+    directionsAccardion = [
+        {title: 'Экономический факультет', names: ['Кафедра Финансов и кредита', 'Кафедра бухгалтерского учета и налогообложения', 'Кафедра экономической и правовой безопасности', 'Кафедра экономики']},
+        {title: 'Юридический факультет', names: ['Кафедра Финансов и кредита', 'Кафедра бухгалтерского учета и налогообложения', 'Кафедра экономической и правовой безопасности', 'Кафедра экономики']},
+        {title: 'Факультет информационных технологий', names: ['Кафедра Финансов и кредита', 'Кафедра бухгалтерского учета и налогообложения', 'Кафедра экономической и правовой безопасности', 'Кафедра экономики']},
+        {title: 'Гуманитарный факультет', names: ['Кафедра Финансов и кредита', 'Кафедра бухгалтерского учета и налогообложения', 'Кафедра экономической и правовой безопасности', 'Кафедра экономики']},
+        {title: 'Факультет управления', names: ['Кафедра Финансов и кредита', 'Кафедра бухгалтерского учета и налогообложения', 'Кафедра экономической и правовой безопасности', 'Кафедра экономики']},
+    ]
+
+section.section.directions
+    .site-container
+        .directions__inner
+            +title('icon__trophy', 'Направления научно-исследовательской деятельности')
+            +button('a', 'btn--transparent', 'Все направления', '', '', 'icon__download')
+        .directions__accardions.js-directions-accordions
+            each item in directionsAccardion
+                .directions__accardion.js-accordion
+                    .directions__accardion-base
+                        .directions__accardion-title= item.title
+                        +button('a', 'directions__accardion-link btn--transparent', 'Перейти', '#', '', 'icon__angle-small-right-white')
+                        +button('button', 'directions__accardion-btn-open btn--transparent', 'Развернуть', '', '', 'icon__angle-small-down')(class="js-accordion-btn")
+                        +button('button', 'directions__accardion-btn-close btn--transparent', 'Свернуть', '', '', 'icon__angle-small-down')(class="js-accordion-btn")
+                    .directions__accardion-content.js-accordion-content
+                        each elem in item.names
+                            .directions__accardion-box
+                                .directions__accardion-box-name= elem
+                                .directions__accardion-box-info
+                                    .directions__accardion-box-info-title
+                                        | Направления научных исследований:
+                                    ul.directions__accardion-box-info-list
+                                        li.directions__accardion-box-info-item
+                                            | Банковская система Российской Федерации: современное состояние и проблемы развития
+                                        li.directions__accardion-box-info-item
+                                            | Проблемы и перспективы развития денежно-кредитной системы России в условиях глобализации
+                                        li.directions__accardion-box-info-item
+                                            | Совершенствование бизнес-процессов обслуживания корпоративных клиентов в коммерческом банке

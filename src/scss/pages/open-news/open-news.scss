@@ -1,0 +1,353 @@
+.open-news {
+    
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 4.8rem;
+        border-radius: 1.6rem;
+        padding: 4.8rem;
+        background: var(--block);
+        color: var(--white);
+
+        @include mq(custom, max, 1024) {
+            padding: 2.4rem;
+            gap: 2.4rem;
+        }
+
+        @include mq(custom, max, 640) {
+            margin: 0 -1.6rem;
+            padding: 2.4rem 1.6rem;
+            border-radius: 0;
+        }
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 4.8rem;
+
+        @include mq(custom, max, 1024) {
+            gap: 2.4rem;
+        }
+
+        @include mq(custom, max, 640) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__top-box {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+
+    &__top-title {
+        font-family: var(--second-family);
+        font-weight: 800;
+        font-size: 4.8rem;
+        line-height: 122.5%;
+
+        @include mq(custom, max, 1024) {
+            font-size: 3.2rem;
+        }
+    }
+
+    &__top-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+    }
+
+    &__top-tag {
+        border: .1rem solid var(--secondary);
+        border-radius: .4rem;
+        padding: .4rem .8rem;
+        font-weight: 400;
+        font-size: 1.4rem;
+        color: var(--white);
+    }
+
+    &__top-date {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+        border: .1rem solid var(--secondary);
+        border-radius: 1.6rem;
+        padding: 1.6rem 2.4rem;
+
+        @include mq(custom, max, 640) {
+            width: 100%;
+        }
+    }
+
+    &__top-date-text {
+        font-size: 1.8rem;
+        line-height: 136%;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 3.2rem;
+        line-height: 128%;
+
+        @include mq(custom, max, 1024) {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__slider {
+        position: relative;
+        width: 100%;
+        height: 48rem;
+        border-radius: 1.6rem;
+
+        @include mq(custom, max, 1024) {
+            height: 28rem;
+        }
+
+        .swiper-nav {
+            position: absolute;
+            bottom: 2.4rem;
+            right: 2.4rem;
+            z-index: 2;
+
+            @include mq(custom, max, 640) {
+                right: 0;
+                left: 0;
+                bottom: 1.6rem;
+                width: fit-content;
+                margin: 0 auto;
+            }
+        }
+
+        .swiper-pagination-bullet {
+            width: 1.6rem;
+            height: 1.6rem;
+            background-color: var(--secondary);
+            opacity: 1;
+
+            @include mq(custom, max, 640) {
+                width: 0.9rem;
+                height: 0.9rem;
+            }
+
+            &.swiper-pagination-bullet-active {
+                background-color: var(--main);
+            }
+        }
+    }
+
+    &__slider-item {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__slider-item-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 2.4rem;
+        line-height: 136%;
+
+        @include mq(custom, max, 1024) {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__blockquote {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 4.8rem;
+        width: 100%;
+        border: .1rem solid var(--secondary);
+        border-radius: 1.6rem;
+        padding: 4.8rem;
+
+        @include mq(custom, max, 1024) {
+            padding: 2.4rem;
+            gap: 2.4rem;
+        }
+    }
+
+    &__blockquote-text {
+        font-weight: 400;
+        font-size: 3.2rem;
+        line-height: 136%;
+
+        @include mq(custom, max, 1024) {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__blockquote-icon {
+        position: absolute;
+        z-index: 0;
+        top: -0.2rem;
+        right: 4.8rem;
+
+        @include mq(custom, max, 1024) {
+            width: 6rem;
+            height: 6rem;
+            top: 0.5rem;
+            right: 2.4rem;
+        }
+    }
+
+    &__blockquote-user {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+
+        @include mq(custom, max, 640) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__blockquote-user-img {
+        position: relative;
+        border-radius: 1.6rem;
+        width: 12.8rem;
+        height: 12.8rem;
+        overflow: hidden;
+        flex-shrink: 0;
+        background-color: var(--background);
+
+        @include mq(custom, max, 1024) {
+            width: 6.4rem;
+            height: 6.4rem;
+        }
+    }
+
+    &__blockquote-user-img-elem {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+    }
+
+    &__blockquote-user-post {
+        font-size: 1.8rem;
+        color: var(--main);
+
+        @include mq(custom, max, 1024) {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__blockquote-user-title {
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 3.2rem;
+        line-height: 136%;
+
+        @include mq(custom, max, 1024) {
+            font-size: 2rem;
+        }
+    }
+
+    &__blockquote-user-profession {
+        color: var(--secondary);
+    }
+
+    &__document {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+
+        @include mq(custom, max, 640) {
+            justify-content: space-between;
+        }
+    }
+
+    &__document-item-info {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+    }
+
+    &__document-item-title {
+        font-size: 1.8rem;
+        color: #fffaf6;
+
+        @include mq(custom, max, 1024) {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__document-item-box {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+    }
+
+    &__document-item-contain {
+        display: flex;
+        gap: 0.8rem;
+
+        @include mq(custom, max, 640) {
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 0.2rem;
+        }
+    }
+
+    &__document-item-type,
+    &__document-item-size {
+        font-weight: 400;
+        font-size: 1.4rem;
+        color: #93908e;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+
+    &__list {
+
+    }
+
+    &__list-item {
+        position: relative;
+        font-size: 2.4rem;
+        padding-left: 3.6rem;
+
+        @include mq(custom, max, 1024) {
+            font-size: 1.6rem;
+            padding-left: 2.6rem;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 1.2rem;
+            left: 1.5rem;
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+            background-color: var(--white);
+
+            @include mq(custom, max, 1024) {
+                top: 0.7rem;
+                left: 1rem;
+                width: 0.4rem;
+                height: 0.4rem;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 0.5rem;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+main.page-main.main
+  .sections-container
+    +breadcrumbs([['Главная', "/"], ['Конференции', "/"], ['Медиа', '/'], ['Наука и образование']])(class='breadcrumbs--large-indentation')
+    include archive.pug
+    include gallery.pug
+    include presentations.pug
+    section.section
+      .site-container
+        .own-scientific-publications__item
+          .own-scientific-publications__item-inner
+            .own-scientific-publications__item-col
+              .own-scientific-publications__item-title
+                | Сборники научных трудов
+              .own-scientific-publications__item-text
+                p
+                  | Основная цель нашего журнала — прояснить суть современного международного права, выявить основные тенденции его развития и понять его место и роль в мировой системе.
+                p
+                  | Журнал имеет междисциплинарный характер, где международное право рассматривается в системе международных отношений и политики.
+              +button('a', '', 'Медиа', '#', '', 'icon__angle-small-right-white')
+            .own-scientific-publications__item-col
+              .own-scientific-publications__item-release-title Последняя конференция этого года #[span 2024]
+              .own-scientific-publications__item-desc
+                | Взаимодействие бизнеса и общества в условиях трансформации информационных процессов и технологий
+              ul.own-scientific-publications__item-info
+                li.own-scientific-publications__item-info-item
+                    +icon-multi("icon__calendar")(width="16px" height="16px")
+                    .own-scientific-publications__item-info-item-text 18.04.2024
+                      span 11:20
+                li.own-scientific-publications__item-info-item
+                    +icon-multi("icon__marker")(width="16px" height="16px")
+                    .own-scientific-publications__item-info-item-text
+                      | Казань, ул. Муштари, д.13
+                li.own-scientific-publications__item-info-item
+                    +icon-multi("icon__shuffle")(width="16px" height="16px")
+                    .own-scientific-publications__item-info-item-text
+                      | Смешанная
+              +button('a', '', 'Архив', '#', '', 'icon__angle-small-right-white')
+    include ../index/latest-news.pug

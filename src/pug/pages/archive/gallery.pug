@@ -1,0 +1,11 @@
+section.section.gallery
+  .site-container
+    .gallery__inner
+      +title('icon__picture', 'Галерея')
+      .open-news__slider.swiper.simple-slider
+          .swiper-wrapper.open-news__slider-wrapper
+              for item in Array.from(Array(7).keys())
+                  .swiper-slide.open-news__slider-item
+                      img.open-news__slider-item-img(src="assets/images/conference.jpg" alt='')
+          +swiper-nav
+      +button('a', 'btn--transparent gallery__btn', 'Больше фотографий', '#', '', 'icon__angle-small-right-white')

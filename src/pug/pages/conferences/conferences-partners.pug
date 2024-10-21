@@ -1,0 +1,9 @@
+section.section.conferences-partners(id='partners')
+    .site-container
+        +title('icon__badge', 'Организаторы и партнеры')
+        .conferences-partners__wrapper
+            .conferences-partners__swiper.swiper.js-infinity-slider
+                .swiper-wrapper
+                    each i in Array.from(Array(5).keys())
+                        a.swiper-slide(href="https://science.tisbi.ru/ru")
+                            img.conferences-partners__swiper-item-img(src="assets/images/sberbank.svg", alt="icon")

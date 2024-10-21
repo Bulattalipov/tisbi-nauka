@@ -1,0 +1,131 @@
+.grant-stages {
+  .title {
+    margin-bottom: 2.4rem;
+  }
+
+  &__inner {
+    border-radius: 1.6rem;
+    padding: 2.4rem;
+    backdrop-filter: blur(1.2rem);
+    background: var(--block-10-blur);
+
+    @include mq(custom, max, 640) {
+      margin: 0 -1.6rem;
+      padding: 2.4rem 1.6rem;
+      border-radius: 0;
+    }
+  }
+
+  &__table {
+    tr {
+      & > * {
+        padding-bottom: 2.4rem;
+        vertical-align: top;
+
+        &:nth-child(1) {
+          padding-right: 2.4rem;
+
+          @include mq(custom, max, 640) {
+            display: none;
+          }
+        }
+
+        &:nth-child(2) {
+          padding-right: 2.4rem;
+        }
+      }
+    }
+
+    th {
+      color: var(--secondary);
+      text-align: start;
+
+      span {
+        display: none;
+
+        @include mq(custom, max, 640) {
+          display: inline;
+        }
+      }
+    }
+  }
+
+  &__table-date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-radius: .8rem;
+    padding: 1.6rem;
+    backdrop-filter: blur(1.2rem);
+    background: rgba(255, 92, 0, 0.16);
+    width: 16rem;
+  }
+
+  &__table-date-elem {
+    color: var(--main);
+  }
+
+  &__table-number {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.6rem;
+    width: 4.8rem;
+    height: 4.8rem;
+    background: var(--main);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--white);
+  }
+
+  &__table-info {
+    .grant-stages__table-date {
+      margin-top: 1.6rem;
+
+      @include mq(custom, min, 640) {
+        display: none;
+      }
+    }
+
+  }
+
+
+  &__table-info-title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: var(--white);
+    margin-bottom: 1.6rem;
+
+    @include mq(custom, max, 1024) {
+      font-size: 2rem;
+    }
+  }
+
+  &__table-info-desc  {
+    color: var(--secondary);
+  }
+
+  &__table-tbody {
+    tr {
+     &:not(:last-child) {
+      & > * {
+        &:nth-child(2) {
+          position: relative;
+
+          &:before {
+            content: '';
+            position: absolute;
+            left: 2.1rem;
+            width: 0.4rem;
+            height: 100%;
+            background-color: var(--main);
+            opacity: 0.4;
+          }
+        }
+      }
+     }
+    }
+  }
+}

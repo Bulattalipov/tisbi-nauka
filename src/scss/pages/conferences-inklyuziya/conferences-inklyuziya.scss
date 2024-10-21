@@ -1,0 +1,445 @@
+.inklyuziya-page {
+  .header {
+    background: var(--inklyuziya-main);
+  }
+
+  .timer-banner {
+    .timer {
+      max-width: 30rem;
+      background-color: transparent;
+      box-shadow: none;
+    }
+    .timer__date-box span  {
+      color:  var(--whte);
+    }
+  }
+
+  .conferences-intro__small-text {
+    color: var(--inklyuziya-dark-secondary);
+  }
+
+  .conferences-intro__title  {
+    color: var(--inklyuziya-main);
+  }
+
+  .conferences-intro__subtitle {
+    color: var(--obschestvo,-gosudarstvo,-lichnost-default);
+  }
+
+  .conferences-intro__tag {
+    border: 1px solid var(--inklyuziya-dark-secondary);
+    color: var(--obschestvo,-gosudarstvo,-lichnost-default);
+  }
+
+  .conferences-intro__info-item {
+    box-shadow: 0 .8rem 3rem 0 rgba(32, 32, 32, 0.3);
+    background: var(--inklyuziya-main);
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .conferences-intro__info-item-text {
+    color: var(--white);
+  }
+
+  .conferences-intro__info-item-add {
+    color: var(--white);
+  }
+
+  .conferences-intro__text {
+    color: var(--inklyuziya-dark-secondary);
+    border-left: 0.2rem solid var(--inklyuziya-main);
+  }
+
+  .conferences-intro__img {
+    width: 85rem;
+    height: 85rem;
+    left: 95.8rem;
+
+    @include mq(custom, max, 1580) {
+      left: auto;
+    }
+    @include mq(xl) {
+      right: -25rem;
+    }
+  }
+
+  .timer {
+    box-shadow: 0 8px 30px 0 rgba(32, 32, 32, 0.3);
+    background-color: var(--inklyuziya-main);
+  }
+
+  .timer__box-date {
+    background-color: var(--white);
+    color: var(--obschestvo,-gosudarstvo,-lichnost-default);
+  }
+
+  .timer__box-date-text {
+    color: var(--obschestvo,-gosudarstvo,-lichnost-default);
+  }
+
+  .timer__box-date-add {
+    color: var(--inklyuziya-main);
+  }
+
+
+  .title {
+    color: var(--obschestvo,-gosudarstvo,-lichnost-default);
+  }
+
+  .btn:not(.btn--transparent) {
+    background-color: var(--white);
+    color: #404040;
+  }
+
+  .btn--transparent {
+    border: 1px solid var(--secondary);
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: rgba(142, 150, 175, 0.2);
+      .icon {
+        color: var(--obschestvo,-gosudarstvo,-lichnost-default);
+      }
+    }
+  }
+
+  .conferences-intellgence__item {
+    background-color: transparent;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .conferences-intellgence__item-title {
+    color: var(--obschestvo,-gosudarstvo,-lichnost-default);
+  }
+
+  .conferences-intellgence__item-elem {
+    color: var(--inklyuziya-dark-secondary);
+
+    &::before {
+      width: 2.4rem;
+      height: 0.8rem;
+      background-image: url("data:image/svg+xml,%3Csvg width='24' height='8' viewBox='0 0 24 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 4H20' stroke='%233456C6' stroke-width='8' stroke-linecap='round' /%3E%3C/svg%3E");
+    }
+  }
+
+  .conferences-regulations__item {
+    background-color: transparent;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  .conferences-regulations__item-elem {
+    &:before {
+      box-shadow: 0 8px 30px 0 rgba(32, 32, 32, 0.3);
+      background: var(--inklyuziya-main);
+    }
+
+    &:not(:last-child)::after {
+      background-color: var(--inklyuziya-main);
+    }
+  }
+
+  .conferences-regulations__item-elem-date  {
+    color: var(--obschestvo,-gosudarstvo,-lichnost-default);
+  }
+
+  .conferences-regulations__item-elem-title {
+    color: var(--inklyuziya-dark-secondary);
+  }
+
+  .conferences-regulations__img {
+    width: 65.6rem;
+    height: 54.4rem;
+    top: auto;
+    left: 90rem;
+
+    @include mq(xl) {
+      left: auto;
+      right: -5rem;
+    }
+  }
+
+  .conferences-program {
+    background: var(--inklyuziya-main);
+
+    .title {
+      color: var(--white);
+    }
+  }
+
+  .conferences-program__box-text {
+    color: var(--inklyuziya-light-secondary);
+  }
+
+  .conferences-program__row--background {
+    background-color: var(--white);
+  }
+
+  .conferences-program__col-info-title {
+    color: var(--obschestvo,-gosudarstvo,-lichnost-default);
+  }
+
+  .conferences-program__col-info-tag {
+    &--orange {
+      background: var(--inklyuziya-main);
+      border: none;
+
+      .conferences-program__col-info-tag-title {
+        color: var(--white);
+      }
+    }
+  }
+
+  .conferences-program__col-info-tag-title {
+    color: var(--obschestvo,-gosudarstvo,-lichnost-default);
+  }
+
+  .conferences-program__col-info-tag-add {
+    color: var(--inklyuziya-main);
+  }
+
+  .conferences-program__col-user-box {
+    .btn {
+      color: var(--obschestvo,-gosudarstvo,-lichnost-default);
+    }
+  }
+
+  .conferences-program__col-user-name {
+    color: var(--inklyuziya-main);
+  }
+
+  .conferences-program__col-user-speciality {
+    color: var(--inklyuziya-dark-secondary);
+  }
+
+  .conferences-program__note {
+    color: var(--inklyuziya-light-secondary);
+    border-left: 0.2rem solid var(--white);;
+  }
+
+  .conferences-requirements__list {
+    background-color: transparent;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .conferences-requirements__item-title {
+    color: var(--obschestvo,-gosudarstvo,-lichnost-default);
+  }
+
+  .conferences-requirements__item-text {
+    color: var(--inklyuziya-dark-secondary);
+    border-left: 0.2rem solid var(--inklyuziya-main);
+  }
+
+  .conferences-requirements__img {
+    width: 63rem;
+    height: 63rem;
+    top: -10rem;
+    left: 61%;
+  }
+
+  .conferences-partners {
+    .swiper-slide {
+      box-shadow: 0 8px 30px 0 rgba(32, 32, 32, 0.3);
+    }
+  }
+
+  .conferences-faq__img {
+    width: 80.8rem;
+    height: 80.8rem;
+    top: -13rem;
+    left: 83rem;
+
+    @include mq(custom, max, 1572) {
+      width: 60rem;
+      height: 60rem;
+      left: auto;
+      right: -17rem;
+    }
+
+    @include mq(lg) {
+      right: -20rem;
+    }
+  }
+
+  .conferences-faq__item {
+    background-color: transparent;
+    border-radius: 0;
+
+    &.conferences-faq__item--change {
+      .conferences-faq__item-title {
+        color: var(--obschestvo,-gosudarstvo,-lichnost-default);
+      }
+    }
+
+    &::before {
+      display: none;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 0.1rem solid var(--inklyuziya-main);
+    }
+
+    &.active {
+      .conferences-faq__item-title {
+        color: var(--obschestvo,-gosudarstvo,-lichnost-default);
+      }
+
+      .icon {
+        fill: var(--obschestvo,-gosudarstvo,-lichnost-default);
+      }
+    }
+
+    .icon {
+      fill: var(--inklyuziya-dark-secondary);
+    }
+  }
+
+  .conferences-faq__item-title {
+    color: var(--inklyuziya-dark-secondary);
+  }
+
+  .conferences-faq__item-text {
+    color: var(--inklyuziya-dark-secondary);
+    border-left: 0.2rem solid var(--inklyuziya-main);
+  }
+
+  .conferences-faq__item-btns {
+    .btn {
+      color: var(--obschestvo,-gosudarstvo,-lichnost-default);
+    }
+  }
+
+  .footer {
+    background: var(--inklyuziya-main);
+  }
+
+
+  .modal {
+    background-color: var(--white);
+    backdrop-filter: none;
+  }
+
+  .modal__close-btn {
+    span {
+      background-color: #C2C5CD;
+    }
+  }
+
+  .modal__registration-img {
+    width: 115.3rem;
+    height: 104.9rem;
+    top: -3rem;
+    left: 53.8rem;
+
+    @include mq(xl) {
+      top: -1rem;
+      left: 39.8rem;
+    }
+  }
+
+  .form-registration {
+    background: var(--inklyuziya-main);
+
+    .title {
+      color: var(--white);
+    }
+
+    .input {
+      background-color: var(--white);
+      color: #000;
+
+      &::placeholder {
+        color: var(--inklyuziya-dark-secondary);
+      }
+    }
+  }
+
+  .form-registration__form-textarea {
+    background-color: var(--white);
+    color: #000;
+
+    &::placeholder {
+      color: var(--inklyuziya-dark-secondary);
+    }
+  }
+
+  .form-registration__step.active-step {
+
+    .form-registration__step-number {
+      background-color: var(--white);
+      color: var(--obschestvo,-gosudarstvo,-lichnost-default);
+      border: none;
+    }
+  }
+
+  .form-registration__step.past-step {
+    .form-registration__step-number {
+      border: 0.1rem solid var(--white);
+    }
+
+    .form-registration__step-line {
+      background-color: var(--white);
+      opacity: 1;
+    }
+  }
+
+  .form-registration__text {
+    border-left: 0.2rem solid var(--white);
+  }
+
+  .form-registration__success-title,
+  .form-registration__success-email-elem {
+    color: var(--white);
+  }
+
+  .choices.is-open {
+    .choices__inner {
+      border: .2rem solid transparent !important;
+    }
+  }
+
+  .choices__inner {
+    background-color: var(--white);
+
+    &:hover {
+      background-color: var(--white);
+    }
+  }
+
+  .choices__list--dropdown.choices__list {
+    background-color: var(--white);
+  }
+
+  .choices__list--dropdown .choices__item {
+    color: #000 !important;
+  }
+
+  .choices__list--dropdown .choices__item:not(:last-child) {
+    border-bottom: 1px solid #000;
+  }
+
+  .choices__list--single .choices__item {
+    color: #000;
+  }
+
+  .radio-button__input:checked + .radio-button__elem {
+    border: 0.1rem solid var(--white);
+
+    &::before {
+      background-color: var(--white);
+    }
+  }
+}

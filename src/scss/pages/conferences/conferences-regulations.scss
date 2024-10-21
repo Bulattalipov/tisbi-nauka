@@ -1,0 +1,154 @@
+.conferences-regulations {
+
+    &__inner {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4.8rem;
+
+        @include mq(custom, max, 1024) {
+            display: flex;
+        }
+
+        @include mq(custom, max, 640) {
+            margin: 0 -1.6rem;
+        }
+    }
+
+    &__item {
+        position: relative;
+        backdrop-filter: blur(1.2rem);
+        background: var(--nauka-yuristy-block-70);
+        border-radius: 1.6rem;
+        padding: 2.4rem;
+        color: var(--white);
+
+        @include mq(custom, max, 1024) {
+            width: 100%;
+        }
+
+        @include mq(custom, max, 640) {
+            border-radius: 0;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          inset: 0;
+          border-radius: 1.6rem;
+          padding: 0.14rem;
+          background: linear-gradient(to bottom, #989898, #202020);
+          -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+          mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+          -webkit-mask-composite: destination-out;
+          mask-composite: exclude;
+          opacity: 0.4;
+        }
+    }
+
+    &__right {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      gap: 1.6rem;
+      padding: 2.4rem;
+
+      @include mq(custom, max, 1024) {
+        display: none;
+      }
+    }
+
+    &__right-title {
+      font-weight: 400;
+      font-size: 2.4rem;
+      color: var(--white);
+    }
+
+    &__right-desc {
+      color: var(--secondary);
+      padding-left: 2.4rem;
+      border-left: 0.2rem solid var(--yunesko-main);
+    }
+
+    &__item-list {
+        position: relative;
+        counter-reset: list;
+    }
+
+    &__item-elem {
+        position: relative;
+        padding-left: 7.2rem;
+
+        &::before {
+            counter-increment: list;
+            content: counter(list) "";
+            position: absolute;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 1.6rem;
+            width: 4.8rem;
+            height: 4.8rem;
+            background: var(--main);
+            font-weight: 400;
+            font-size: 2.4rem;
+            color: var(--white);
+            z-index: 2;
+        }
+
+        &:not(:last-child) {
+            padding-bottom: 2.4rem;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 2.2rem;
+                height: 100%;
+                width: 0.4rem;
+                background-color: var(--main);
+                z-index: 1;
+                opacity: 0.4;
+            }
+        }
+    }
+
+    &__item-elem-date {
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 3.2rem;
+        margin-bottom: 1.6rem;
+        line-height: 120%;
+
+        @include mq(md) {
+            font-size: 2rem;
+        }
+    }
+
+    &__item-elem-title {
+        font-size: 1.8rem;
+        color: var(--secondary);
+    }
+
+    &__img {
+        position: absolute;
+        z-index: -1;
+        top: -16rem;
+        left: 63rem;
+        width: 107.6rem;
+        height: 107.6rem;
+        object-fit: cover;
+
+        @include mq(xl) {
+            left: auto;
+            right: -23rem;
+            width: 90rem;
+            height: 90rem;
+        }
+
+        @include mq(custom, max, 1024) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,84 @@
+.menu {
+  position: fixed;
+  z-index: 12;
+  top: 7.8rem;
+  right: 24.4rem;
+  width: max-content;
+  display: none;
+  align-items: center;
+  gap: 1.2rem;
+  background: var(--secondary-10);
+  border-radius: 0.8rem;
+  border: 2px solid var(--block-10-blur);
+  backdrop-filter: blur(1.2rem);
+  background: var(--nauka-yuristy-block-70);
+  color: var(--secondary);
+
+  @include mq(custom, max, 1250) {
+    flex-direction: column;
+    align-items: flex-end;
+
+    &.active {
+      display: flex;
+    }
+
+    @include mq(custom, max, 640) {
+      top: 9.6rem;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      display: none;
+      width: 100%;
+      border-radius: 0;
+      border: none;
+      border-top: 2px solid rgba(108, 111, 117, 0.3);
+      // transform: translate3d(0, -100%, 0);
+      transition: transform 0.5s;
+      gap: 0;
+    }
+  }
+
+  @include mq(md) {
+    right: 21.2rem;
+  }
+
+  .nav {
+    width: 100%;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav__item {
+    width: 100%;
+  }
+
+  .nav__link {
+    display: block;
+    padding: 0.9rem 1.6rem;
+    text-align: start;
+
+    &:hover {
+      background: rgba(255, 92, 0, 0.16);
+    }
+
+    @include mq(custom, max, 640) {
+      text-align: end;
+      padding: 1.2rem 1.6rem;
+    }
+  }
+
+  &__langs {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 1.6rem;
+    margin: 1.2rem 1.6rem 1.6rem 1.6rem;
+
+    @include mq(custom, max, 640) {
+      display: flex;
+    }
+  }
+}

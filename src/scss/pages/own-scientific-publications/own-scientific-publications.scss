@@ -1,0 +1,336 @@
+.own-scientific-publications  {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2.4rem;
+    position: relative;
+    border-radius: 1.6rem;
+    padding: 4.8rem;
+    backdrop-filter: blur(1.2rem);
+    background: var(--block-10-blur);
+    overflow: hidden;
+    color: var(--white);
+
+    @include mq(custom, max, 1024) {
+      padding: 2.4rem;
+      gap: 2.4rem;
+    }
+
+    @include mq(sm) {
+      flex-direction: column;
+    }
+
+    @include mq(custom, max, 640) {
+      margin: 0 -1.6rem;
+      padding: 1.6rem;
+      border-radius: 0;
+    }
+
+    .btn {
+      @include mq(custom, max, 640) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__item-inner {
+    display: flex;
+    gap: 4.8rem;
+    width: 100%;
+
+    @include mq(custom, max, 1024) {
+      gap: 2.4rem;
+    }
+
+    @include mq(sm) {
+      flex-direction: column;
+    }
+  }
+
+  &__item-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.4rem;
+
+    &--short {
+      min-width: 43.2rem;
+      max-width: 43.2rem;
+
+      @include mq(custom, max, 1024) {
+        min-width: auto;
+        max-width: auto;
+      }
+    }
+  }
+
+  &__contain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4.8rem;
+
+    @include mq(custom, max, 1024) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .own-scientific-publications__item-inner {
+      flex-direction: column;
+      gap: 2.4rem;
+
+      @include mq(custom, max, 1024) {
+        flex-direction: row;
+      }
+
+      @include mq(custom, max, 768) {
+        flex-direction: column;
+      }
+    }
+
+    .own-scientific-publications__item-release-slider {
+      width: calc(22 *  var(--index) / 1.02);
+      max-width: 56rem;
+
+      @include mq(lg) {
+        width: calc(22 *  var(--index) / 1.01);
+      }
+
+      @include mq(custom, max, 1024) {
+        width: calc(21* 2vw);
+      }
+    }
+  }
+
+  &__item-title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: var(--white);
+
+    @include mq(custom, max, 1024) {
+      font-size: 2rem;
+    }
+  }
+
+  &__item-text  {
+    color: var(--secondary);
+    padding-left: 2.4rem;
+    border-left: 0.2rem solid var(--main);
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: 1.4rem;
+      }
+    }
+  }
+
+  &__item-release {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    width: 100%;
+  }
+
+  &__item-release-title {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.8rem;
+    color: var(--white);
+
+    span {
+      border-radius: .4rem;
+      padding: .8rem 1.2rem;
+      background: rgba(255, 92, 0, 0.16);
+      font-weight: 400;
+      font-size: 1.4rem;
+      text-align: center;
+      color: var(--main);
+    }
+  }
+
+  &__item-release-slider {
+    position: relative;
+    width: 100%;
+    overflow: visible;
+    width: calc(23.5 *  var(--index) / 1.01);
+    max-width: 60.8rem;
+
+    @include mq(lg) {
+      width: calc(21* 2vw);
+    }
+
+    @include mq(custom, max, 768) {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .swiper-nav  {
+      position: absolute;
+      top: -6rem;
+      z-index: 3;
+      right: 0;
+      width: 9.6rem;
+    }
+
+    .swiper-nav__nav-btn  {
+      backdrop-filter: blur(12px);
+      background: var(--block-10-blur);
+      background-color: var(--main);
+      border-radius: 0.8rem;
+
+      svg {
+        fill: var(--white);
+      }
+    }
+  }
+
+  &__item-release-slide {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    width: 100%;
+
+    .btn {
+      width: 100%;
+    }
+
+    .btn__text {
+      margin-right: auto;
+    }
+  }
+
+  &__item-notification {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    border-radius: .8rem;
+    padding: .8rem 1.6rem;
+    background: rgba(255, 92, 0, 0.16);
+  }
+
+  &__item-notification-text {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--main);
+  }
+
+  &__item-announcement {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--success);
+    padding: .8rem 1.6rem;
+    background: rgba(40, 181, 113, 0.2);
+
+    @include mq(custom, max, 1024) {
+      position: static;
+      width: 100%;
+      border-radius: .8rem;
+      text-align: center;
+    }
+  }
+
+  &__item-board {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    border: .2rem solid rgba(142, 150, 175, 0.2);
+    border-radius: .8rem;
+    padding: 2.4rem;
+  }
+
+  &__item-board-title  {
+    font-size: 1.8rem;
+  }
+
+  &__item-board-users {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  &__item-board-user {
+    display: flex;
+    gap: 1.6rem;
+  }
+
+  &__item-board-user-img {
+    position: relative;
+    border-radius: 1.6rem;
+    width: 9.6rem;
+    height: 9.6rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: var(--background);
+  }
+
+  &__item-board-user-img-user {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+  }
+
+  &__item-board-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  &__item-board-box-title {
+    font-size: 1.8rem;
+  }
+
+  &__item-board-box-prof {
+    color: var(--secondary);
+  }
+
+  &__item-desc {
+    font-weight: 400;
+    font-size: 2.4rem;
+    color: var(--white);
+    line-height: 136%;
+  }
+
+  &__item-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  &__item-info-item {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    border-left: .1rem solid var(--main);
+    padding: .8rem 1.2rem;
+    background: var(--secondary-10);
+  }
+
+  &__item-info-item-text {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    font-size: 1.8rem;
+    span {
+      display: inline-block;
+      color: var(--main);
+    }
+  }
+}

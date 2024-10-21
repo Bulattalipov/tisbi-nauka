@@ -1,0 +1,96 @@
+.banner-simple {
+    &__inner {
+        padding: 4.8rem;
+        border-radius: 1.6rem;
+        background: var(--block);
+        overflow: hidden;
+
+        @include mq(custom, max, 1024) {
+            padding: 2.4rem;
+        }
+
+        @include mq(custom, max, 640) {
+            margin: 0 -1.6rem;
+            padding: 2.4rem;
+            border-radius: 0;
+        }
+    }
+
+    &__box {
+        position: relative;
+        max-width: 70.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.4rem;
+
+        @include mq(xl) {
+            max-width: 65.8rem;
+        }
+
+        @include mq(lg) {
+            max-width: 56.2rem;
+        }
+
+        @include mq(custom, max, 1024) {
+            max-width: 53rem;
+        }
+
+        @include mq(sm) {
+            max-width: 39.4rem;
+        }
+
+        @include mq(custom, max, 640) {
+            max-width: 100%;
+        }
+    }
+
+    &__title {
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 3.2rem;
+        color: var(--white);
+        line-height: 136%;
+
+        @include mq(custom, max, 1024) {
+            font-size: 2rem;
+        }
+    }
+
+    &__text {
+        color: var(--secondary);
+        padding-left: 2.4rem;
+        border-left: 0.2rem solid var(--main);
+        line-height: 136%;
+
+        @include mq(custom, max, 640) {
+            padding-left: 0;
+            border-left: none;
+        }
+    }
+
+    .btn {
+        margin-top: 2.4rem;
+    }
+
+    &__img {
+        position: absolute;
+        min-width: 70.6rem;
+        height: 70.6rem;
+        top: -16rem;
+        left: 102%;
+
+        @include mq(lg) {
+            top: -20rem;
+            left: 108%;      
+        }
+
+        @include mq(sm) {
+            top: -8rem;
+        }
+
+        @include mq(custom, max, 640) {
+            display: none;
+        }
+    }
+}

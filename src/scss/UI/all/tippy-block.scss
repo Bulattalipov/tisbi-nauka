@@ -1,0 +1,18 @@
+[data-tippy-root] {
+  // top: 2.2rem !important;
+}
+
+.tippy-box {
+  // left: -1.5rem;
+  border-radius: .8rem;
+  background: #424866;
+
+  .tippy-content {
+    padding: 1.6rem;
+  }
+
+  .tippy-arrow {
+    // left: 1rem !important;
+    color: #424866;
+  }
+}

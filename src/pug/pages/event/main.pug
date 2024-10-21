@@ -1,0 +1,6 @@
+main.page-main.main
+    .sections-container
+        +breadcrumbs([['Главная', "/"], ['Мероприятия', "/"], ['Международный конкурс молодежных научных работ по проблемам кооперации «Молодежь и кооперация»']])
+        include event.pug
+        +upcoming-events
+        include ../index/latest-news.pug

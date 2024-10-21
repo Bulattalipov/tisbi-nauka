@@ -1,0 +1,27 @@
+mixin pagination
+    section.section.pagination
+        .site-container
+            ul.pagination__list
+                li.pagination__item
+                    a.pagination__item-arrow(href="#")
+                        +icon-mono('icon__angle-left')(width='20px' height='20px')
+                li.pagination__item
+                    +button('a', 'btn--transparent', '1', '#', '', '') 
+                li.pagination__item.active
+                    +button('a', 'btn--transparent', '2', '#', '', '') 
+                li.pagination__item
+                    +button('a', 'btn--transparent', '3', '#', '', '') 
+                li.pagination__item
+                    +button('a', 'btn--transparent', '4', '#', '', '')
+                li.pagination__item
+                    .pagination__item-elem ...
+                li.pagination__item
+                    +button('a', 'btn--transparent', '121', '#', '', '') 
+                li.pagination__item
+                    +button('a', 'btn--transparent', '122', '#', '', '') 
+                li.pagination__item
+                    +button('a', 'btn--transparent', '123', '#', '', '')
+                li.pagination__item
+                    a.pagination__item-arrow.pagination__item-arrow-right(href="#")
+                        +icon-mono('icon__angle-left')(width='20px' height='20px')
+            +button('a', 'btn--transparent pagination__btn', 'Загрузить еще', '#', '', '')

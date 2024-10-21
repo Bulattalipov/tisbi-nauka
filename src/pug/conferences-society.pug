@@ -1,0 +1,10 @@
+extends layout/default.pug
+
+block variables
+	- const bodyClass = "society-page"
+	- const pageTitle = "Наука и образование"
+	- const siteLang = "en"
+	- const bodyStyle = "background-image: url('assets/images/backpickcha-society.png'); background-attachment: fixed"
+
+block content
+	include pages/conferences-society/main.pug

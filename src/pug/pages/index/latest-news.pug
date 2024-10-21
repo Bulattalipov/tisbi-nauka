@@ -1,0 +1,29 @@
+-
+    latestNews = [
+       {imgUrl: 'assets/images/latest-news/image-1.jpg', title: 'Студенты «ТИСБИ» – номинанты Всероссийского конкурса', text: 'Казани состоялась церемония награждения победителей конкурса научных работ имени Н.И. Лобачевского'},
+       {imgUrl: 'assets/images/latest-news/image-2.jpg', title: 'XIII Молодежная премия в области науки и инноваций', text: 'Прими участие и выиграй 100.000 рублей '},
+       {imgUrl: 'assets/images/latest-news/image-3.jpg', title: 'Открытие ежегодной научно-практической конференции', text: 'В «ТИСБИ» прошла научная конференция «Наука, образование: современные цифровые технологии формирования экосреды инновационного развития региона в условиях системных преобразований» '},
+       {imgUrl: 'assets/images/latest-news/image-4.jpg', title: 'Опубликованы результаты Открытого Конкурса научных работ студентов им. Н.И. Лобачевского', text: 'Студенты Университета управления «ТИСБИ» в числе победителей и призеров '},
+    ]
+
+section.section.latest-news
+    .site-container
+        .latest-news__wrapper
+            +title('icon__document-signed', 'Последние новости')
+            .swiper.latest-news__slider
+                .swiper-wrapper.latest-news__slider-list
+                    each item in latestNews
+                        .swiper-slide.latest-news__slider-item
+                            .latest-news__slider-item-contain
+                                img.latest-news__slider-item-img(src=item.imgUrl alt='')
+                                .latest-news__slider-item-date 24.07 #[span 2024]
+                            .latest-news__slider-item-info
+                                h5.latest-news__slider-item-info-title
+                                    a(href="#")= item.title
+                                .latest-news__slider-item-info-desc= item.text
+                                ul.latest-news__slider-item-info-tags
+                                    li.latest-news__slider-item-info-tag Фестиваль
+                                    li.latest-news__slider-item-info-tag Конкурс
+                                    li.latest-news__slider-item-info-tag Иностранный язык
+            +button('a', 'btn--transparent latest-news__btn', 'Все новости', '#', '', 'icon__angle-small-right-white')
+

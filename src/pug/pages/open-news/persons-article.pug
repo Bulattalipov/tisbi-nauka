@@ -1,0 +1,12 @@
+section.section.persons-article
+    .site-container
+        .persons-article__inner
+            .persons-article__title Персоны в статье
+            ul.persons-article__users
+              each item in Array.from(Array(6).keys())
+                li.persons-article__user
+                    .persons-article__user-img
+                        img.persons-article__user-img-elem(src='assets/images/user.jpg')
+                    .persons-article__user-box
+                      .persons-article__user-title Фамилия имя отчество
+                      .persons-article__user-desc кандидат педагогических наук, профессор

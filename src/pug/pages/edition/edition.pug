@@ -1,0 +1,253 @@
+section.section.edition
+  .site-container
+    .edition__inner
+      .edition__aside
+        .edition__info
+          .edition__info-date
+            .edition__info-date-title
+              +icon-multi('icon__info')(width='24px', height='24px')
+              .edition__info-date-title-text Прием статей до:
+            .edition__info-date-elem 12.05.2024
+          .edition__info-data
+            .edition__info-box
+              .edition__info-box-title
+                | ISSN
+              ul.edition__info-box-list
+                  li.edition__info-box-list-elem
+                      .edition__info-box-list-elem-text 18.04.2024
+            .edition__info-box
+              .edition__info-box-title.edition__info-box-title--white
+                | Контактная информация
+              ul.edition__info-box-list
+                  li.edition__info-box-list-elem
+                      +icon-multi("icon__calendar")(width="16px" height="16px")
+                      .edition__info-box-list-elem-text
+                        | 18.04.2024
+                  li.edition__info-box-list-elem
+                      +icon-multi("icon__marker")(width="16px" height="16px")
+                      .edition__info-box-list-elem-text
+                        | Казань, ул. Муштари, д.13
+                  li.edition__info-box-list-elem
+                      +icon-multi("icon__shuffle")(width="16px" height="16px")
+                      .edition__info-box-list-elem-text
+                        | Смешанная
+          .edition__info-btns
+            +button('a', 'btn--transparent', 'Поделиться', '#', '', 'icon__redo')
+            +button('button', '', 'Подать материал', '', '', 'icon__angle-small-right-white')(data-path='modal-materials')
+        .edition__releases
+          .edition__releases-title
+            | Выпуски этого года
+            span 2024
+          .edition__releases-btns
+            +button('a', 'btn--transparent', 'Выпуск №1', '#', 'icon__document-signed', '')
+            +button('a', 'btn--transparent', 'Выпуск №2', '#', 'icon__document-signed', '')
+            +button('a', 'btn--transparent', 'Выпуск №3', '#', 'icon__document-signed', '')
+      .edition__right
+        .edition__tab.js-tabs-funcs
+          .edition__tab-btns
+            .edition__tab-btns-inner
+              .edition__tab-btn.js-tabs-funcs-tag.active(data-tab='magazine') О журнале
+              .edition__tab-btn.js-tabs-funcs-tag(data-tab='releases') Выпуски
+              .edition__tab-btn.js-tabs-funcs-tag(data-tab='editorial-board') Редколлегия
+              .edition__tab-btn.js-tabs-funcs-tag(data-tab='requirements') Требования к отправке материала
+          .edition__tab-contents
+            .edition__tab-content.js-tabs-funcs-content.active(data-content-tab='magazine')
+              .upcoming-events__item
+                  .upcoming-events__item-title
+                      | Инклюзия в образовании
+                  .upcoming-events__item-desc
+                      | Редакция журнала «Инклюзия в образовании» УВО «Университет управления «ТИСБИ» приглашает Вас к сотрудничеству. Журнал зарегистрирован Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций, Свидетельство номер ПИ № ФС 77 – 67742 дата регистрации 10.11.2016 года, территория распространения Российская Федерация, зарубежные страны. ISSN 2499–9830. Статьи размещаются в Научной электронной библиотеке (РУНЭБ) и индексируются в РИНЦ (Российский индекс научного цитирования), что, безусловно, отражается на рейтингах авторов. Редакция предлагает Вам, Вашим коллегам и ученикам возможность публиковать статьи по направлению «Педагогические науки» и, прежде всего, по вопросам, связанным с инклюзивным образованием. Перспективность и актуальность развития инклюзивного образования в России и в мире очевидна.
+                  .upcoming-events__item-subblock
+                      .upcoming-events__item-subblock-title
+                          | Цель журнала
+                      .upcoming-events__item-subblock-texts
+                          p
+                              | Представить научной общественности, преподавателям университетов, молодым учёным и аспирантам как в России, так и за рубежом оригинальные результаты теоретических и прикладных исследований в области экономики, менеджмента, юриспруденции, образования, науки, культуры.
+                  .upcoming-events__item-subblock
+                      .upcoming-events__item-subblock-title
+                          | Задачи
+                      .upcoming-events__item-subblock-texts
+                          p
+                              |  Создание для ученых и специалистов информационного источника, освещающего новые научные результаты в сфере финансовых отношений; экономики, менеджмента, юриспруденции, образования, науки, культуры.
+                  .upcoming-events__item-subblock
+                      .upcoming-events__item-subblock-title
+                          | Учредители
+                      .upcoming-events__item-subblock-texts
+                          p
+                              |  «Университет управления «ТИСБИ»
+                  .upcoming-events__item-subblock
+                      .upcoming-events__item-subblock-title
+                          | Информация об издательстве:
+                      .upcoming-events__item-subblock-texts
+                          p
+                              | УВО «Университет управления «ТИСБИ»
+                  .upcoming-events__item-subblock
+                      .upcoming-events__item-subblock-title
+                          | Периодичность рецензируемого научного журнала
+                      .upcoming-events__item-subblock-box
+                          | 2 раза в полугодие
+                  .upcoming-events__item-subblock
+                      .upcoming-events__item-subblock-title
+                          | Описание тематики издания
+                      .upcoming-events__item-subblock-tags
+                          .upcoming-events__item-subblock-tag
+                            | финансовые рынки
+                          .upcoming-events__item-subblock-tag
+                            | корпоративные финансы
+                          .upcoming-events__item-subblock-tag
+                            | бюджетно-налоговая и денежно-кредитная политика
+                          .upcoming-events__item-subblock-tag
+                            | финансовый менеджмент
+                          .upcoming-events__item-subblock-tag
+                            | цифровые финансовые активы
+                          .upcoming-events__item-subblock-tag
+                            | новые финансовые технологии
+                          .upcoming-events__item-subblock-tag
+                            | управление финансовыми рисками
+                          .upcoming-events__item-subblock-tag
+                            | страхование и ценообразование
+                          .upcoming-events__item-subblock-tag
+                            | финансовая безопасность
+                          .upcoming-events__item-subblock-tag
+                            | экономика фирмы в условиях системных преобразований
+                          .upcoming-events__item-subblock-tag
+                            | менеджмент
+                          .upcoming-events__item-subblock-tag
+                            | Теория и методика обучения и воспитания
+                          .upcoming-events__item-subblock-tag
+                            | Частно-правовые (цивилистические) науки
+                          .upcoming-events__item-subblock-tag
+                            | Уголовно-правовые науки
+                          .upcoming-events__item-subblock-tag
+                            | Международно-правовые науки
+            .edition__tab-content.js-tabs-funcs-content(data-content-tab='releases')
+              .edition__tab-releases
+                each elem in Array.from(Array(4).keys())
+                  .edition__tab-release
+                    +title('icon__file', '2024 год')
+                    ul.edition__tab-release-list
+                      each item in Array.from(Array(4).keys())
+                        li.edition__tab-release-item
+                          img.edition__tab-release-item-img(src='assets/images/releases.jpg' alt='')
+                          .edition__tab-release-item-content
+                            .edition__tab-release-item-content-title
+                              | Журнал «Инклюзия в образовании»
+                            .edition__tab-release-item-content-tag
+                              | Выпуск №2 2024 год
+                            +button('a', '', 'Скачать', '#', '', 'icon__cloud-download')
+              .edition__tab-releases-2
+                each elem in Array.from(Array(9).keys())
+                  .edition__tab-release-box
+                    +title('icon__file', '2020 год')
+                    each item in Array.from(Array(4).keys())
+                      +button('a', 'btn--transparent', 'Выпуск N1', '#', 'icon__document-signed', '')
+            .edition__tab-content.js-tabs-funcs-content(data-content-tab='editorial-board')
+              .upcoming-events__item
+                  .mysticism__user
+                    .mysticism__user-img-wrapper
+                        img.mysticism__user-img(src='assets/images/user.jpg' alt='')
+                    .mysticism__user-info
+                        .mysticism__user-post Главный редактор
+                        .mysticism__user-name Ельшин Леонид Алексеевич
+                        .mysticism__user-educ
+                          | доктор экономических наук, доцент, профессор кафедры «Экономика» УВО «Университет управления «ТИСБИ», Казань, Россия.
+                  .mysticism__user
+                    .mysticism__user-img-wrapper
+                        img.mysticism__user-img(src='assets/images/user.jpg' alt='')
+                    .mysticism__user-info
+                        .mysticism__user-post Председатели редакционного совета
+                        .mysticism__user-name Прусс Нэлла Матвеевна
+                        .mysticism__user-educ
+                          | канд. пед. наук, профессор, президент «Университета управления «ТИСБИ», Председатель.
+                  .upcoming-events__item-subblock
+                      .upcoming-events__item-subblock-title
+                          | Цель журнала
+                      .upcoming-events__item-subblock-texts
+                        .upcoming-events__item-subblock-text
+                          .upcoming-events__item-subblock-text-title
+                            | АЮПОВ А.А.
+                          .upcoming-events__item-subblock-text-desc
+                            | д-р экон. наук, профессор Университета управления «ТИСБИ» (г. Казань).
+                        .upcoming-events__item-subblock-text
+                          .upcoming-events__item-subblock-text-title
+                            | АЮПОВ А.А.
+                          .upcoming-events__item-subblock-text-desc
+                            | д-р экон. наук, профессор Университета управления «ТИСБИ» (г. Казань).
+                  .upcoming-events__item-subblock
+                      .upcoming-events__item-subblock-title
+                          | Цель журнала
+                      .upcoming-events__item-subblock-texts
+                        .upcoming-events__item-subblock-text
+                          .upcoming-events__item-subblock-text-title
+                            | АЮПОВ А.А.
+                          .upcoming-events__item-subblock-text-desc
+                            | д-р экон. наук, профессор Университета управления «ТИСБИ» (г. Казань).
+                        .upcoming-events__item-subblock-text
+                          .upcoming-events__item-subblock-text-title
+                            | АЮПОВ А.А.
+                          .upcoming-events__item-subblock-text-desc
+                            | д-р экон. наук, профессор Университета управления «ТИСБИ» (г. Казань).
+            .edition__tab-content.js-tabs-funcs-content(data-content-tab='requirements')
+              .edition__tab-requirements
+                .edition__tab-requirements-title
+                  | Требования к научным статьям, публикуемым в журнале #[span «ВЕСТНИК УНИВЕРСИТЕТА УПРАВЛЕНИЯ «ТИСБИ»]
+                ul.edition__tab-requirements-list
+                  li.edition__tab-requirements-list-item
+                    | Тематика: Образовательное СМИ. Экономическая теория, экономика и управление народным хозяйством, менеджмент, юриспруденция, образование, наука, культура, реклама в соответствии с законодательством Российской Федерации о рекламе.
+                  li.edition__tab-requirements-list-item
+                    | Статья должна быть выполнена в формате Microsoft Word (.doc, .rtf), шрифт Times New Roman, кегль 14, поля: левое - 3см, остальные по 2,5 см, интервал полуторный. Уплотнение интервалов запрещено.
+                  li.edition__tab-requirements-list-item
+                    | Минимальный объем статьи 7 страниц формата А4 и не должен превышать 15 страниц.
+                  li.edition__tab-requirements-list-item
+                    | Площадь рисунков, схем, таблиц, формул приравнивается к текстовому эквиваленту. Каждый объект не должен превышать указанных размеров страницы, а шрифт в нем должен быть не менее 12 пунктов. Возможно использование только вертикальных таблиц и рисунков. Запрещены рисунки, имеющие залитые цветом области. Все объекты должны быть черно-белыми, без оттенков. Все формулы должны быть созданы с использованием компонента Microsoft Equation или в виде чётких картинок. Графики, таблицы и рисунки: черно-белые, без цветной заливки. Допускается штриховка. Таблицы набираются в редакторе MS Word и должны иметь номера и названия, которые должны быть указаны над таблицами. Графический материал должен быть высокого качества (не ниже 300 dpi), при необходимости издательство может потребовать предоставить материал в отдельных файлах в формате jpg и tif. Названия и номера графического материала должны быть указаны под изображением. Таблицы и графический материал не должны выходить за пределы указанных полей.
+                  li.edition__tab-requirements-list-item
+                    | Статью должна предварять следующая информация:
+                    ol
+                      li
+                        | инициалы и фамилия автора/авторов, ученая степень, ученое звание,  место работы/учебы (наименование учреждения или организации), включая подразделение (кафедра, факультет), контактная информация (E-mail или номер телефона) на русском и на английском языках;
+                      li
+                        | название статьи на русском и английском языках;
+                      li
+                        |  аннотация на русском языке и английском языках (не менее 100 слов);
+                      li
+                        | ключевые слова на русском и английском языках (не менее 5-7 слов: основных общенаучных терминов или терминов по профилю исследования, упорядоченных от наиболее общих к конкретным, соответствующим описанию исследования);
+                      li
+                        | индекс УДК (Универсальной десятичной классификации) - система классификации информации, используется для систематизации произведений науки, литературы и искусства, периодической печати, различных видов Требования к статьям в журнал «Вестник Университета управления «ТИСБИ» документов и организации картотек. Индекс можно получить в библиотеке или найти через Интернет.
+                  li.edition__tab-requirements-list-item
+                    | Статья должна содержать внутритекстовые и затекстовые библиографические ссылки, а также может содержать подстрочные библиографические ссылки. Список литературы (на русском и английском языке) должен содержать не менее 10 источников, включая не менее 3 из них на научные публикации, рецензируемые зарубежными базами цитирования (Scopus, Web of Science).
+                  li.edition__tab-requirements-list-item
+                    | Обязательным требованием является наличие в статье не менее одной ссылки на публикации, размещенных в ранее опубликованных выпусках журнала «ВЕСТНИК УНИВЕРСИТЕТА УПРАВЛЕНИЯ «ТИСБИ»
+                  li.edition__tab-requirements-list-item
+                    | К статье в обязательном порядке прикладывается рецензия с заверенной подписью и печатью организации (Требования к оформлению рецензии находятся в приложении 1).
+                  li.edition__tab-requirements-list-item
+                    | Уровень оригинальности текста должен составлять не менее 75%.
+                  li.edition__tab-requirements-list-item
+                    | Рукописи статей для публикации в журнале необходимо отправлять техническому секретарю журнала Лопатиной Екатерине Николаевне (vestniktisbi@yandex.ru; тел.: 8 (951) 895-94-96).
+        .event__documents
+          +title('icon__file', 'Документы')
+          .event__documents-inner
+              .event__documents-item
+                  .event__documents-item-info
+                      +icon-multi('icon__document')(width='24px' height='24px' class='event__documents-item-img')
+                      .event__documents-item-title Длинное название файла
+                  .event__documents-item-box
+                      .event__documents-item-type PDF
+                      .event__documents-item-size 143,7КБ
+                      +button('a', 'btn--transparent btn--cube', '', '#', '', 'icon__cloud-download')
+              .event__documents-item
+                  .event__documents-item-info
+                      +icon-multi('icon__document')(width='24px' height='24px' class='event__documents-item-img')
+                      .event__documents-item-title Длинное название файла
+                  .event__documents-item-box
+                      .event__documents-item-type PDF
+                      .event__documents-item-size 143,7КБ
+                      +button('a', 'btn--transparent btn--cube', '', '#', '', 'icon__cloud-download')
+              .event__documents-item
+                  .event__documents-item-info
+                      +icon-multi('icon__document')(width='24px' height='24px' class='event__documents-item-img')
+                      .event__documents-item-title Длинное название файла
+                  .event__documents-item-box
+                      .event__documents-item-type PDF
+                      .event__documents-item-size 143,7КБ
+                      +button('a', 'btn--transparent btn--cube', '', '#', '', 'icon__cloud-download')
+        +charts()

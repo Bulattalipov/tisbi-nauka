@@ -1,0 +1,33 @@
+mixin conferences-intro(smallText, title, subtitle, imgUrl, logos)
+  section.conferences-intro
+      .site-container
+          .conferences-intro__inner
+              .conferences-intro__box
+                  if logos
+                    .conferences-intro__logos
+                      img.conferences-intro__logo-item(src='assets/images/Logo_UNESCO_new_1.svg')
+                      img.conferences-intro__logo-item(src='assets/images/logo-tisbi.svg')
+                  .conferences-intro__small-text= smallText
+                  h1.conferences-intro__title= title
+                  p.conferences-intro__subtitle= subtitle
+                  ul.conferences-intro__tags
+                      li.conferences-intro__tag Русский
+                      li.conferences-intro__tag Английский
+                      li.conferences-intro__tag Татарский
+              .conferences-intro__right
+                  img.conferences-intro__img(src=imgUrl alt="")
+                  +timer(true)
+              .conferences-intro__box
+                  ul.conferences-intro__info
+                      li.conferences-intro__info-item
+                          +icon-multi("icon__calendar")(width="24px" height="24px")
+                          .conferences-intro__info-item-text 26.04.2024
+                              span.conferences-intro__info-item-add 11:30
+                      li.conferences-intro__info-item
+                          +icon-multi("icon__marker")(width="24px" height="24px")
+                          .conferences-intro__info-item-text Казань, ул. Муштари, д.13
+                      li.conferences-intro__info-item
+                          +icon-multi("icon__shuffle")(width="24px" height="24px")
+                          .conferences-intro__info-item-text Смешанная
+                  p.conferences-intro__text
+                      | Приглашаем Вас принять участие в работе XXIV Национальной  научно-практической конференции студентов, магистрантов, аспирантов и  молодых ученых «Общество, государство, личность: механизмы инновационной  деятельности молодежи в решении задач научно-технологического  развития».

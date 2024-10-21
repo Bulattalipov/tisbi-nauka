@@ -1,0 +1,42 @@
+/* stylelint-disable no-invalid-position-at-import-rule */
+:root {
+  --index: calc(1vw + 1vh);
+  /* typography  */
+  --font-family: "Open Sans", sans-serif;
+  --second-family: "Gilroy", sans-serif;
+
+  --font-body: 500 1.6rem / 1.22 var(--font-family);
+
+  /* colors */
+  --main: #ff5c00;
+  --white: #fff;
+  --secondary: #a6abbd;
+  --dark-blue: #1d3172;
+  --background: #131a3a;
+  --block: #2b314e;
+  --block-10-blur: rgba(255, 255, 255, 0.1);
+  --secondary-10: rgba(142, 150, 175, 0.1);
+  --error: #ba3a29;
+  --success: #28b571;
+  --nauka-yuristy-block-70: rgba(32, 32, 32, 0.7);
+  --obschestvo: #606060;
+  --obschestvo-gray: #aabcc9;
+  --obschestvo-society: #2091da;
+  --obschestvo: #404040;
+  --yunesko-main: #0069b4;
+  --yunesko-light-secondary: #b1c5d3;
+  --yunesko-default: #303030;
+  --inklyuziya-dark-secondary: #606679;
+  --inklyuziya-main: #3456c6;
+  --inklyuziya-default: #404040;
+  --inklyuziya-light-secondary: #c2c5cd;
+
+  /* etc */
+  --transition: 200ms ease-in;
+}
+
+@import "./helpers/**/*";
+@import "./vendor/**/*";
+@import "./settings/**/*";
+@import "./UI/**/*";
+@import "./pages/**/*";
