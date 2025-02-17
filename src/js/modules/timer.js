@@ -7,6 +7,7 @@ export default function (){
 
   timers.forEach(item => {
     item.closest('.timer').style.display = 'flex';
+    item.classList.remove('loading');
     const deadlineTime = item.getAttribute("data-time");
 
     const deadline = new Date(deadlineTime);

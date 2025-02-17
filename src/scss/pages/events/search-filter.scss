@@ -122,10 +122,12 @@
 
     &__extended {
       height: 0;
+      visibility: hidden;
       overflow: hidden;
 
       &.is-open {
         height: 100%;
+        visibility: visible;
         margin-bottom: 2.4rem;
       }
     }
@@ -152,7 +154,7 @@
       flex-shrink: 0;
 
       @include mq(custom, max, 1024) {
-        width: auto;
+        width: 100%;
       }
 
       @include mq(custom, max, 460) {

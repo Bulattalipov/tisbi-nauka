@@ -19,11 +19,11 @@ section.section.latest-news
                                 .latest-news__slider-item-date 24.07 #[span 2024]
                             .latest-news__slider-item-info
                                 h5.latest-news__slider-item-info-title
-                                    a(href="#")= item.title
+                                    a(href="/open-news.html")= item.title
                                 .latest-news__slider-item-info-desc= item.text
                                 ul.latest-news__slider-item-info-tags
                                     li.latest-news__slider-item-info-tag Фестиваль
                                     li.latest-news__slider-item-info-tag Конкурс
                                     li.latest-news__slider-item-info-tag Иностранный язык
-            +button('a', 'btn--transparent latest-news__btn', 'Все новости', '#', '', 'icon__angle-small-right-white')
+            +button('a', 'btn--transparent latest-news__btn', 'Все новости', '/news.html', '', 'icon__angle-small-right-white')
 

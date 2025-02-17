@@ -44,6 +44,13 @@
   }
 
   &__table-tr {
+    position: relative;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: var(--secondary-10);
+    }
+
     @include mq(custom, max, 900) {
       display: flex;
       flex-direction: column;
@@ -116,6 +123,15 @@
 
     @include mq(custom, max, 1024) {
       font-size: 1.8rem;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
   }
 

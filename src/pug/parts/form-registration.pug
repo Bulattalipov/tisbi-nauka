@@ -83,9 +83,9 @@
                 .form-registration__form-label.form-registration__form-label--number-copies.hidden
                     .form-registration__form-title.required-title Количество
                     +input('number', 'numberCopies', 'Количество копий')(data-must-validate='')
-                .form-registration__form-label
+                .form-registration__form-label.form-registration__form-label--postal-address.hidden
                     .form-registration__form-title.required-title Почтовый адрес
-                    +input('number', 'postalAddress', 'Ваш почтовый адрес')(data-must-validate='')
+                    +input('text', 'postalAddress', 'Ваш почтовый адрес')(data-must-validate='')
                 .form-registration__form-label
                     .form-registration__form-title Комментарии / предложения
                     textarea.form-registration__form-textarea(placeholder='Можете добавить информацию' data-no-must-validate='')

@@ -7,7 +7,7 @@ mixin timer(withButtons, addBlock)
                 +icon-multi("icon__info")(width="24px" height="24px")
                 .timer__text
                     | До конца регистрации осталось
-            .timer__date.loading.timer-box(data-time="2024-11-14")
+            .timer__date.loading.timer-box(data-time="2025-11-14")
                 .timer__date-box #[span(class="timer-days") 00]
                 .timer__date-line
                 .timer__date-box #[span(class="timer-hours") 00]
@@ -16,7 +16,7 @@ mixin timer(withButtons, addBlock)
             if withButtons
                 .timer__btns
                     +button('button', 'timer__btn--registration', 'Зарегистрироваться', '', '', 'icon__angle-small-right-white')(data-path="modal-registration")
-                    +button('a', 'btn--transparent', 'Архив', '#', '', 'icon__angle-small-right-white')
+                    +button('a', 'btn--transparent', 'Архив', '/archive.html', '', 'icon__angle-small-right-white')
             if addBlock
                 .timer__box
                     .timer__box-title Начало конференции

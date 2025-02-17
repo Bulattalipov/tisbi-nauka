@@ -1,10 +1,25 @@
 .error {
     display: inline-block;
     margin-top: 0.8rem;
+    height: 0;
+    overflow: hidden;
+    // animation-name: openError;
+    // animation-duration: 0.7s;
+    // animation-timing-function: linear;
 
     &__text {
         font-weight: 400;
         font-size: 1.4rem;
         color: var(--error);
     }
+}
+
+@keyframes openError {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: auto;
+  }
 }

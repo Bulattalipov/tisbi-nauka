@@ -26,12 +26,13 @@ main.page-main.main
                           .upcoming-events__item-info-item-text
                               | Казань, ул. Муштари, д.13
                       li.upcoming-events__item-info-item
-                          +icon-multi("icon__shuffle")(width="16px" height="16px")
+                          +icon-multi("icon__what")(width="16px" height="16px")
                           .upcoming-events__item-info-item-text
                               | Смешанная
                   .upcoming-events__item-btns
                       +button('button', '', 'Записаться', '', '', 'icon__angle-small-right-white')(data-path='modal-registration-event')
-                      +button('a', 'btn--transparent', 'Поделиться', '#', '', 'icon__redo')
+                      script(src="https://yastatic.net/share2/share.js")
+                      div.ya-share2(data-curtain, data-description, data-shape="round", data-limit="0", data-more-button-type="long", data-services="vkontakte,telegram,whatsapp")
               li.upcoming-events__item
                   .upcoming-events__item-top
                       .upcoming-events__item-top-box
@@ -53,12 +54,13 @@ main.page-main.main
                           .upcoming-events__item-info-item-text
                               | Казань, ул. Муштари, д.13
                       li.upcoming-events__item-info-item
-                          +icon-multi("icon__shuffle")(width="16px" height="16px")
+                          +icon-multi("icon__what")(width="16px" height="16px")
                           .upcoming-events__item-info-item-text
                               | Смешанная
                   .upcoming-events__item-btns
                       +button('button', '', 'Записаться', '', '', 'icon__angle-small-right-white')(data-path='modal-registration-event')
-                      +button('a', 'btn--transparent', 'Поделиться', '#', '', 'icon__redo')
+                      script(src="https://yastatic.net/share2/share.js")
+                      div.ya-share2(data-curtain, data-description, data-shape="round", data-limit="0", data-more-button-type="long", data-services="vkontakte,telegram,whatsapp")
               li.upcoming-events__item
                   .upcoming-events__item-top
                       .upcoming-events__item-top-box
@@ -80,15 +82,12 @@ main.page-main.main
                           .upcoming-events__item-info-item-text
                               | Казань, ул. Муштари, д.13
                       li.upcoming-events__item-info-item
-                          +icon-multi("icon__shuffle")(width="16px" height="16px")
+                          +icon-multi("icon__what")(width="16px" height="16px")
                           .upcoming-events__item-info-item-text
                               | Смешанная
                   .upcoming-events__item-btns
                       +button('button', '', 'Записаться', '', '', 'icon__angle-small-right-white')(data-path='modal-registration-event')
-                      +button('a', 'btn--transparent', 'Поделиться', '#', '', 'icon__redo')
-          .upcoming-events__plug
-              +icon-multi("icon__cross-circle")(width="24px" height="24px")
-              .upcoming-events__plug-text
-                  | В этот день мероприятия отсутствуют
+                      script(src="https://yastatic.net/share2/share.js")
+                      div.ya-share2(data-curtain, data-description, data-lang='ru' data-shape="round", data-limit="0", data-more-button-type="long", data-services="vkontakte,telegram,whatsapp")
         +pagination
         include ../index/latest-news.pug

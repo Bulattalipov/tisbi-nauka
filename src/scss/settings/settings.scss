@@ -360,3 +360,26 @@ a:focus {
     opacity: 0.1;
   }
 }
+
+.loading {
+  overflow: hidden;
+  border-radius: 16px;
+  pointer-events: none;
+  background: linear-gradient(270deg, var(--block) 0, rgba(142, 150, 175, 0.1) 80%, var(--block) 100%);
+  background-size: 200%;
+
+  animation-duration: 2.4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: backgroundMovement;
+  animation-timing-function: linear;
+}
+
+@keyframes backgroundMovement {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}

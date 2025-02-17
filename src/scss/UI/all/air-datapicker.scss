@@ -107,13 +107,14 @@ padding: 0;
 }
 
 .air-datepicker-body {
-min-width: 36rem;
+  min-width: auto;
 }
 
 .air-datepicker-cell {
 background: var(--block-10-blur);
 font-size: 1.8rem;
 color: var(--white);
+user-select: none;
 
 @include mq(custom, max, 640) {
   font-size: 1.6rem;

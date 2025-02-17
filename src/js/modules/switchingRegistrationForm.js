@@ -327,9 +327,11 @@ export default function () {
 
       if (currentStep === 3) {
         const numberCopies = formWrapper.querySelector('.form-registration__form-label--number-copies');
+        const postalAddress = formWrapper.querySelector('.form-registration__form-label--postal-address');
 
         if (!numberCopies.classList.contains('hidden')) {
           numberCopies.classList.add('hidden')
+          postalAddress.classList.add('hidden')
         }
       }
     })
@@ -454,12 +456,21 @@ export default function () {
                   </span>
               </span>
           `);
+
+      gsap.to(item.closest('.form-registration__form-label').querySelector('.error'), {
+        height: 'auto',
+        duration: 0.3,
+      })
     }
 
 
     function deleteError(item) {
       const error = item.closest('.form-registration__form-label').querySelector('.error');
       if (error) {
+        gsap.to(error, {
+          height: 0,
+          duration: 0.3,
+        })
         error.remove();
       }
     }
@@ -470,6 +481,7 @@ export default function () {
       const typeReport = formWrapper.querySelector('.form-registration__form-label--type-report');
       const topicReport = formWrapper.querySelector('.form-registration__form-label--topic-report');
       const numberCopies = formWrapper.querySelector('.form-registration__form-label--number-copies');
+      const postalAddress = formWrapper.querySelector('.form-registration__form-label--postal-address');
 
       if (elem.closest('.form-registration__form-label--form-participation')) {
         if (elem.parentElement.attributes['data-open-next']) {
@@ -511,10 +523,15 @@ export default function () {
       if (elem.closest('.form-registration__form-label--printed-copy')) {
         if (elem.parentElement.attributes['data-open-next']) {
           numberCopies.classList.remove('hidden');
+          postalAddress.classList.remove('hidden');
         } else {
           numberCopies.classList.add('hidden');
           deleteError(numberCopies);
           changeInput(numberCopies);
+
+          postalAddress.classList.add('hidden');
+          deleteError(postalAddress);
+          changeInput(postalAddress);
         }
       }
     };

@@ -18,6 +18,10 @@
     @include mq(custom, max, 410) {
       gap: 1.6rem;
     }
+
+    &.swiper-pagination-lock {
+      display: none;
+    }
   }
 
   .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {

@@ -32,7 +32,8 @@ section.section.edition
                       .edition__info-box-list-elem-text
                         | Смешанная
           .edition__info-btns
-            +button('a', 'btn--transparent', 'Поделиться', '#', '', 'icon__redo')
+            script(src="https://yastatic.net/share2/share.js")
+            div.ya-share2(data-curtain, data-description, data-shape="round", data-limit="0", data-more-button-type="long", data-services="vkontakte,telegram,whatsapp")
             +button('button', '', 'Подать материал', '', '', 'icon__angle-small-right-white')(data-path='modal-materials')
         .edition__releases
           .edition__releases-title

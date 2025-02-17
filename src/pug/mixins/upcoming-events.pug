@@ -1,6 +1,6 @@
 mixin upcoming-events(notButton)
     script
-      | let arrayEventDate = ['2024-08-20', '2024-09-25', '2024-09-27'];
+      | let arrayEventDate = ['2025-02-05', '2025-02-06', '2025-02-07'];
     section.section.upcoming-events
         .site-container
             .upcoming-events__wrapper
@@ -8,92 +8,39 @@ mixin upcoming-events(notButton)
                 .upcoming-events__inner
                     .upcoming-events__calendar(id='el' data-sticky-container)
                     .upcoming-events__contain
-                        .upcoming-events__date 18 Апреля 2024
-                        ul.upcoming-events__list
-                            li.upcoming-events__item
-                                .upcoming-events__item-top
-                                    .upcoming-events__item-top-box
-                                        .upcoming-events__item-top-box-type Лекция
-                                        .upcoming-events__item-top-box-title Наука
-                                    ul.upcoming-events__item-top-tags
-                                        li.upcoming-events__item-top-tag Очное
-                                        li.upcoming-events__item-top-tag Очное
-                                        li.upcoming-events__item-top-tag Студенты
-                                .upcoming-events__item-title
-                                    | Международная научно-практическая конференция: “Переход от образовательной среды к образовательной экосистеме в интересах устойчивого развития”
-                                ul.upcoming-events__item-info
-                                    li.upcoming-events__item-info-item
-                                        +icon-multi("icon__clock")(width="16px" height="16px")
-                                        .upcoming-events__item-info-item-text 18.04.2024
-                                        span 11:20
-                                    li.upcoming-events__item-info-item
-                                        +icon-multi("icon__marker")(width="16px" height="16px")
-                                        .upcoming-events__item-info-item-text
-                                            | Казань, ул. Муштари, д.13
-                                    li.upcoming-events__item-info-item
-                                        +icon-multi("icon__shuffle")(width="16px" height="16px")
-                                        .upcoming-events__item-info-item-text
-                                            | Смешанная
-                                .upcoming-events__item-btns
-                                    +button('button', '', 'Записаться', '', '', 'icon__angle-small-right-white')(data-path='modal-registration-event')
-                                    +button('a', 'btn--transparent', 'Поделиться', '#', '', 'icon__redo')
-                            li.upcoming-events__item
-                                .upcoming-events__item-top
-                                    .upcoming-events__item-top-box
-                                        .upcoming-events__item-top-box-type Лекция
-                                        .upcoming-events__item-top-box-title Наука
-                                    ul.upcoming-events__item-top-tags
-                                        li.upcoming-events__item-top-tag Очное
-                                        li.upcoming-events__item-top-tag Очное
-                                        li.upcoming-events__item-top-tag Студенты
-                                .upcoming-events__item-title
-                                    | Международная научно-практическая конференция: “Переход от образовательной среды к образовательной экосистеме в интересах устойчивого развития”
-                                ul.upcoming-events__item-info
-                                    li.upcoming-events__item-info-item
-                                        +icon-multi("icon__clock")(width="16px" height="16px")
-                                        .upcoming-events__item-info-item-text 18.04.2024
-                                        span 11:20
-                                    li.upcoming-events__item-info-item
-                                        +icon-multi("icon__marker")(width="16px" height="16px")
-                                        .upcoming-events__item-info-item-text
-                                            | Казань, ул. Муштари, д.13
-                                    li.upcoming-events__item-info-item
-                                        +icon-multi("icon__shuffle")(width="16px" height="16px")
-                                        .upcoming-events__item-info-item-text
-                                            | Смешанная
-                                .upcoming-events__item-btns
-                                    +button('button', '', 'Записаться', '', '', 'icon__angle-small-right-white')(data-path='modal-registration-event')
-                                    +button('a', 'btn--transparent', 'Поделиться', '#', '', 'icon__redo')
-                            li.upcoming-events__item
-                                .upcoming-events__item-top
-                                    .upcoming-events__item-top-box
-                                        .upcoming-events__item-top-box-type Лекция
-                                        .upcoming-events__item-top-box-title Наука
-                                    ul.upcoming-events__item-top-tags
-                                        li.upcoming-events__item-top-tag Очное
-                                        li.upcoming-events__item-top-tag Очное
-                                        li.upcoming-events__item-top-tag Студенты
-                                .upcoming-events__item-title
-                                    | Международная научно-практическая конференция: “Переход от образовательной среды к образовательной экосистеме в интересах устойчивого развития”
-                                ul.upcoming-events__item-info
-                                    li.upcoming-events__item-info-item
-                                        +icon-multi("icon__clock")(width="16px" height="16px")
-                                        .upcoming-events__item-info-item-text 18.04.2024
-                                        span 11:20
-                                    li.upcoming-events__item-info-item
-                                        +icon-multi("icon__marker")(width="16px" height="16px")
-                                        .upcoming-events__item-info-item-text
-                                            | Казань, ул. Муштари, д.13
-                                    li.upcoming-events__item-info-item
-                                        +icon-multi("icon__shuffle")(width="16px" height="16px")
-                                        .upcoming-events__item-info-item-text
-                                            | Смешанная
-                                .upcoming-events__item-btns
-                                    +button('button', '', 'Записаться', '', '', 'icon__angle-small-right-white')(data-path='modal-registration-event')
-                                    +button('a', 'btn--transparent', 'Поделиться', '#', '', 'icon__redo')
-                        .upcoming-events__plug
+                        .upcoming-events__date
+                        ul.upcoming-events__list.loading
+                        .upcoming-events__hidden-block
+                          li.upcoming-events__item(data-id='{id}')
+                            .upcoming-events__item-top
+                                .upcoming-events__item-top-box
+                                    .upcoming-events__item-top-box-type {type}
+                                    .upcoming-events__item-top-box-title {rubric}
+                                ul.upcoming-events__item-top-tags {tags}
+                            .upcoming-events__item-title {title}
+                            ul.upcoming-events__item-info
+                                li.upcoming-events__item-info-item
+                                    +icon-multi("icon__clock")(width="16px" height="16px")
+                                    .upcoming-events__item-info-item-text {time}
+                                li.upcoming-events__item-info-item
+                                    +icon-multi("icon__marker")(width="16px" height="16px")
+                                    .upcoming-events__item-info-item-text {location}
+                                li.upcoming-events__item-info-item
+                                    +icon-multi("icon__what")(width="16px" height="16px")
+                                    .upcoming-events__item-info-item-text {form}
+                            .upcoming-events__item-btns
+                                +button('button', 'upcoming-events__item-btn--sign-up', 'Записаться', '', '', 'icon__angle-small-right-white')(data-path='modal-registration-event')
+                                +button('a', 'upcoming-events__item-btn--sign-up-link', 'Записаться', '#', '', 'icon__angle-small-right-white')(data-path='modal-registration-event')
+                                div.ya-share2(data-curtain="data-curtain" data-description="data-description" data-shape="round" data-limit="0" data-more-button-type="long" data-services="vkontakte,telegram,whatsapp")
+                                +button('a', 'btn--transparent upcoming-events__item-btn--go-to', 'Перейти на страницу', '#', '', '')
+                          .upcoming-events__plug.upcoming-events__plug--event-are-absent
                             +icon-multi("icon__cross-circle")(width="24px" height="24px")
                             .upcoming-events__plug-text
                                 | В этот день мероприятия отсутствуют
+                          .upcoming-events__plug.upcoming-events__plug--date-not-selected
+                            +icon-multi("icon__cross-circle")(width="24px" height="24px")
+                            .upcoming-events__plug-text
+                                | Дата не выбрана. Выберите нужную дату.
+
                 if !notButton
-                    +button('a', 'btn--transparent upcoming-events__btn', 'Все мероприятия', '#', '', 'icon__angle-small-right-white')
+                    +button('a', 'btn--transparent upcoming-events__btn', 'Все мероприятия', '/events.html', '', 'icon__angle-small-right-white')

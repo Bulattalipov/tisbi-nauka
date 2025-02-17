@@ -115,6 +115,10 @@
       -webkit-mask-composite: destination-out;
       mask-composite: exclude;
       opacity: 0.4;
+
+      @include mq(custom, max, 640) {
+        display: none;
+      }
     }
 
     &.active {
