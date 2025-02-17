@@ -1,17 +1,3 @@
-# Название страниц
-Главная - http://localhost:3000/
-О науке - http://localhost:3000/about-science.html
-Мероприятия - http://localhost:3000/events.html
-Мероприятие - http://localhost:3000/event.html
-Новости - http://localhost:3000/news.html
-Открытая новость - http://localhost:3000/open-news.html
-Научные школы - http://localhost:3000/scientific-schools.html
-Собственные научные журналы - http://localhost:3000/own-scientific-publications.html
-Наука и образование - http://localhost:3000/conferences.html
-Основные тенденции развития современного права http://localhost:3000/conferences-law.html
-
-
-
 # GULP сборка
 
 ## Основные возможности и используемые технологии
